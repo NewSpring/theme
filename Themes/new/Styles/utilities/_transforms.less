@@ -1,16 +1,23 @@
-.util-rotation(@breakpoint:"base") {
+//
+// Utilities for transforming elements
+//
+
+.ns-util-mix-transform(@breakpoint:"base") {
   .setInfix(@bp) when (@bp = "base") {
     @infix: ~"";
-    .display-rotation(@infix);
+    .transform-breakpoints(@infix);
   }
+
   .setInfix(@bp) when (default()) {
     @infix: ~"-@{breakpoint}";
-    .display-rotation(@infix);
+
+    .transform-breakpoints(@infix);
   }
+
   .setInfix(@breakpoint);
 }
 
-.display-rotation(@infix) {
+.transform-breakpoints(@infix) {
   .rotate@{infix}-90 {
     transform: rotate(90deg);
   }
@@ -20,14 +27,7 @@
   .flip@{infix}-x {
     transform: scaleX(-1);
   }
+  .flip@{infix}-y {
+    transform: scaleY(-1);
+  }
 }
-
-// Generate base mobile classes
-.util-rotation();
-
-// Generate breakpoint-specific classes
-each(@breakpoints, {
-    @media (min-width: @value) {
-        .util-rotation(@key);
-    }
-});

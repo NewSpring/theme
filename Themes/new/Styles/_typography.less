@@ -90,7 +90,7 @@ ol,
 p,
 blockquote {
   margin-top: 0;
-  margin-bottom: (@base-spacing-unit*6);
+  margin-bottom: (@spacer*6);
 }
 
 .pretitle {
@@ -141,8 +141,7 @@ a {
   list-style-type: none;
 }
 
-// +768px
-@media (min-width: @screen-sm-min) {
+@media @sm {
   .display-1 {
     font-size: ceil(@font-size-display-1 * 1.18); // 76px
     letter-spacing: -2px;
@@ -195,8 +194,7 @@ a {
   }
 }
 
-// +992px
-@media (min-width: @screen-md-min) {
+@media @md {
   .display-1 {
     font-size: ceil(@font-size-display-1 * 1.43); // 92px
     letter-spacing: -3px;

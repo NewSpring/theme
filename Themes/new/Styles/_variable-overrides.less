@@ -110,42 +110,76 @@
 //--
 @btn-link-disabled-color: @gray-light;
 
-// Spacing
-@base-spacing-unit: 4px;
-@spacers: {
-  0: 0;
-  1: (@base-spacing-unit*2); // 8px
-  2: (@base-spacing-unit*4); // 16px
-  3: (@base-spacing-unit*6); // 24px
-  4: (@base-spacing-unit*8); // 32px
-  5: (@base-spacing-unit*10); // 40px
-  6: (@base-spacing-unit*12); // 64px
-  7: (@base-spacing-unit*24); // 96px
-  8: (@base-spacing-unit*32); // 128px
-  9: (@base-spacing-unit*48); // 192px
-  10: (@base-spacing-unit*64); // 256px
-  11: (@base-spacing-unit*80); // 320px
-  12: (@base-spacing-unit*96); // 384px
-  auto: auto;
-};
+@spacer: 4px;
+@spacing-1: 2; // 8px
+@spacing-2: 4; // 16px
+@spacing-3: 6; // 24px
+@spacing-4: 8; // 32px
+@spacing-5: 10; // 40px
+@spacing-6: 12; // 64px
+@spacing-7: 24; // 96px
+@spacing-8: 36; // 128px
+@spacing-9: 48; // 192px
+@spacing-10: 64; // 256px
+@spacing-11: 80; // 320px
+@spacing-12: 96; // 384px
 
-@sizes: {
-  0: 0;
-  25: 25;
-  50: 50;
-  75: 75;
-  100: 100;
-  vh: vh;
-  vw: vw;
-  auto: auto;
-};
+// Media Queries
+@screen-sm: 576px;
+@screen-sm-min: @screen-sm;
 
-@breakpoints: {
-  sm: 576px;
-  md: 768px;
-  lg: 992px;
-  xl: 1441px;
-};
+@screen-md: 768px;
+@screen-md-min: @screen-md;
+
+@screen-lg: 992px;
+@screen-lg-min: @screen-lg;
+
+@screen-xl: 1441px;
+@screen-xl-min: @screen-xl;
+
+// Media queries
+// Example usage:
+// @media @xl {
+//   body {
+//     background: red;
+//   }
+// }
+@xl: ~"(min-width: @{screen-xl-min})";
+
+// @spacers: {
+//   0: 0;
+//   1: (@base-spacing-unit*2); // 8px
+//   2: (@base-spacing-unit*4); // 16px
+//   3: (@base-spacing-unit*6); // 24px
+//   4: (@base-spacing-unit*8); // 32px
+//   5: (@base-spacing-unit*10); // 40px
+//   6: (@base-spacing-unit*12); // 64px
+//   7: (@base-spacing-unit*24); // 96px
+//   8: (@base-spacing-unit*32); // 128px
+//   9: (@base-spacing-unit*48); // 192px
+//   10: (@base-spacing-unit*64); // 256px
+//   11: (@base-spacing-unit*80); // 320px
+//   12: (@base-spacing-unit*96); // 384px
+//   auto: auto;
+// };
+
+// @sizes: {
+//   0: 0;
+//   25: 25;
+//   50: 50;
+//   75: 75;
+//   100: 100;
+//   vh: vh;
+//   vw: vw;
+//   auto: auto;
+// };
+
+// @breakpoints: {
+//   sm: 576px;
+//   md: 768px;
+//   lg: 992px;
+//   xl: 1441px;
+// };
 
 // Bootstrap Overrides
 
@@ -153,17 +187,17 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical: @base-spacing-unit * 3;
-@padding-base-horizontal: @base-spacing-unit * 6;
+@padding-base-vertical: @spacer * 3;
+@padding-base-horizontal: @spacer * 6;
 
-@padding-large-vertical: @base-spacing-unit * 4;
-@padding-large-horizontal: @base-spacing-unit * 8;
+@padding-large-vertical: @spacer * 4;
+@padding-large-horizontal: @spacer * 8;
 
-@padding-small-vertical: @base-spacing-unit * 2;
-@padding-small-horizontal: @base-spacing-unit * 5;
+@padding-small-vertical: @spacer * 2;
+@padding-small-horizontal: @spacer * 5;
 
-@padding-xs-vertical: @base-spacing-unit * 2;
-@padding-xs-horizontal: @base-spacing-unit * 4;
+@padding-xs-vertical: @spacer * 2;
+@padding-xs-horizontal: @spacer * 4;
 
 @line-height-large: 1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small: 1.5;

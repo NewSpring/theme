@@ -1,34 +1,30 @@
-.util-display(@breakpoint:"base") {
+//
+// Utilities for common positioning values
+//
+
+.ns-util-mix-positioning(@breakpoint:"base") {
   .setInfix(@bp) when (@bp = "base") {
     @infix: ~"";
-    .display(@infix);
+    .positioning-breakpoints(@infix);
   }
+
   .setInfix(@bp) when (default()) {
     @infix: ~"-@{breakpoint}";
-    .display(@infix);
+
+    .positioning-breakpoints(@infix);
   }
+
   .setInfix(@breakpoint);
 }
 
-.display(@infix) {
-  .block@{infix} {
-    display: block;
-  }
-  .inline-block@{infix} {
-    display: inline-block;
-  }
-  .inline@{infix} {
-    display: inline;
-  }
-  .flex@{infix} {
-    display: flex;
-  }
+.positioning-breakpoints(@infix) {
   .ltr@{infix} {
     direction: ltr;
   }
   .rtl@{infix} {
     direction: rtl;
   }
+
   .text@{infix}-left {
     text-align: left;
   }
@@ -117,12 +113,3 @@
     left: 75%;
   }
 }
-
-.util-display();
-
-// Generate breakpoint-specific classes
-each(@breakpoints, {
-    @media (min-width: @value) {
-        .util-display(@key);
-    }
-});
