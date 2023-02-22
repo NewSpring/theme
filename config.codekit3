@@ -4265,18 +4265,6 @@
       "oAP" : "\/Themes\/new\/Styles\/.gitignore",
       "oF" : 0
     },
-    "\/Themes\/new\/Styles\/bootstrap.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Themes\/new\/Styles\/bootstrap-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/Themes\/new\/Styles\/bootstrap.less" : {
       "aP" : 0,
       "bl" : 0,
@@ -4287,25 +4275,13 @@
       "ma" : 0,
       "mS" : 0,
       "oA" : 0,
-      "oAP" : "\/Themes\/new\/Styles\/bootstrap.css",
-      "oF" : 0,
+      "oAP" : "\/Themes\/new\/Compiled\/bootstrap.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "rwU" : 0,
       "sI" : 0,
       "sU" : 0
-    },
-    "\/Themes\/new\/Styles\/theme.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Themes\/new\/Styles\/theme-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/Themes\/new\/Styles\/theme.less" : {
       "aP" : 0,
@@ -4317,8 +4293,8 @@
       "ma" : 0,
       "mS" : 0,
       "oA" : 0,
-      "oAP" : "\/Themes\/new\/Styles\/theme.css",
-      "oF" : 0,
+      "oAP" : "\/Themes\/new\/Compiled\/theme.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "rwU" : 0,
