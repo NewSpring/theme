@@ -1,0 +1,31 @@
+@import "_variable-overrides.less";
+
+.util-ratios(@breakpoint:"base") {
+  .setInfix(@bp) when (@bp = "base") {
+    @infix: ~"";
+    .ratios(@infix);
+  }
+  .setInfix(@bp) when (default()) {
+    @infix: ~"-@{breakpoint}";
+    .ratios(@infix);
+  }
+  .setInfix(@breakpoint);
+}
+
+.ratios(@infix) {
+  .ratio@{infix}-video { aspect-ratio: 16 / 9; }
+  .ratio@{infix}-landscape { aspect-ratio: 2 / 1; }
+  .ratio@{infix}-square { aspect-ratio: 1 / 1; }
+  .ratio@{infix}-portrait { aspect-ratio: 1 / 1.5; }
+}
+
+
+// Generate base mobile classes
+.util-ratios();
+
+// Generate breakpoint-specific classes
+each(@breakpoints, {
+    @media (min-width: @value) {
+        .util-ratios(@key);
+    }
+});

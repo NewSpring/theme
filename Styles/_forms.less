@@ -1,0 +1,495 @@
+/*
+    Used to manage styles related to Rock's forms
+
+    1. Bootstrap Overrides / Additions
+    2. Data Lists
+    3. Input Sizing
+    4. Control Specific Styles
+    5. Validation
+    6. Custom Controls
+    7. Static Control
+*/
+
+// 1. Bootstrap Overrides / Additions
+// -------------------------
+
+.input-xs {
+  .input-size(@input-height-xs; @padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
+}
+
+// Prevent Toggle Arrows from Displaying on number inputs
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+// Prevent Text Areas from oversizing beyond 100%
+textarea {
+  resize: vertical;
+}
+
+legend {
+  font-weight: @font-weight-light;
+  color: @text-color;
+  border-width: 0;
+}
+
+a.aspNetDisabled {
+  opacity: .5;
+}
+
+.picker.aspNetDisabled {
+  opacity: 1;
+}
+
+a.aspNetDisabled.picker-label,
+.picker.aspNetDisabled .picker-label {
+  background: @input-bg-disabled;
+  opacity: 1;
+}
+
+.form-group.rock-literal,
+.rock-control-wrapper {
+
+  p.form-control-static {
+    padding-top: 0;
+  }
+}
+
+.form-group {
+  // used to fix the font sizes when a form is placed in a wrapping container that changes the default font size like a jumbotron
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+}
+
+.-mt-form-group {
+  -webkit-transform: translateY(-@form-group-margin-bottom);
+  -ms-transform: translateY(-@form-group-margin-bottom);
+  transform: translateY(-@form-group-margin-bottom);
+}
+
+.form-group > .form-group {
+  margin-top: 12px;
+}
+
+.form-section {
+  margin-bottom: @form-section-margin-bottom;
+}
+
+.form-inline {
+  // control groups break bootstraps form-inline https://stackoverflow.com/questions/21017542/bootstrap-form-inline-not-working
+  .control-wrapper {
+    display: inline-table;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .date-range-picker .input-group {
+    margin-bottom: 0;
+  }
+}
+
+.form-inline-all {
+  .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .form-control-static {
+    display: inline-block;
+  }
+}
+
+.form-group.captcha {
+  iframe {
+    border: 0;
+  }
+
+  &.has-error {
+    iframe {
+      border: 1px solid @state-danger-text;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+// styling to get rock controls to layout horizontal
+.form-horizontal {
+  .form-group {
+    .form-control-group,
+    .form-control {
+      float: left;
+    }
+  }
+
+  &[class*="label-"] {
+    .form-group {
+      label {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .make-sm-column(2);
+
+        @media (min-width: @screen-sm-min) {
+          padding-top: @padding-base-vertical + 1px;
+          padding-bottom: @padding-base-vertical + 1px;
+          margin-bottom: 0; // Override the `<label>/<legend>` default
+          line-height: @line-height-base;
+          text-align: right;
+        }
+      }
+
+      .control-wrapper {
+        .make-sm-column(10);
+      }
+    }
+  }
+
+  &.label-md {
+    .form-group {
+      label {
+        .make-sm-column(4);
+      }
+      .control-wrapper {
+        .make-sm-column(8);
+      }
+    }
+  }
+
+  &.label-lg {
+    .form-group {
+      label {
+        .make-sm-column(6);
+      }
+      .control-wrapper {
+        .make-sm-column(6);
+      }
+    }
+  }
+
+  &.label-xl {
+    .form-group {
+      label {
+        .make-sm-column(8);
+      }
+      .control-wrapper {
+        .make-sm-column(4);
+      }
+    }
+  }
+
+  &.label-auto {
+    .form-group {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .control-label {
+        width: auto;
+        min-width: 180px;
+        padding-top: @padding-base-vertical + 1px;
+        padding-bottom: @padding-base-vertical + 1px;
+        margin-bottom: 0; // Override the `<label>/<legend>` default
+        line-height: @line-height-base;
+        text-align: right;
+      }
+      .control-wrapper {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &.label-min-w-0 {
+    .control-label {
+      min-width: 0 !important;
+    }
+  }
+}
+
+
+.controls {
+  .checkbox:first-child,
+  .radio:first-child {
+    margin-top: 0;
+  }
+}
+
+
+// highlight required fields
+.form-group.required > .control-label,
+.required-indicator {
+  &::after {
+    margin-left: 4px;
+    font-family: @fa-font-face;
+    font-size: 6px;
+    font-weight: @fa-theme-weight;
+    color: @required-field-color;
+    vertical-align: super;
+    content: @fa-var-circle;
+  }
+}
+
+// 2. Data Lists
+// -------------------------
+
+dl:not(.dl-horizontal) {
+  dt {
+    margin-top: @description-term-margin-top;
+    margin-bottom: @description-term-margin-bottom;
+    font-weight: @font-weight-bold;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin-left: 0;
+  }
+}
+
+// 3. Input Sizing
+// -------------------------
+
+// form control sizing for bs3 - to be used only in specific cases
+// added on 9/27/13
+.form-control.input-width-xs,
+.input-group.input-width-xs,
+.form-control-group.input-width-xs input {
+  width: @input-width-xs;
+}
+
+.form-control.input-width-sm,
+.input-group.input-width-sm,
+.form-control-group.input-width-sm input {
+  width: @input-width-sm;
+}
+
+.form-control.input-width-md,
+.input-group.input-width-md,
+.form-control-group.input-width-md input {
+  width: @input-width-md;
+}
+
+.form-control.input-width-lg,
+.input-group.input-width-lg,
+.form-control-group.input-width-lg input {
+  width: @input-width-lg;
+}
+
+.form-control.input-width-xl,
+.input-group.input-width-xl,
+.form-control-group.input-width-xl input {
+  width: @input-width-xl;
+}
+
+.form-control.input-width-xxl,
+.input-group.input-width-xxl,
+.form-control-group.input-width-xxl input {
+  width: @input-width-xxl;
+}
+
+.input-max-w-xl {
+  max-width: @input-width-xl;
+}
+
+.form-control-group {
+  .clearfix();
+
+  .form-control,
+  .input-group,
+  .chosen-container,
+  .timepicker-input {
+    float: left;
+    margin-right: 6px;
+  }
+
+  // Add spacing so time "to" is centered
+  .form-control-static + .timepicker-input {
+    margin-left: 35px;
+  }
+
+  // Nested form controls get too much margin
+  .input-group > .form-control {
+    margin-right: 0;
+  }
+
+  & > span {
+    float: left;
+    margin: (@input-padding-y - 1) 6px (@input-padding-y + 1) 0;
+    font-size: @input-font-size;
+    line-height: @input-line-height;
+    color: @text-muted;
+  }
+
+  & > label {
+    float: left;
+    margin-top: 8px;
+  }
+
+  .form-group-auto & {
+    display: -ms-flexbox;
+    display: flex;
+
+    .form-control {
+      -ms-flex: 1 1 0;
+      flex: 1 1 0;
+    }
+  }
+}
+
+// change margins in panel headings
+.panel-heading {
+  .input-group {
+    margin-top: -6px;
+    margin-bottom: -6px;
+  }
+
+  .picker-daterange .input-group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// 4. Control Specific Styling
+// -------------------------
+
+.form-control > option[disabled] {
+  color: fade(@input-color, 50%); // Select fields don't obey opacity
+}
+
+.input-group-edit {
+  .input-group-addon {
+    background-color: @brand-success;
+
+    a {
+      color: @btn-success-color;
+    }
+  }
+}
+
+// Add btn using PrependText or AppendText
+.input-group-addon {
+  > .btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: @input-height-base;
+    margin: -(@input-padding-y + 1) -(@input-padding-x + 1);
+    border-radius: @input-border-radius;
+
+    &:focus {
+      z-index: 3;
+    }
+  }
+
+  &:first-child > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:last-child > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.date-parts-picker {
+  display: flex;
+  flex-wrap: wrap;
+
+  .control-label {
+    width: 100%;
+  }
+
+  .form-control {
+    flex: 1 1 auto;
+    min-width: @input-width-sm;
+    max-width: floor(@input-width-sm * 1.25);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.month-year-picker .separator,
+.month-day-picker .separator {
+  @separator-margin: ((@input-height-base - @font-size-lg) / 2);
+  margin: @separator-margin 6px @separator-margin 0;
+  font-size: @font-size-lg;
+  line-height: 1;
+  color: @text-muted;
+}
+
+.rock-check-box {
+  .checkbox {
+    margin-top: 0;
+  }
+}
+
+.form-control.ssn-part {
+  &.ssn-area {
+    width: 50px;
+  }
+  &.ssn-group {
+    width: 45px;
+  }
+  &.ssn-serial {
+    width: 60px;
+  }
+}
+
+// 5. validation
+// -------------------------
+
+.validation-error {
+  float: left;
+  font-weight: @font-weight-light;
+  color: @brand-danger;
+}
+
+// 6. Custom Controls
+// -------------------------
+.btn-controlaligned {
+  margin-top: 24px;
+}
+
+/* SK Add margin in ListItems */
+.list-items-rows .controls-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+// 7. Static Controls
+// -------------------------
+.form-group.static-control {
+  label {
+    margin-bottom: 0;
+  }
+
+  .form-control-static {
+    padding-top: 0;
+  }
+}

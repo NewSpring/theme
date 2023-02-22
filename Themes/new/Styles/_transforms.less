@@ -1,0 +1,33 @@
+.util-rotation(@breakpoint:"base") {
+  .setInfix(@bp) when (@bp = "base") {
+    @infix: ~"";
+    .display-rotation(@infix);
+  }
+  .setInfix(@bp) when (default()) {
+    @infix: ~"-@{breakpoint}";
+    .display-rotation(@infix);
+  }
+  .setInfix(@breakpoint);
+}
+
+.display-rotation(@infix) {
+  .rotate@{infix}-90 {
+    transform: rotate(90deg);
+  }
+  .rotate@{infix}-90-counter {
+    transform: rotate(-90deg);
+  }
+  .flip@{infix}-x {
+    transform: scaleX(-1);
+  }
+}
+
+// Generate base mobile classes
+.util-rotation();
+
+// Generate breakpoint-specific classes
+each(@breakpoints, {
+    @media (min-width: @value) {
+        .util-rotation(@key);
+    }
+});

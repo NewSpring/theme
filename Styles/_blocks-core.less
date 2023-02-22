@@ -1,0 +1,1004 @@
+/*
+  Used to manage styles for specific blocks.
+
+  1. Notes - block to display, add, edit, delete notes
+  2. Schedule Builder - block for building schedules
+  3. Workflow - styles for workflow blocks
+  4. Electronic Signatures
+
+*/
+
+// Fullscreen Toggle
+
+.rock-fullscreen-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-flex; /* make element size relative to content */
+  align-items: center; /* vertical alignment of items */
+  justify-content: center;
+  width: 50px;
+  padding: 0 10px; /* horizontal with padding-l/r */
+  line-height: 40px; /* vertically size by height, line-height or padding */
+  color: @text-color;
+  text-align: center;
+  cursor: pointer;
+  border-left: 1px solid @panel-border;
+  opacity: .5;
+  transition: .2s;
+
+  &:hover {
+    font-size: 110%;
+    color: @text-color;
+    opacity: .75;
+  }
+
+  &::before {
+    font-family: @fa-font-face;
+    font-weight: @fa-theme-weight;
+    text-align: center;
+    content: @fa-var-expand;
+  }
+
+  .is-fullscreen & {
+    color: @text-color;
+    &::before {
+      content: @fa-var-compress;
+    }
+  }
+}
+
+.panel-follow-full-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  > div {
+    position: relative;
+    float: left;
+    height: 100%;
+  }
+}
+
+.section-header-hr {
+  margin-top: 16px;
+}
+
+.rock-header {
+  .title {
+    margin: 0;
+  }
+
+  .description {
+    margin: 0;
+    font-size: @font-size-small;
+    color: @text-muted;
+  }
+
+  hr {
+    &:extend(.section-header-hr);
+  }
+}
+
+.panel-section {
+  border-color: @panel-section-border;
+  box-shadow: none !important;
+
+  > .panel-heading {
+    position: relative;
+    padding: 18px;
+    background: @panel-section-heading-bg;
+    border-radius: @panel-border-radius @panel-border-radius 0 0;
+    &::after {
+      position: absolute;
+      right: (@panel-body-padding - 4px);
+      bottom: 0;
+      left: (@panel-body-padding - 4px);
+      content: "";
+      border-bottom: 1px solid @input-border;
+    }
+
+    .panel-title {
+      margin-bottom: 12px;
+    }
+
+    .description {
+      margin: 0;
+      color: @text-muted;
+    }
+  }
+
+  > .panel-body {
+    background: @panel-section-body-bg;
+    border-radius: 0 0 @panel-border-radius @panel-border-radius;
+  }
+}
+
+
+// Fancy Scrollbars
+
+.styled-scroll {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0,.03);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: rgba(0,0,0, .2);
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(0,0,0, .3);
+    }
+  }
+}
+
+// 1. Notes
+// -------------------------
+.panel-note {
+  border-top-color: @panel-top-border-color;
+
+  .panel-variant(@panel-border; @panel-heading-text-color; @panel-heading-bg; @panel-heading-border;);
+
+  .panel-body {
+    padding: 0;
+  }
+
+  .panel-heading {
+    h3 {
+      float: left;
+    }
+
+    .btn {
+      float: right;
+      margin: -4px 0 -4px auto;
+    }
+  }
+}
+
+.tag-flair {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  text-transform: capitalize;
+  vertical-align: top;
+
+  .tag-color {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 0 6px 0 1px;
+    background-color: #999;
+    border-radius: 50%;
+  }
+
+  .tag-label {
+    line-height: 1;
+    color: @text-muted;
+    white-space: nowrap;
+  }
+}
+
+
+.load-more-container {
+  margin: 16px;
+  text-align: center;
+}
+
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 1;
+  color: @text-muted;
+  text-align: center;
+  background: @gray-100;
+  border-radius: 50%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &-xl {
+    width: 64px;
+    height: 64px;
+  }
+
+  &-lg {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  &-sm {
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+  }
+
+  &-xs {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    content: "";
+    border: 1px solid rgba(0,0,0,.0975);
+    border-radius: 50%;
+  }
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+
+  .dropdown {
+    align-self: flex-start;
+    margin-left: auto;
+  }
+
+  .btn-overflow {
+    height: @font-size-base;
+    padding: 0;
+    line-height: @font-size-base;
+    color: @gray-light;
+    &:hover,
+    &:focus {
+      color: @gray;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+
+  .note-caption {
+    font-weight: 600;
+  }
+
+  .note-details {
+    display: flex;
+    align-items: center;
+    font-size: @font-size-sm;
+    line-height: 1.5;
+  }
+
+  .timestamp {
+    display: inline-block;
+    color: @text-muted;
+  }
+
+  .meta-figure {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+
+  .meta-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+
+    .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 1 1 0%;
+      flex: 1 1 0%;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      min-width: 0;
+      -webkit-box-pack: justify;
+      -webkit-box-flex: 1;
+    }
+
+    .dropdown .dropdown-menu {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.note-view-list {
+  margin: 0;
+  > .note:last-child {
+    padding-bottom: 0;
+    .note-comments {
+      border-bottom: 0;
+    }
+  }
+}
+
+.note {
+  + .note {
+    border-top: 1px solid #dee2e6;
+  }
+
+  .flag {
+    padding: 4px 8px 6px;
+    margin: -16px -24px 12px;
+    font-size: 12px;
+    color: @brand-danger;
+    background: @state-danger-bg;
+    border-top: 2px solid @brand-danger;
+    @media @sm {
+      padding: 4px 23px 6px;
+      font-size: 14px;
+    }
+
+    &.warning {
+      color: @state-warning-text;
+      background: @state-warning-bg;
+      border-left-color: @brand-warning;
+    }
+  }
+
+  article {
+    padding: 16px 24px;
+
+    // &.is-alert {
+    //   box-shadow: inset 5px 0 0 0 @brand-danger;
+    // }
+
+    // &.is-personal {
+    //   box-shadow: inset 5px 0 0 0 @brand-info;
+    // }
+  }
+
+  .note-comments {
+    background: @ui-3;
+    border-top: 1px solid @panel-border;
+  }
+
+  .meta {
+    margin-bottom: 6px;
+    @media @sm {
+      margin-bottom: 12px;
+    }
+  }
+
+  .note-content {
+    p {
+      margin: 0;
+    }
+
+    .note-attributes {
+      padding: 8px 0 0;
+      margin: 24px 0 0;
+      border-top: 1px solid fade(@panel-border, 60%);
+    }
+
+    .note-attribute {
+      margin: @form-group-margin-bottom 0 0;
+      font-size: @font-size-small;
+    }
+  }
+
+  .note-footer {
+    display: flex;
+    flex-direction: row;
+    font-size: @font-size-xs;
+
+    &-actions-list {
+      -ms-flex-order: 0;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      order: 0;
+      text-align: center;
+      -webkit-box-pack: justify;
+      -webkit-box-ordinal-group: 1;
+    }
+
+    &-meta-list {
+      margin-bottom: 0;
+      margin-left: auto;
+
+      > li > .btn {
+        padding: 0;
+        margin-left: 32px;
+        font-size: @font-size-xs;
+        color: @text-muted;
+
+        i {
+          margin-right: 4px;
+        }
+
+        &:hover {
+          color: @link-color;
+        }
+      }
+    }
+  }
+
+  &-nested {
+    > .note-list-nested {
+      margin-left: 16px;
+
+      @media @sm {
+        margin-left: 44px;
+      }
+    }
+  }
+}
+
+.note-list-nested {
+  margin-left: 0;
+
+  @media @sm {
+    margin-left: 60px;
+  }
+
+  > .note:first-child {
+    border-top: 0;
+  }
+
+  .note-content,
+  .note-footer {
+    margin-left: 44px;
+  }
+}
+
+.note-editor {
+  .meta-body {
+    background: @input-bg;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
+  }
+
+  .settings {
+    padding: 3px 12px 6px;
+
+    .createDate {
+      float: left;
+
+      .date-time-picker {
+        .input-group,
+        & {
+          margin-bottom: 0;
+        }
+
+        .control-label {
+          display: none;
+        }
+
+        .form-control {
+          height: 30px;
+          padding: 5px 10px;
+          font-size: @font-size-xs;
+        }
+
+        .date {
+          width: 130px;
+        }
+
+        .bootstrap-timepicker {
+          width: 120px;
+        }
+
+        .input-group-addon {
+          padding: 0 12px;
+        }
+
+      }
+    }
+
+    .noteentry-notetype {
+      float: left;
+      width: auto;
+      max-width: 200px;
+      height: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: @font-size-xs;
+      line-height: 30px;
+    }
+
+    .checkbox {
+      float: left;
+      margin: 3px 5px 0 10px !important;
+      font-size: @font-size-xs;
+      line-height: 24px;
+    }
+
+    .hidden + .checkbox {
+      margin-left: 0 !important;
+    }
+
+    .commands {
+      float: right;
+
+      > .btn {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.note-editor-standard {
+  // Add custom focus state only for standard notes.
+  .meta-body {
+    &:focus,
+    &:focus-within,
+    &.focus-within {
+      border: var(--focus-state-border);
+      box-shadow: var(--focus-state-shadow);
+    }
+  }
+
+  // Disable primary note field border and focus states
+  .noteentry-control .form-control {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.note-editor-attributes {
+  .noteentry-control {
+    padding: 18px 24px 0;
+  }
+
+  .settings {
+    padding: 6px 24px;
+  }
+}
+
+.note-editor.note-frame {
+  margin: 0;
+}
+
+// Fixes note-editor name conflict with Summernote and Timeline note
+.notes .note-editor {
+  margin: 16px 24px;
+}
+
+.noteentry-control {
+  textarea {
+    .resizable(vertical);
+  }
+}
+
+
+// 2. Schedule Builder
+// -------------------------
+
+.recurrence-pattern-type {
+  padding-left: @spacing-lg-px;
+  margin-top: 12px;
+}
+
+.recurrence-pattern-specific-date {
+  .clearfix();
+
+  .input-group {
+    float: left;
+  }
+
+  .actions {
+    float: left;
+    margin-top: 4px;
+    margin-left: 12px;
+  }
+}
+
+
+.recurrence-pattern-daily,
+.recurrence-pattern-monthly,
+.continue-until {
+  .form-control-group {
+    display: block;
+    min-height: @input-height-base;
+    margin-bottom: 3px;
+  }
+}
+
+.recurrence-pattern-weekly {
+  .week-days {
+    margin-top: @spacing-md-px;
+
+    .clearfix();
+
+    .checkbox {
+      float: left;
+      margin: 0 @spacing-md-px;
+    }
+  }
+}
+
+
+.exclusions {
+  .add-exclusion {
+    .form-control-group {
+      float: left;
+    }
+
+    .actions {
+      float: left;
+      margin-top: 5px;
+    }
+  }
+}
+
+// 3. Workflow
+// -------------------------
+
+.workflow-section-activities {
+  margin-top: 64px;
+}
+
+.workflow-activities-readonly-header {
+  color: @text-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.panel.workflow-activity {
+
+  &::before {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    width: 6px;
+    content: "";
+    background: @brand-info;
+    border-radius: @panel-border-radius 0 0 @panel-border-radius;
+  }
+
+  h3.panel-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: @font-size-h4;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .panel-title::before {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    font-family: @fa-font-face;
+    font-size: @font-size-small;
+    font-weight: @fa-theme-weight;
+    color: @brand-info; // WAS TEXT-MUTED
+    content: @fa-var-cubes;
+    background: fade(@brand-info, 20%);
+    border-radius: 20px;
+  }
+
+  a.btn-link {
+    color: @text-color;
+  }
+
+  &.activated-with-workflow:not(.workflow-activity-inactive) {
+    &::before {
+      background-color: @brand-success;
+    }
+
+    .panel-title::before {
+      color: @brand-success;
+      background: fade(@brand-success, 20%);
+    }
+  }
+
+  &.workflow-activity-inactive {
+    &::before {
+      background-color: @brand-danger;
+    }
+
+    .panel-title::before {
+      color: @brand-danger;
+      background: fade(@brand-danger, 20%);
+    }
+  }
+
+  // TODO: Add class activity-type-description
+  > .panel-heading > .filter-toggle > span {
+    margin-left: 36px;
+    font-size: @font-size-small;
+    line-height: 1.5;
+    color: @text-muted;
+  }
+
+  @media (min-width: @screen-md-min) {
+    > .panel-body {
+      padding-left: (@panel-body-padding + 36px);
+    }
+  }
+}
+
+.workflow-action {
+  margin-bottom: 12px;
+  // TODO: Re-enable when
+  //overflow: hidden;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.editable:hover {
+    border-color: @brand-primary;
+  }
+
+  > .panel-heading {
+    background: @gray-100 !important;
+  }
+
+  .workflow-action-name::before {
+    margin-right: 8px;
+    font-family: @fa-font-face;
+    font-weight: @fa-theme-weight;
+    content: @fa-var-cube;
+  }
+
+  .criteria-exists {
+    color: @btn-warning-color;
+    background-color: @btn-warning-bg;
+    border: 1px solid @btn-warning-border;
+  }
+
+  .conditional-run-criteria {
+    padding: 15px 0 10px;
+    margin: -15px -16px 15px;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .form-action-rows .form-row {
+    margin-bottom: 15px;
+  }
+}
+
+.workflow-action.not-editable {
+  opacity: .5;
+}
+
+// panel for workflow entry/navigation
+.panel-group {
+  .panel-workflowitem {
+    margin-bottom: 30px;
+    .panel-variant(@panel-border; @panel-heading-text-color; @panel-heading-bg; @panel-heading-border;);
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    .panel-heading {
+      padding: 30px;
+
+      a {
+        display: block;
+
+        .panel-title {
+          width: 100%;
+
+          h3 {
+            margin: 0;
+
+            i {
+              margin-right: 12px;
+              font-size: 35px;
+            }
+          }
+        }
+
+
+        i.panel-navigation {
+          margin-top: 8px;
+
+          &::before {
+            margin-top: 6px;
+            font-family: @fa-font-face;
+            font-size: 20px;
+            font-weight: @fa-theme-weight;
+            content: @fa-var-chevron-up;
+          }
+        }
+
+        &.collapsed {
+          i.panel-navigation::before {
+            content: @fa-var-chevron-down;
+          }
+        }
+      }
+    }
+  }
+}
+
+.checkin-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+
+  .btn-checkbox {
+    width: ~"calc(50% - 16px)";
+    margin: 0 8px 16px;
+
+    @media (min-width: @screen-sm-min) {
+      width: ~"calc(33.333% - 16px)";
+    }
+
+    @media (min-width: @screen-md-min) {
+      width: ~"calc(25% - 16px)";
+    }
+  }
+}
+
+.btn-checkbox {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  white-space: normal;
+
+  i {
+    margin-bottom: .25em;
+    font-size: 2em;
+  }
+
+  .name {
+    display: -webkit-box;
+    max-height: 2.6666666em;
+    overflow: hidden;
+    line-height: 1.3333333;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .small {
+    font-size: 80%;
+    line-height: 1;
+  }
+
+  &.active {
+    color: @btn-primary-color !important;
+    background: @btn-primary-bg !important;
+    border-color: @btn-primary-border !important;
+  }
+}
+
+.mobile-auth-row {
+  max-width: 400px;
+  margin-right: -4px;
+  margin-left: -4px;
+  font-size: 36px;
+  text-align: center;
+
+  .input-lg {
+    .max(36px, @font-size-large);
+    min-height: 54px;
+    font-size: @max;
+    border-radius: 0;
+  }
+
+  > .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    padding-right: 4px;
+    padding-left: 4px;
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+  }
+
+  > .col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.rock-fullname {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// rockslide Vue transition
+.rockslide-enter-active,
+.rockslide-leave-active {
+  transition: all .6s ease;
+}
+
+.rockslide-enter,
+.rockslide-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+// 4. Electronic Signatures
+
+.icon-property {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: @text-muted;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .property {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+}
+
+.registrant-signature-document{
+  margin-top: 32px;
+}
+
+.signaturedocument-container {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 20px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid @panel-border;
+  border-radius: @border-radius-base;
+}
+
+.signaturedocument-iframe {
+  width: 100%;
+  min-height: 450px;
+}
+
+.signature-entry-agreement {
+  margin-top: 6px;
+}
+
+.signature-entry-clear-col {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+/*
+    Used to manage styles for specific blocks.
+
+    1. Group Viewer - styles for the group viewer block.
+
+*/
+
+// 1. Group Viewer
+// -------------------------
+.group-location-map {
+  margin-bottom: 24px;
+
+  .address {
+    margin-top: 8px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.description {
+  margin-bottom: 24px;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.resource-list {
+  @media (min-width: @screen-md-min) {
+    top: 16px;
+    max-height: ~"calc(100vh - 112px)";
+  }
+}

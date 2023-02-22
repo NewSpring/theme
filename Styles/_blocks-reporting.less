@@ -1,0 +1,182 @@
+/*
+    Used to manage styles for specific blocks.
+
+    1. Data Views - block for creating data views
+    2. Dynamic Report - block for making reports dynamically updated
+    3. Interactions
+*/
+
+
+// 1. Data Views
+// -------------------------
+
+/* data views */
+.filter-toggle {
+  align-self: flex-start;
+  padding-right: 8px;
+  //margin-top: 5px;
+
+  & > span {
+    float: left;
+  }
+
+  .btn-toggle {
+    margin: 0 6px;
+  }
+}
+
+.filter-item-select {
+  > span {
+    float: left;
+    padding: 8px 6px 0 0;
+  }
+
+  .chosen-container {
+    float: left;
+    width: 250px !important;
+  }
+}
+
+// add top margin to checkbox lists in filters
+.field-criteria {
+  // Add margin to in-columns because checkbox-inline is not inherited
+  .in-columns,
+  .checkbox-inline {
+    margin-top: 8px;
+  }
+
+  @media @md {
+    // Vertically align criteria fields to the top
+    > div {
+      display: table-cell;
+      float: none;
+      vertical-align: top;
+    }
+
+    .vertical-align-bottom {
+      vertical-align: bottom;
+    }
+  }
+}
+
+.filter-item div[class*="col"] {
+  margin-bottom: 6px;
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+/* text between input elements in dataview filters - DT */
+span.data-view-filter-label {
+  display: inline-block;
+  min-height: (@line-height-computed + @font-size-base) - 2;
+  padding-top: (@padding-base-vertical + 1);
+  padding-bottom: (@padding-base-vertical + 1);
+  margin: 0 12px 0 0;
+}
+
+// 2. Dynamic Report
+// -------------------------
+
+.filterfield {
+  margin-bottom: 12px;
+
+  // Override table-cell alignment for dynamic reports and data views
+  .field-criteria > div {
+    display: block;
+    float: left;
+  }
+}
+
+.filterfield-label {
+  display: block;
+  margin-top: 8px;
+  font-weight: @font-weight-semibold;
+}
+
+// 3. Interactions
+// -------------------------
+
+.list-panel {
+  > .grid-filter {
+    padding: 6px 0;
+    margin: -@panel-body-padding -@panel-body-padding @panel-body-padding;
+    border-bottom: 1px solid @panel-border;
+
+    > header {
+      position: relative;
+    }
+
+    .grid-filter-entry {
+      padding-top: inherit;
+      border: 0;
+    }
+
+    .btn-link {
+      position: relative;
+      margin: 0;
+    }
+  }
+}
+
+// 4. Form Field Filter
+// -------------------------
+.filter-rule-remove,
+.filtervisibilityrules-type {
+  margin-bottom: @form-group-margin-bottom;
+}
+
+.filter-rule {
+  display: flex;
+  align-items: flex-start;
+
+  @media (min-width: @screen-md-min) {
+    align-items: flex-end;
+  }
+}
+
+.filter-rule {
+  .filter-rule-fields {
+    flex: 1 1 auto;
+    margin-right: 5px;
+  }
+
+  .flex-rule-remove {
+    flex: 0 0 auto;
+  }
+}
+
+.filter-rule-fieldfilter,
+.filter-rule-fieldfilter .field-criteria,
+.filter-rule-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.filter-rule-fieldfilter .field-criteria,
+.filter-rule-fields {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+}
+
+.filter-rule-fieldfilter .field-criteria {
+  width: ~"calc(100% + 10px)";
+}
+
+// .control-wrapper is for Obsidian
+.filter-rule-comparefield > .form-control,
+.filter-rule-comparefield > .control-wrapper,
+.filter-rule-fieldfilter > .field-criteria .form-control {
+  min-width: 100%;
+  margin-bottom: @form-group-margin-bottom;
+}
+
+.filter-rule-fieldfilter {
+  .field-criteria > div {
+    display: block;
+    float: left;
+  }
+}
