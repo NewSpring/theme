@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34448",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/finances.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4326,7 +4334,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 696289535.702739,
-    "displayValue" : "theme2",
+    "displayValue" : "theme",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-forest",
     "iconImageWasSetByUser" : 0
