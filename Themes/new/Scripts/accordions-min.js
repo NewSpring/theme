@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){$('[data-toggle="collapse"]').each((function(s){$(this).bind("click",(function(){let s=$(this).find(".fa-plus, .fa-minus");s.hasClass("fa-plus")?(s.removeClass("fa-plus"),s.addClass("fa-minus")):(s.addClass("fa-plus"),s.removeClass("fa-minus"))}))}))}),!1);
