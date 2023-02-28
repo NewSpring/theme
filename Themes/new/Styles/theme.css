@@ -4127,7 +4127,7 @@ span.data-view-filter-label {
   display: flex;
   align-items: center;
   margin-bottom: 2px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -5413,7 +5413,7 @@ span.data-view-filter-label {
 .persondetails-group header h1 {
   float: left;
   margin: 10px 15px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 25px;
 }
@@ -5491,7 +5491,7 @@ span.data-view-filter-label {
 }
 .persondetails-group .addresses ul h4 {
   margin: 0;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
 }
 .persondetails-group .addresses ul .address .actions a {
@@ -16628,17 +16628,17 @@ a {
   }
   h4,
   .h4 {
-    font-size: 32px;
+    font-size: 34px;
     letter-spacing: -1.3px;
   }
   h5,
   .h5 {
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: -1.15px;
   }
   h6,
   .h6 {
-    font-size: 24px;
+    font-size: 31px;
     letter-spacing: -1px;
   }
 }
@@ -16672,12 +16672,12 @@ a {
   }
   h4,
   .h4 {
-    font-size: 40px;
+    font-size: 42px;
     letter-spacing: -1.8px;
   }
   h5,
   .h5 {
-    font-size: 32px;
+    font-size: 37px;
     letter-spacing: -1.45px;
   }
   .pretitle {
@@ -16696,6 +16696,12 @@ a {
 }
 .btn {
   border: 0;
+}
+.dropdown-menu > li > a {
+  text-decoration: none;
+  font-family: "colfax-web", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 .btn-danger {
   color: #fff;
@@ -21856,10 +21862,6 @@ html {
 }
 section {
   padding: 96px 32px;
-}
-section,
-footer {
-  overflow: hidden;
 }
 .fullscreen {
   position: absolute;

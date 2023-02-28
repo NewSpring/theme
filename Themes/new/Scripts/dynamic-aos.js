@@ -3,7 +3,7 @@ document.addEventListener(
   function () {
     // Get elements to animate
     let elementsToAnimate = document.querySelectorAll(
-      "h1:not([data-aos], [data-aos] *), h2:not([data-aos], [data-aos] *), h3:not([data-aos], [data-aos] *), h4:not([data-aos], [data-aos] *), h5:not([data-aos], [data-aos] *), h6:not([data-aos], [data-aos] *), p:not([data-aos], [data-aos] *), i:not([data-aos], [data-aos] *)"
+      "h1:not([data-aos], [data-aos] *), h2:not([data-aos], [data-aos] *), h3:not([data-aos], [data-aos] *), h4:not([data-aos], [data-aos] *), h5:not([data-aos], [data-aos] *), h6:not([data-aos], [data-aos] *), p:not([data-aos], [data-aos] *), i:not([data-aos], [data-aos] *), .dropdown-toggle"
     );
 
     // Loop through and add data attributes

@@ -3937,6 +3937,17 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Themes\/new\/Scripts\/accordions-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Scripts\/accordions-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/Themes\/new\/Scripts\/accordions.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -4107,24 +4118,6 @@
       "mS" : 0,
       "oA" : 1,
       "oAP" : "\/Themes\/new\/Styles\/_shadows.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "rwU" : 0,
-      "sI" : 0,
-      "sU" : 0
-    },
-    "\/Themes\/new\/Styles\/_sizing.less" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "eJ" : 0,
-      "ft" : 1,
-      "iI" : 0,
-      "ma" : 0,
-      "mS" : 0,
-      "oA" : 1,
-      "oAP" : "\/Themes\/new\/Styles\/_sizing.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
