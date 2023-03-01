@@ -21860,6 +21860,16 @@ html {
 .btn-link {
   font-weight: 500;
 }
+#navigation-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  transition: all 0.1s ease-in-out;
+}
+.js-container {
+  padding: 0 !important;
+}
 section {
   padding: 96px 32px;
 }
