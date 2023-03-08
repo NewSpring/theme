@@ -26,6 +26,26 @@
   background-color: var(--blue-dark);
 }
 
+.fill-orange {
+  fill: var(--orange);
+}
+
+.fill-pink {
+  fill: var(--pink);
+}
+
+.fill-pink-light {
+  fill: var(--pink-light);
+}
+
+.fill-blue {
+  fill: var(--blue);
+}
+
+.fill-blue-dark {
+  fill: var(--blue-dark);
+}
+
 .text-orange {
   color: var(--orange);
 }
@@ -60,5 +80,33 @@
     font-family: "futura-pt-bold", sans-serif;
     font-weight: 700;
     font-style: normal;
+  }
+
+  .btn-primary {
+    background-color: var(--orange);
+
+    &:hover {
+      background-color: darken(#ff5f1e, 10%);
+    }
+  }
+
+  .btn-blue {
+    background-color: var(--blue);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: var(--blue-dark);
+    }
+  }
+
+  .btn-pink {
+    background-color: var(--pink);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#ee79c7, 10%);
+    }
   }
 }

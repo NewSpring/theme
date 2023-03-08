@@ -20,6 +20,21 @@
 .bg-blue-dark {
   background-color: var(--blue-dark);
 }
+.fill-orange {
+  fill: var(--orange);
+}
+.fill-pink {
+  fill: var(--pink);
+}
+.fill-pink-light {
+  fill: var(--pink-light);
+}
+.fill-blue {
+  fill: var(--blue);
+}
+.fill-blue-dark {
+  fill: var(--blue-dark);
+}
 .text-orange {
   color: var(--orange);
 }
@@ -44,4 +59,26 @@
   font-family: "futura-pt-bold", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.easter .btn-primary {
+  background-color: var(--orange);
+}
+.easter .btn-primary:hover {
+  background-color: #ea4400;
+}
+.easter .btn-blue {
+  background-color: var(--blue);
+  color: #fff;
+}
+.easter .btn-blue:hover,
+.easter .btn-blue:focus {
+  background-color: var(--blue-dark);
+}
+.easter .btn-pink {
+  background-color: var(--pink);
+  color: #fff;
+}
+.easter .btn-pink:hover,
+.easter .btn-pink:focus {
+  background-color: #e84cb4;
 }

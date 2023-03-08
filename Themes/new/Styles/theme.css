@@ -21602,6 +21602,9 @@ html {
 .btn-link {
   font-weight: 500;
 }
+.hidden {
+  display: none !important;
+}
 #navigation-wrapper {
   position: fixed;
   top: 0;
