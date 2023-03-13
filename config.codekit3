@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34448",
+  "creatorBuild" : "34434",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -5241,10 +5241,6 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
-      "logical-assignment-operators" : {
-        "active" : 0,
-        "optionString" : "'always',  {'enforceForIfStatements': false}"
-      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "{'ignoreExpressions': false, 'max': 1}"
@@ -5405,9 +5401,6 @@
       "no-empty-pattern" : {
         "active" : 1
       },
-      "no-empty-static-block" : {
-        "active" : 0
-      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -5546,9 +5539,6 @@
         "active" : 0
       },
       "no-new-func" : {
-        "active" : 0
-      },
-      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {

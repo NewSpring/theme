@@ -5,6 +5,10 @@
   --blue: #005be1;
   --blue-dark: #00449b;
 }
+svg {
+  shape-rendering: crisp-edges !important;
+  stroke-width: 0.5;
+}
 .bg-orange {
   background-color: var(--orange);
 }
@@ -56,9 +60,17 @@
 .easter h4,
 .easter h5,
 .easter h6 {
-  font-family: "futura-pt-bold", sans-serif;
-  font-weight: 700;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 900;
   font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.easter h3,
+.easter h4,
+.easter h5,
+.easter h6 {
+  letter-spacing: 0px;
 }
 .easter .btn-primary {
   background-color: var(--orange);
