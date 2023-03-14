@@ -5,9 +5,9 @@
   --blue: #005be1;
   --blue-dark: #00449b;
 }
-svg {
+svg,
+.crisp-edges {
   shape-rendering: crisp-edges !important;
-  stroke-width: 0.5;
 }
 .bg-orange {
   background-color: var(--orange);
@@ -51,8 +51,14 @@ svg {
 .text-blue {
   color: var(--blue);
 }
+.text-blue:hover {
+  color: #0046ae;
+}
 .text-blue-dark {
   color: var(--blue-dark);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--pink) !important;
 }
 .easter h1,
 .easter h2,

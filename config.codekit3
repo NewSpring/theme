@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34472",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -4205,6 +4205,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Themes\/new\/Assets\/Vectors\/easter\/lockup.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/Vectors\/easter\/lockup.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Themes\/new\/Assets\/Vectors\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -5241,6 +5251,10 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
+      "logical-assignment-operators" : {
+        "active" : 0,
+        "optionString" : "'always',  {'enforceForIfStatements': false}"
+      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "{'ignoreExpressions': false, 'max': 1}"
@@ -5401,6 +5415,9 @@
       "no-empty-pattern" : {
         "active" : 1
       },
+      "no-empty-static-block" : {
+        "active" : 0
+      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -5539,6 +5556,9 @@
         "active" : 0
       },
       "no-new-func" : {
+        "active" : 0
+      },
+      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {
@@ -6281,6 +6301,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
+    "rollupTreeshakingModuleSideEffects" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,

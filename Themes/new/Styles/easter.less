@@ -6,9 +6,8 @@
   --blue-dark: #00449b;
 }
 
-svg {
+svg, .crisp-edges {
   shape-rendering: crisp-edges !important;
-  stroke-width: 0.5;
 }
 
 .bg-orange {
@@ -65,10 +64,18 @@ svg {
 
 .text-blue {
   color: var(--blue);
+
+  &:hover {
+    color: darken(#005be1, 10%);
+  }
 }
 
 .text-blue-dark {
   color: var(--blue-dark);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--pink) !important;
 }
 
 .easter {
