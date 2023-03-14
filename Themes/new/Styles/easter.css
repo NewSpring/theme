@@ -51,9 +51,6 @@ svg,
 .text-blue {
   color: var(--blue);
 }
-.text-blue:hover {
-  color: #0046ae;
-}
 .text-blue-dark {
   color: var(--blue-dark);
 }
