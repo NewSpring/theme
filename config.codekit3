@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34448",
+  "creatorBuild" : "34472",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -15,6 +15,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
+    "\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/about.html",
       "oF" : 0
     },
     "\/easter.html" : {
@@ -3925,6 +3933,71 @@
       "oAP" : "\/tailwind.html",
       "oF" : 0
     },
+    "\/Themes\/new\/Assets\/Images\/about_fuse_1x1.jpg" : {
+      "ft" : 16384,
+      "iS" : 498559,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/about_fuse_1x1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/about_hero_2x1.jpg" : {
+      "ft" : 16384,
+      "iS" : 7652608,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/about_hero_2x1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/about_kidspring_2x1.jpg" : {
+      "ft" : 16384,
+      "iS" : 16806854,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/about_kidspring_2x1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/about_kidspring2_2x1.jpg" : {
+      "ft" : 16384,
+      "iS" : 20721794,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/about_kidspring2_2x1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/about_kidspring3_2x1.jpg" : {
+      "ft" : 16384,
+      "iS" : 16757327,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/about_kidspring3_2x1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Themes\/new\/Assets\/SVG\/easter\/1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -6301,6 +6374,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
+    "rollupTreeshakingModuleSideEffects" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
