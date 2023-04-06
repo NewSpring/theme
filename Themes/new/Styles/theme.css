@@ -16589,6 +16589,9 @@ blockquote footer {
 .font-black {
   font-weight: 900;
 }
+.font-underline {
+  text-decoration: underline;
+}
 mark {
   background-color: #fff14f;
 }
@@ -17945,6 +17948,45 @@ button.swiper-pagination-bullet {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.col-start-1 {
+  grid-column-start: 1;
+}
+.col-start-2 {
+  grid-column-start: 2;
+}
+.col-start-3 {
+  grid-column-start: 3;
+}
+.col-start-4 {
+  grid-column-start: 4;
+}
+.col-start-5 {
+  grid-column-start: 5;
+}
+.col-start-6 {
+  grid-column-start: 6;
+}
+.col-start-7 {
+  grid-column-start: 7;
+}
+.col-start-8 {
+  grid-column-start: 8;
+}
+.col-start-9 {
+  grid-column-start: 9;
+}
+.col-start-10 {
+  grid-column-start: 10;
+}
+.col-start-11 {
+  grid-column-start: 11;
+}
+.col-start-12 {
+  grid-column-start: 12;
+}
+.col-start-initial {
+  grid-column-start: initial;
+}
 .justify-items-start {
   justify-items: start;
 }
@@ -18685,6 +18727,45 @@ button.swiper-pagination-bullet {
   }
   .col-span-sm-full {
     grid-column: 1 / -1;
+  }
+  .col-start-sm-1 {
+    grid-column-start: 1;
+  }
+  .col-start-sm-2 {
+    grid-column-start: 2;
+  }
+  .col-start-sm-3 {
+    grid-column-start: 3;
+  }
+  .col-start-sm-4 {
+    grid-column-start: 4;
+  }
+  .col-start-sm-5 {
+    grid-column-start: 5;
+  }
+  .col-start-sm-6 {
+    grid-column-start: 6;
+  }
+  .col-start-sm-7 {
+    grid-column-start: 7;
+  }
+  .col-start-sm-8 {
+    grid-column-start: 8;
+  }
+  .col-start-sm-9 {
+    grid-column-start: 9;
+  }
+  .col-start-sm-10 {
+    grid-column-start: 10;
+  }
+  .col-start-sm-11 {
+    grid-column-start: 11;
+  }
+  .col-start-sm-12 {
+    grid-column-start: 12;
+  }
+  .col-start-sm-initial {
+    grid-column-start: initial;
   }
   .justify-items-sm-start {
     justify-items: start;
@@ -19428,6 +19509,45 @@ button.swiper-pagination-bullet {
   .col-span-md-full {
     grid-column: 1 / -1;
   }
+  .col-start-md-1 {
+    grid-column-start: 1;
+  }
+  .col-start-md-2 {
+    grid-column-start: 2;
+  }
+  .col-start-md-3 {
+    grid-column-start: 3;
+  }
+  .col-start-md-4 {
+    grid-column-start: 4;
+  }
+  .col-start-md-5 {
+    grid-column-start: 5;
+  }
+  .col-start-md-6 {
+    grid-column-start: 6;
+  }
+  .col-start-md-7 {
+    grid-column-start: 7;
+  }
+  .col-start-md-8 {
+    grid-column-start: 8;
+  }
+  .col-start-md-9 {
+    grid-column-start: 9;
+  }
+  .col-start-md-10 {
+    grid-column-start: 10;
+  }
+  .col-start-md-11 {
+    grid-column-start: 11;
+  }
+  .col-start-md-12 {
+    grid-column-start: 12;
+  }
+  .col-start-md-initial {
+    grid-column-start: initial;
+  }
   .justify-items-md-start {
     justify-items: start;
   }
@@ -20170,6 +20290,45 @@ button.swiper-pagination-bullet {
   .col-span-lg-full {
     grid-column: 1 / -1;
   }
+  .col-start-lg-1 {
+    grid-column-start: 1;
+  }
+  .col-start-lg-2 {
+    grid-column-start: 2;
+  }
+  .col-start-lg-3 {
+    grid-column-start: 3;
+  }
+  .col-start-lg-4 {
+    grid-column-start: 4;
+  }
+  .col-start-lg-5 {
+    grid-column-start: 5;
+  }
+  .col-start-lg-6 {
+    grid-column-start: 6;
+  }
+  .col-start-lg-7 {
+    grid-column-start: 7;
+  }
+  .col-start-lg-8 {
+    grid-column-start: 8;
+  }
+  .col-start-lg-9 {
+    grid-column-start: 9;
+  }
+  .col-start-lg-10 {
+    grid-column-start: 10;
+  }
+  .col-start-lg-11 {
+    grid-column-start: 11;
+  }
+  .col-start-lg-12 {
+    grid-column-start: 12;
+  }
+  .col-start-lg-initial {
+    grid-column-start: initial;
+  }
   .justify-items-lg-start {
     justify-items: start;
   }
@@ -20911,6 +21070,45 @@ button.swiper-pagination-bullet {
   }
   .col-span-xl-full {
     grid-column: 1 / -1;
+  }
+  .col-start-xl-1 {
+    grid-column-start: 1;
+  }
+  .col-start-xl-2 {
+    grid-column-start: 2;
+  }
+  .col-start-xl-3 {
+    grid-column-start: 3;
+  }
+  .col-start-xl-4 {
+    grid-column-start: 4;
+  }
+  .col-start-xl-5 {
+    grid-column-start: 5;
+  }
+  .col-start-xl-6 {
+    grid-column-start: 6;
+  }
+  .col-start-xl-7 {
+    grid-column-start: 7;
+  }
+  .col-start-xl-8 {
+    grid-column-start: 8;
+  }
+  .col-start-xl-9 {
+    grid-column-start: 9;
+  }
+  .col-start-xl-10 {
+    grid-column-start: 10;
+  }
+  .col-start-xl-11 {
+    grid-column-start: 11;
+  }
+  .col-start-xl-12 {
+    grid-column-start: 12;
+  }
+  .col-start-xl-initial {
+    grid-column-start: initial;
   }
   .justify-items-xl-start {
     justify-items: start;
