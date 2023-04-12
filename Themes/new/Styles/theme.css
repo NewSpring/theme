@@ -21983,6 +21983,18 @@ html {
   z-index: 1001;
   transition: all 0.1s ease-in-out;
 }
+#navigation-secondary {
+  font-size: 90%;
+  background-color: var(--brand-primary);
+  color: white;
+}
+#navigation-secondary ul {
+  background-color: var(--gray-darker);
+}
+#navigation-secondary a:hover,
+#navigation-secondary a:focus {
+  color: white;
+}
 .js-container {
   padding: 0 !important;
 }
@@ -22050,6 +22062,13 @@ footer a:hover {
   section {
     padding-top: 192px;
     padding-bottom: 192px;
+  }
+  #navigation-secondary {
+    background-color: var(--gray-darker);
+  }
+  #navigation-secondary .collapse {
+    display: flex;
+    height: auto !important;
   }
 }
 @media (min-width: 1441px) {
