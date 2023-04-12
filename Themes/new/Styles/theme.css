@@ -21959,6 +21959,20 @@ html {
 .btn-link {
   font-weight: 500;
 }
+:root {
+  --brand-primary: #6bac43;
+  --brand-secondary: #1c683e;
+  --brand-tertiary: #2a4930;
+  --brand-kraft: #bd9b68;
+  --brand-info: #1698da;
+  --brand-warning: #f0ad4e;
+  --brand-danger: #c64f55;
+  --gray-darker: #1c1c1c;
+  --gray-dark: #303030;
+  --gray: #b4b4b4;
+  --gray-light: #ccc;
+  --gray-lighter: #efefef;
+}
 .hidden {
   display: none !important;
 }
