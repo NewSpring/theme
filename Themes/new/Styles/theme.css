@@ -16550,6 +16550,9 @@ blockquote footer {
   font-style: italic;
   color: #b4b4b4;
 }
+small {
+  font-size: 80%;
+}
 .font-sans {
   font-family: "colfax-web", sans-serif;
 }
@@ -16685,6 +16688,10 @@ a {
   .h5 {
     font-size: 37px;
     letter-spacing: -1.45px;
+  }
+  h6,
+  .h6 {
+    font-size: 26px;
   }
   .pretitle {
     font-size: 21px;
@@ -16921,6 +16928,60 @@ fieldset[disabled] .btn-dark.focus {
 }
 .text-gray-lighter {
   color: #efefef;
+}
+.fill-primary {
+  fill: #6bac43;
+}
+.fill-secondary {
+  fill: #1c683e;
+}
+.fill-tertiary {
+  fill: #2a4930;
+}
+.fill-kraft {
+  fill: #bd9b68;
+}
+.fill-gray-darker {
+  fill: #1c1c1c;
+}
+.fill-gray-dark {
+  fill: #303030;
+}
+.fill-gray {
+  fill: #b4b4b4;
+}
+.fill-gray-light {
+  fill: #ccc;
+}
+.fill-gray-lighter {
+  fill: #efefef;
+}
+.stroke-primary {
+  stroke: #6bac43;
+}
+.stroke-secondary {
+  stroke: #1c683e;
+}
+.stroke-tertiary {
+  stroke: #2a4930;
+}
+.stroke-kraft {
+  stroke: #bd9b68;
+}
+.stroke-gray-darker {
+  stroke: #1c1c1c;
+}
+.stroke-gray-dark {
+  stroke: #303030;
+}
+.stroke-gray {
+  stroke: #b4b4b4;
+}
+.stroke-gray-light {
+  stroke: #ccc;
+}
+.stroke-gray-lighter {
+  stroke: #efefef;
 }
 /**
  * Swiper 4.4.1
@@ -17780,6 +17841,50 @@ button.swiper-pagination-bullet {
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.timeline .timeline--item {
+  min-height: 100px;
+}
+.timeline .timeline--item > div:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 1000px;
+  background-color: #fff;
+  border: 4px solid var(--gray-light);
+  z-index: 1;
+}
+.timeline .timeline--item:not(:last-child) > div:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  margin-left: -2px;
+  height: 100%;
+  background-color: var(--gray-light);
+}
+@media (min-width: 768px) {
+  .timeline .timeline--item i {
+    font-size: 3em;
+  }
+  .timeline .timeline--item:nth-child(2n+1) > div:before {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -10px;
+  }
+  .timeline .timeline--item:nth-child(2n+1) > div:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -2px;
+  }
 }
 /*****
 
@@ -22062,6 +22167,21 @@ footer a:hover {
   section {
     padding-top: 192px;
     padding-bottom: 192px;
+  }
+  .background-md-center {
+    background-position: center;
+  }
+  .background-md-top {
+    background-position: top;
+  }
+  .background-md-bottom {
+    background-position: bottom;
+  }
+  .background-md-left {
+    background-position: left;
+  }
+  .background-md-right {
+    background-position: right;
   }
   #navigation-secondary {
     background-color: var(--gray-darker);
