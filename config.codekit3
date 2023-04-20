@@ -25,6 +25,14 @@
       "oAP" : "\/about.html",
       "oF" : 0
     },
+    "\/beliefs-item.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/beliefs-item.html",
+      "oF" : 0
+    },
     "\/beliefs.html" : {
       "cB" : 0,
       "ft" : 8192,
