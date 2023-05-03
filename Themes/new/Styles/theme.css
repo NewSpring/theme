@@ -16553,6 +16553,9 @@ blockquote footer {
 small {
   font-size: 80%;
 }
+.no-wrap {
+  white-space: nowrap;
+}
 .font-sans {
   font-family: "colfax-web", sans-serif;
 }
@@ -16594,6 +16597,27 @@ small {
 }
 .font-underline {
   text-decoration: underline;
+}
+.tracking-tightest {
+  letter-spacing: -0.1em;
+}
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-normal {
+  letter-spacing: 0em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 mark {
   background-color: #fff14f;
