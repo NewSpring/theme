@@ -18,6 +18,9 @@
 }
 
 .ratios-breakpoints(@infix) {
+  .ratio@{infix}-thin {
+    aspect-ratio: 3 / 1;
+  }
   .ratio@{infix}-video {
     aspect-ratio: 16 / 9;
   }
@@ -27,10 +30,10 @@
   .ratio@{infix}-square {
     aspect-ratio: 1 / 1;
   }
-  .ratio@{infix}-shuare {
+  .ratio@{infix}-portrait {
     aspect-ratio: 1 / 1.25;
   }
-  .ratio@{infix}-portrait {
+  .ratio@{infix}-tall {
     aspect-ratio: 1 / 1.5;
   }
 }

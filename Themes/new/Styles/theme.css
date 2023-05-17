@@ -18223,6 +18223,9 @@ button.swiper-pagination-bullet {
 .d-inline-grid {
   display: inline-grid !important;
 }
+.ratio-thin {
+  aspect-ratio: 3 / 1;
+}
 .ratio-video {
   aspect-ratio: 16 / 9;
 }
@@ -18232,10 +18235,10 @@ button.swiper-pagination-bullet {
 .ratio-square {
   aspect-ratio: 1 / 1;
 }
-.ratio-shuare {
+.ratio-portrait {
   aspect-ratio: 1 / 1.25;
 }
-.ratio-portrait {
+.ratio-tall {
   aspect-ratio: 1 / 1.5;
 }
 .col-auto {
@@ -19034,6 +19037,9 @@ button.swiper-pagination-bullet {
   .d-sm-inline-grid {
     display: inline-grid !important;
   }
+  .ratio-sm-thin {
+    aspect-ratio: 3 / 1;
+  }
   .ratio-sm-video {
     aspect-ratio: 16 / 9;
   }
@@ -19043,10 +19049,10 @@ button.swiper-pagination-bullet {
   .ratio-sm-square {
     aspect-ratio: 1 / 1;
   }
-  .ratio-sm-shuare {
+  .ratio-sm-portrait {
     aspect-ratio: 1 / 1.25;
   }
-  .ratio-sm-portrait {
+  .ratio-sm-tall {
     aspect-ratio: 1 / 1.5;
   }
   .col-sm-auto {
@@ -19846,6 +19852,9 @@ button.swiper-pagination-bullet {
   .d-md-inline-grid {
     display: inline-grid !important;
   }
+  .ratio-md-thin {
+    aspect-ratio: 3 / 1;
+  }
   .ratio-md-video {
     aspect-ratio: 16 / 9;
   }
@@ -19855,10 +19864,10 @@ button.swiper-pagination-bullet {
   .ratio-md-square {
     aspect-ratio: 1 / 1;
   }
-  .ratio-md-shuare {
+  .ratio-md-portrait {
     aspect-ratio: 1 / 1.25;
   }
-  .ratio-md-portrait {
+  .ratio-md-tall {
     aspect-ratio: 1 / 1.5;
   }
   .col-md-auto {
@@ -20658,6 +20667,9 @@ button.swiper-pagination-bullet {
   .d-lg-inline-grid {
     display: inline-grid !important;
   }
+  .ratio-lg-thin {
+    aspect-ratio: 3 / 1;
+  }
   .ratio-lg-video {
     aspect-ratio: 16 / 9;
   }
@@ -20667,10 +20679,10 @@ button.swiper-pagination-bullet {
   .ratio-lg-square {
     aspect-ratio: 1 / 1;
   }
-  .ratio-lg-shuare {
+  .ratio-lg-portrait {
     aspect-ratio: 1 / 1.25;
   }
-  .ratio-lg-portrait {
+  .ratio-lg-tall {
     aspect-ratio: 1 / 1.5;
   }
   .col-lg-auto {
@@ -21470,6 +21482,9 @@ button.swiper-pagination-bullet {
   .d-xl-inline-grid {
     display: inline-grid !important;
   }
+  .ratio-xl-thin {
+    aspect-ratio: 3 / 1;
+  }
   .ratio-xl-video {
     aspect-ratio: 16 / 9;
   }
@@ -21479,10 +21494,10 @@ button.swiper-pagination-bullet {
   .ratio-xl-square {
     aspect-ratio: 1 / 1;
   }
-  .ratio-xl-shuare {
+  .ratio-xl-portrait {
     aspect-ratio: 1 / 1.25;
   }
-  .ratio-xl-portrait {
+  .ratio-xl-tall {
     aspect-ratio: 1 / 1.5;
   }
   .col-xl-auto {
