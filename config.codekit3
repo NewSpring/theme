@@ -4468,6 +4468,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Themes\/new\/Assets\/SVG\/logo-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/logo-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Themes\/new\/Assets\/SVG\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -4993,6 +5003,14 @@
       "rwU" : 0,
       "sI" : 0,
       "sU" : 0
+    },
+    "\/type.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/type.html",
+      "oF" : 0
     }
   },
   "hooks" : [
