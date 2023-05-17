@@ -11,7 +11,6 @@
 
   .setInfix(@bp) when (default()) {
     @infix: ~"-@{breakpoint}";
-
     .margin-breakpoints(@infix);
     .padding-breakpoints(@infix);
   }
@@ -19,11 +18,7 @@
   .setInfix(@breakpoint);
 }
 
-// stylelint-disable declaration-block-single-line-max-declarations
 .margin-breakpoints(@infix) {
-  .m@{infix}-0 {
-    margin: 0 !important;
-  }
   .m@{infix}-6 {
     margin: @spacer * @spacing-6 !important;
   }
@@ -46,10 +41,6 @@
     margin: @spacer * @spacing-12 !important;
   }
 
-  .mx@{infix}-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
   .mx@{infix}-6 {
     margin-right: @spacer * @spacing-6 !important;
     margin-left: @spacer * @spacing-6 !important;
@@ -79,10 +70,6 @@
     margin-left: @spacer * @spacing-12 !important;
   }
 
-  .my@{infix}-0 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
   .my@{infix}-6 {
     margin-top: @spacer * @spacing-6 !important;
     margin-bottom: @spacer * @spacing-6 !important;
@@ -112,9 +99,6 @@
     margin-bottom: @spacer * @spacing-12 !important;
   }
 
-  .mt@{infix}-0 {
-    margin-top: 0 !important;
-  }
   .mt@{infix}-6 {
     margin-top: @spacer * @spacing-6 !important;
   }
@@ -137,9 +121,6 @@
     margin-top: @spacer * @spacing-12 !important;
   }
 
-  .mr@{infix}-0 {
-    margin-right: 0 !important;
-  }
   .mr@{infix}-6 {
     margin-right: @spacer * @spacing-6 !important;
   }
@@ -162,12 +143,6 @@
     margin-right: @spacer * @spacing-12 !important;
   }
 
-  .mb@{infix}-0 {
-    margin-bottom: 0 !important;
-  }
-  .mb@{infix}-5 {
-    margin-bottom: @spacer * @spacing-5 !important;
-  }
   .mb@{infix}-6 {
     margin-bottom: @spacer * @spacing-6 !important;
   }
@@ -190,9 +165,6 @@
     margin-bottom: @spacer * @spacing-12 !important;
   }
 
-  .ml@{infix}-0 {
-    margin-left: 0 !important;
-  }
   .ml@{infix}-6 {
     margin-left: @spacer * @spacing-6 !important;
   }
@@ -214,6 +186,7 @@
   .ml@{infix}-12 {
     margin-left: @spacer * @spacing-12 !important;
   }
+
 }
 
 .padding-breakpoints(@infix) {
