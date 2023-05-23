@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./Themes/new/Styles/bootstrap.css" />
     <link rel="stylesheet" href="./Themes/new/Styles/theme.css" />
   </head>
-  <body>
+  <body data-lava>
     <section class="position-fixed bring-forward p-1 w-100 d-grid grid-cols-2 justify-content-between align-content-center">
       <div class="fullscreen o-60" style="background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%);"></div>
@@ -228,7 +228,7 @@
 
         <div class="page-constrained mx-auto d-grid grid-cols-1 grid-cols-lg-2 gap-y-2 gap-y-md-4 gap-x-md-4">
 
-          <div class="position-relative d-flex justify-content-center align-items-end px-6 py-7 ratio-portrait ratio-lg-shuare bg-gray-lighter rounded-lg overflow-hidden" style="background-color: rgba(0,120,200,1);" data-aos="fade-right">
+          <div class="position-relative d-flex justify-content-center align-items-end px-6 py-7 ratio-portrait ratio-lg-shuare bg-gray-lighter rounded-xl overflow-hidden" style="background-color: rgba(0,120,200,1);" data-aos="fade-right">
             
             <div class="fullscreen background-cover background-center o-40" style="background-image:url('https://s3.amazonaws.com/ns.images/images/uploads/KidSpring_2022_-219%20(1).jpg?AWSAccessKeyId=AKIAI6GSVDKZRVEIDFVQ&Expires=1715838683&Signature=OrRozpdctypBeDSBMq1n3YVBuXQ%3D');"></div>
 
@@ -242,7 +242,7 @@
             </div>
           </div>
 
-          <div class="position-relative d-flex justify-content-center align-items-end px-6 py-7 ratio-portrait ratio-lg-shuare bg-gray-lighter rounded-lg overflow-hidden" style="background-color: rgba(60,50,130,1);" data-aos="fade-left">
+          <div class="position-relative d-flex justify-content-center align-items-end px-6 py-7 ratio-portrait ratio-lg-shuare bg-gray-lighter rounded-xl overflow-hidden" style="background-color: rgba(60,50,130,1);" data-aos="fade-left">
             
             <div class="fullscreen background-cover background-center o-50" style="background-image:url('https://s3.amazonaws.com/ns.images/newspring/homepage/2021/New_Website_FUSE(2000x1000).png?AWSAccessKeyId=AKIAI6GSVDKZRVEIDFVQ&Expires=1715838683&Signature=t61xdmKcSMbEnv2nkfhWwj1XblQ%3D');"></div>
 
@@ -259,7 +259,134 @@
         </div>
       </section>
 
+      {% assign articles = 'newspring_articles' | PersistedDataset | Where:'Status',2 | Shuffle %}
+      <section class="bg-gray-lighter px-0">
+        <div class="page-constrained mx-auto mb-4 mb-md-7 px-4 px-sm-7">
+          <h2 class="display-3 font-bold tracking-tightest">Discover</h2>
+
+          <div class="d-grid grid-cols-1 grid-cols-md-12 gap-y-5 gap-x-md-4 gap-y-lg-0 mb-4 mb-md-6">
+            <div class="col-span-md-12 col-span-lg-7">
+              {% for article in articles limit:1  %}
+                <div class="position-relative p-3 p-md-6 d-flex align-items-end ratio-portrait ratio-md-square ratio-lg-portrait ratio-xl-square bg-black text-white rounded-2x overflow-hidden">
+
+                  <div class="fullscreen background-cover background-center" style="background-image: url('{{ article.ImageLandscape }}')"></div>
+
+                  <div class="fullscreen o-70" style="background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 85%);"></div>
+                  <div>
+                    <h2 class="mb-1">{{ article.Title }}</h2>
+                    {% assign tagCount = article.Tags | Size %}
+                    {% if tagCount >= 1 %}
+                      <p data-aos="fade-up">{% for tag in article.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-white font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-sm" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
+                    {% endif %}
+                    <p class="mb-0"><a href="#" class="btn btn-sm btn-primary">Read Article</a></p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="d-grid grid-cols-1 grid-cols-sm-2 grid-cols-lg-1 gap-y-2 gap-y-4 col-span-md-12 col-span-lg-5 gap-x-sm-5 gap-x-lg-0">
+              {% for item in articles limit:4 offset:12 %}
+                <div class="d-grid grid-cols-12 gap-x-3 gap-x-sm-0 gap-x-md-3 gap-y-sm-3 gap-y-lg-0">
+                  <div class="col-span-4 col-span-sm-12 col-span-lg-4 height-max-content">
+                    <a href="{{ item.Permalink }}">
+                      <div class="ratio-square bg-black rounded-xl background-cover background-center max-w-100" style="background-image:url('{{ item.ImageLandscape }}');"></div>
+                    </a>
+                  </div>
+                  <div class="col-span-8 col-span-sm-12 col-span-lg-8">
+                    <h6 class="mb-0"><a href="{{ item.Permalink }}" class="text-decoration-none text-gray-darker">{{ item.Title }}</a></h6>
+                    {% assign tagCount = item.Tags | Size %}
+                    {% if tagCount >= 1 %}
+                      <p data-aos="fade-up">{% for tag in item.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-primary font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-sm" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {% assign series = 'newspring_sermons_series' | PersistedDataset | Where:'Status',2 | Shuffle %}
+      {% assign latest = 'newspring_sermons' | PersistedDataset | Where:'Status',2 | Index:8 %}
+      {% assign latestSeriesId = latest.Parents | First | Property:'Id' %}
+      {% assign latestSeries = series | Where:'Id',latestSeriesId | First %}
+
+      <section class="bg-black text-white px-0">
+
+        <div class="page-constrained mx-auto mb-4 mb-md-7 px-4 px-sm-7">
+          <h2 class="display-3 font-bold tracking-tightest">Sermons</h2>
+          <div class="d-grid grid-cols-1 grid-cols-md-12 gap-y-4 gap-y-md-0 gap-x-md-6 align-items-center">
+            <div class="col-span-md-6 col-span-lg-5">
+              <div class="position-relative ratio-square bg-info rounded-xl overflow-hidden">
+                <div class="fullscreen background-cover background-center" style="background-image:url('{{ latest.ImageLandscape }}');"></div>
+              </div>
+            </div>
+            <div class="col-span-md-6 col-span-lg-7">
+                <p class="pretitle">{{ latestSeries.Title }}</p>
+                <h3 class="h2">{{ latest.Title }}</h3>
+                {% assign tagCount = latest.Tags | Size %}
+                {% if tagCount >= 1 %}
+                  <p data-aos="fade-up">{% for tag in latest.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-primary font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-sm" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
+                {% endif %}
+                {{ latest.Content | HtmlDecode }}
+                <p class="mb-0"><a href="#" class="btn btn-primary">Watch Sermon</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-constrained mx-auto mb-4 px-4 px-sm-7">
+          <h2 class="">Sermons by Series</h2>
+        </div>
+
+        
+        <div class="marquee">
+          <div class="track">
+            <div class="content">
+              {% for item in series limit:12 %}
+                <div class="d-inline-block mr-1" style="width: 250px;">
+                  <a href="{{ item.Permalink }}" class="d-block position-relative ratio-tall bg-black rounded-lg overflow-hidden">
+                    <div class="fullscreen background-cover background-center" style="background-image:url('{{ item.ImageSquare }}');"></div>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .marquee {
+            position: relative;
+            width: 100vw;
+            max-width: 100%;
+            overflow-x: hidden;
+          }
+
+          .track {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 30s linear infinite;
+          }
+
+          .marquee:hover .track {
+            animation-play-state: paused;
+          }
+
+          @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+        </style>
+      </section>
+
     </div>
 
+    <script type="text/javascript" src="./Themes/new/Scripts/parse-lava-min.js"></script>
+    <script type="text/javascript">
+        parseLava("https://rock.newspring.cc", ".keyfile", function() {
+            // Do things after lava has been parsed
+            AOS.init();
+        });
+    </script>
   </body>
 </html>

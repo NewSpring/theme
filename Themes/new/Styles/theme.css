@@ -17172,7 +17172,8 @@ fieldset[disabled] .btn-dark.focus {
 .text-kraft {
   color: #bd9b68;
 }
-.text-gray-darker {
+.text-gray-darker,
+.text-gray-darker:hover {
   color: #1c1c1c;
 }
 .text-gray-dark {
@@ -22406,8 +22407,8 @@ footer a:hover {
 }
 @media (min-width: 768px) {
   section {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 160px;
+    padding-bottom: 160px;
   }
   .background-md-center {
     background-position: center;
@@ -22434,7 +22435,7 @@ footer a:hover {
 }
 @media (min-width: 1441px) {
   section {
-    padding-top: 256px;
-    padding-bottom: 256px;
+    padding-top: 192px;
+    padding-bottom: 192px;
   }
 }
