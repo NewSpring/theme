@@ -260,9 +260,9 @@
       </section>
 
       {% assign articles = 'newspring_articles' | PersistedDataset | Where:'Status',2 | Shuffle %}
-      <section class="bg-gray-lighter px-0">
-        <div class="page-constrained mx-auto mb-4 mb-md-7 px-4 px-sm-7">
-          <h2 class="display-3 font-bold tracking-tightest">Discover</h2>
+      <section class="bg-gray-lighter">
+        <div class="page-constrained mx-auto">
+          <h2 class="display-3 font-bold tracking-tighter">Discover</h2>
 
           <div class="d-grid grid-cols-1 grid-cols-md-12 gap-y-5 gap-x-md-4 gap-y-lg-0 mb-4 mb-md-6">
             <div class="col-span-md-12 col-span-lg-7">
@@ -274,29 +274,29 @@
                   <div class="fullscreen o-70" style="background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 85%);"></div>
                   <div>
-                    <h2 class="mb-1">{{ article.Title }}</h2>
+                    <h2 class="mb-1"><a href="{{ article.Permalink }}" class="text-decoration-none text-white">{{ article.Title }}</a></h2>
                     {% assign tagCount = article.Tags | Size %}
                     {% if tagCount >= 1 %}
-                      <p data-aos="fade-up">{% for tag in article.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-white font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-sm" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
+                      <p data-aos="fade-up">{% for tag in article.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-white font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-xs" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
                     {% endif %}
-                    <p class="mb-0"><a href="#" class="btn btn-sm btn-primary">Read Article</a></p>
+                    <p class="mb-0"><a href="{{ article.Permalink }}" class="btn btn-sm btn-primary">Read Article</a></p>
                   </div>
                 </div>
               {% endfor %}
             </div>
-            <div class="d-grid grid-cols-1 grid-cols-sm-2 grid-cols-lg-1 gap-y-2 gap-y-4 col-span-md-12 col-span-lg-5 gap-x-sm-5 gap-x-lg-0">
+            <div class="d-grid grid-cols-1 grid-cols-sm-2 grid-cols-lg-1 gap-y-5 col-span-md-12 col-span-lg-5 gap-x-sm-5 gap-x-lg-0 height-max-content">
               {% for item in articles limit:4 offset:12 %}
-                <div class="d-grid grid-cols-12 gap-x-3 gap-x-sm-0 gap-x-md-3 gap-y-sm-3 gap-y-lg-0">
+                <div class="d-grid grid-cols-12 gap-x-3 gap-x-sm-0 gap-x-md-3 gap-y-sm-3 gap-y-lg-0 height-max-content">
                   <div class="col-span-4 col-span-sm-12 col-span-lg-4 height-max-content">
                     <a href="{{ item.Permalink }}">
                       <div class="ratio-square bg-black rounded-xl background-cover background-center max-w-100" style="background-image:url('{{ item.ImageLandscape }}');"></div>
                     </a>
                   </div>
-                  <div class="col-span-8 col-span-sm-12 col-span-lg-8">
+                  <div class="col-span-8 col-span-sm-12 col-span-lg-8 height-max-content">
                     <h6 class="mb-0"><a href="{{ item.Permalink }}" class="text-decoration-none text-gray-darker">{{ item.Title }}</a></h6>
                     {% assign tagCount = item.Tags | Size %}
                     {% if tagCount >= 1 %}
-                      <p data-aos="fade-up">{% for tag in item.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-primary font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-sm" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
+                      <p class="mb-0" data-aos="fade-up">{% for tag in item.Tags limit:3 %}<a href="/topics/{{ tag.Name }}" class="mr-1 text-decoration-none text-primary font-sans font-bold no-wrap tracking-tight"><i class="fa-solid fa-tag fa-xs" style="position: relative; top: 3px;"></i> <small>{{ tag.Name }}</small></a> {% endfor %}</p>
                     {% endif %}
                   </div>
                 </div>
@@ -308,14 +308,14 @@
       </section>
 
       {% assign series = 'newspring_sermons_series' | PersistedDataset | Where:'Status',2 | Shuffle %}
-      {% assign latest = 'newspring_sermons' | PersistedDataset | Where:'Status',2 | Index:8 %}
+      {% assign latest = 'newspring_sermons' | PersistedDataset | Where:'Status',2 | Index:0 %}
       {% assign latestSeriesId = latest.Parents | First | Property:'Id' %}
       {% assign latestSeries = series | Where:'Id',latestSeriesId | First %}
 
       <section class="bg-black text-white px-0">
 
         <div class="page-constrained mx-auto mb-4 mb-md-7 px-4 px-sm-7">
-          <h2 class="display-3 font-bold tracking-tightest">Sermons</h2>
+          <h2 class="display-3 font-bold tracking-tighter">Sermons</h2>
           <div class="d-grid grid-cols-1 grid-cols-md-12 gap-y-4 gap-y-md-0 gap-x-md-6 align-items-center">
             <div class="col-span-md-6 col-span-lg-5">
               <div class="position-relative ratio-square bg-info rounded-xl overflow-hidden">
