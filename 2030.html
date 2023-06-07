@@ -67,9 +67,30 @@
 
     <div id="content">
 
+      <style>
+        .gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: inherit;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #4B3340, #8D4E46);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+      </style>
+
       <section class="text-white position-relative d-flex justify-content-center align-content-center flex-wrap text-center px-md-9 vh-100" style="background-color: rgb(180,90,80);">
         <div
-          class="fullscreen background-cover background-center o-70"
+          class="fullscreen background-cover background-center background-fixed o-70"
           style="background-image: url('https://images.unsplash.com/photo-1546874177-9e664107314e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2369&q=100')"></div>
         <div class="fullscreen o-90" style="background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 80%);"></div>
@@ -84,7 +105,7 @@
       <section id="debt" class="bg-white">
         <div class="text-constrained mx-auto text-center">
           <i class="hidden fa-solid fa-circle-check fa-3x mb-3 text-primary bg-white rounded-full"></i>
-          <h2 class="h1">Be Debt Free</h2>
+          <h2 class="display-2 gradient-text">Be Debt Free</h2>
           <p class="pretitle text-primary" data-aos="fade-up"><i class="fa-solid fa-circle-check"></i> Completed 2023</p>
 
           <p class="lead mb-0">We dreamed of being debt-free since January 2017 &mdash; when we started the year with a $45 million debt balance largely due to facility-building projects.</p>
@@ -103,11 +124,11 @@
       background: linear-gradient(321deg, rgba(75,51,64,1) 0%, rgba(141,78,70,1) 100%);">
         <div class="text-constrained mx-auto px-4 px-sm-7 px-md-0">
           <div class="text-center">
-            <h2 class="h1">Plant Ten New Churches</h2>
+            <h2 class="display-2">Plant Ten New Churches</h2>
             <p class="lead text-white o-50">We will identify, train, and send out people we believe have been called by God and are ready to start a new church — not a NewSpring campus.</p>
             <p>We believe these new churches will be planted outside the state of South Carolina. We also strongly believe God will raise up other people in our church who will feel called to go and be a part of these church plants.</p>
 
-            <div class="overflow-hidden text-white p-5 my-6 my-md-7 py-md-6 rounded-xl" data-aos="fade-up">
+            <div class="position-relative overflow-hidden text-white p-5 my-6 my-md-7 py-md-6 rounded-xl" data-aos="fade-up">
               <div class="fullscreen bg-black o-20"></div>
               <div class="bring-forward">
                 <p class="lead text-white">Is God calling you to plant or be part of planting a church?</p>
@@ -117,7 +138,7 @@
           </div>
         </div>
 
-        <div class="text-center">
+        <div>
           <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-y-1 gap-x-2 mb-5" data-aos="fade-up">
             <p class="h4 mb-0">News From</p>
             <a href="/topics/church-planting" class="btn btn-primary font-bold"><i class="fa-solid fa-tag mr-1"></i>church planting</a>
@@ -191,7 +212,7 @@
         <div class="hidden fullscreen o-100" style="background: rgb(35,93,95);
   background: linear-gradient(0deg, rgba(35,93,95,0) 50%, rgba(35,93,95,1) 100%);"></div>
         <div class="text-constrained mx-auto text-center px-4 px-sm-7 px-md-0">
-          <h2 class="h1">All NewSpring Campuses in Permanent Homes</h2>
+          <h2 class="display-3 gradient-text">All NewSpring Campuses in Permanent Homes</h2>
         
           <p class="lead">Out of our 14 locations across the state, our <a href="/locations/aiken" class="text-gray">Aiken</a>, <a href="/locations/charleston" class="text-gray">Charleston</a>, <a href="/locations/lake-wylie" class="text-gray">Lake Wylie</a>, and <a href="/locations/myrtle-beach" class="text-gray">Myrtle Beach</a> campuses are still leasing their facilities.</p>
           <p>We’d love to see each of these campuses established in their permanent facility by 2030!</p>
