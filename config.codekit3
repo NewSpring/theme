@@ -105,6 +105,22 @@
       "oAP" : "\/jobs.html",
       "oF" : 0
     },
+    "\/locations-item.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/locations-item.html",
+      "oF" : 0
+    },
+    "\/locations.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/locations.html",
+      "oF" : 0
+    },
     "\/Styles\/_blocks-checkinadmin.less" : {
       "aP" : 0,
       "bl" : 0,
