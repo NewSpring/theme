@@ -18288,7 +18288,7 @@ button.swiper-pagination-bullet {
   aspect-ratio: 1 / 1.25;
 }
 .ratio-tall {
-  aspect-ratio: 1 / 1.6;
+  aspect-ratio: 1 / 1.7;
 }
 .col-auto {
   grid-column: auto;
@@ -19110,7 +19110,7 @@ button.swiper-pagination-bullet {
     aspect-ratio: 1 / 1.25;
   }
   .ratio-sm-tall {
-    aspect-ratio: 1 / 1.6;
+    aspect-ratio: 1 / 1.7;
   }
   .col-sm-auto {
     grid-column: auto;
@@ -19933,7 +19933,7 @@ button.swiper-pagination-bullet {
     aspect-ratio: 1 / 1.25;
   }
   .ratio-md-tall {
-    aspect-ratio: 1 / 1.6;
+    aspect-ratio: 1 / 1.7;
   }
   .col-md-auto {
     grid-column: auto;
@@ -20756,7 +20756,7 @@ button.swiper-pagination-bullet {
     aspect-ratio: 1 / 1.25;
   }
   .ratio-lg-tall {
-    aspect-ratio: 1 / 1.6;
+    aspect-ratio: 1 / 1.7;
   }
   .col-lg-auto {
     grid-column: auto;
@@ -21579,7 +21579,7 @@ button.swiper-pagination-bullet {
     aspect-ratio: 1 / 1.25;
   }
   .ratio-xl-tall {
-    aspect-ratio: 1 / 1.6;
+    aspect-ratio: 1 / 1.7;
   }
   .col-xl-auto {
     grid-column: auto;
