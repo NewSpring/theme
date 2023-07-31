@@ -38,95 +38,112 @@
     <link rel="stylesheet" href="./Themes/new/Styles/theme.css" />
   </head>
   <body>
-    <section class="p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center drop-shadow">
+    <style>
+      :root {
+        --pine: #2a4930;
+        --olive: #8d8b53;
+        --sage: #cfdcb1;
+      }
+
+      .bg-pine {
+        background-color: var(--pine);
+      }
+      .bg-olive {
+        background-color: var(--olive);
+      }
+      .bg-sage {
+        background-color: var(--sage);
+      }
+    </style>
+    <section class="bring-forward p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center shadow-md" style="z-index: 100">
       <div class="d-grid align-content-center">
-        <a href="/" class="px-3 mb-0">
+        <a href="/" class="px-4 mb-0">
           <img src="./Themes/new/Assets/SVG/logo.svg" alt="NewSpring Church Logo" style="width: 160px; max-width: 160px" />
         </a>
       </div>
       <div class="overflow-hidden text-right">
-        <a href="#" class="d-inline-block no-underline p-3 p-md-3 text-gray-darker border-solid border-l border-gray-lighter">
+        <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
           <i class="fa-light fa-lg fa-bars"></i>
         </a>
 
         <span class="hidden-xs hidden-sm">
-          <a href="#" class="d-inline-block no-underline p-3 p-md-3 text-gray-darker border-solid border-l border-gray-lighter">
+          <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
             <i class="fa-light fa-lg fa-location-dot"></i>
           </a>
 
-          <a href="#" class="d-inline-block no-underline p-3 p-md-3 text-gray-darker border-solid border-l border-gray-lighter">
+          <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
             <i class="fa-light fa-lg fa-magnifying-glass"></i>
           </a>
         </span>
 
-        <a href="#" class="d-inline-block no-underline p-3 p-md-3 text-gray-darker border-solid border-l border-gray-lighter">
+        <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
           <i class="fa-light fa-lg fa-circle-user"></i>
         </a>
       </div>
     </section>
 
     <div id="content">
-
-      <style>
-        .gradient-text {
-  /* Fallback: Set a background color. */
-  background-color: inherit;
-  
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #4B3340, #8D4E46);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-      </style>
-
-      <section class="ratio-landscape position-relative d-flex justify-content-center align-content-center flex-wrap text-center px-md-9" style="background-color: rgb(180,90,80);">
+      <section class="bg-pine position-relative text-white d-flex justify-content-center align-content-center text-center pb-9">
+        <div class="fullscreen background-cover background-center o-20" style="background-image: url('/Themes/new/Assets/Images/2030_hero_2x1.jpg')"></div>
         <div
-          class="fullscreen background-cover background-center o-100"
-          style="background-image: url('/Themes/new/Assets/Images/2030_hero_2x1.jpg')"></div>
-        <div class="fullscreen o-50" style="background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 80%);"></div>
-        <div class="bring-forward page-constrained height-max-content hidden">
-          <h1 class="display-3">We want to see everyone everywhere in an everyday relationship with Jesus.</h1>
-          <p class="lead text-white">In 2020, our leadership team prayed and sought the Lord for the future of NewSpring Church. We believe He made three things abundantly clear. We’re calling these goals “Vision 2030.”</p>          </p>
-          <p class="mb-0"><a href="#debt" data-scroll class="btn btn-primary drop-shadow">Learn More</a></p>
+          class="fullscreen o-0"
+          style="background: rgb(20, 20, 20); background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 100%)"></div>
+        <div class="bring-forward text-constrained" style="height: max-content !important">
+          <h1 class="display-3">We want everyone everywhere to have an everyday relationship with Jesus.</h1>
+          <p>
+            In 2020, our leadership team prayed and sought the Lord for the future of NewSpring Church. We believe He made three things abundantly clear. We
+            call these goals “Vision 2030.”
+          </p>
+          <p class="mb-0"><a href="#values" data-scroll class="btn btn-primary drop-shadow">Learn More</a></p>
         </div>
       </section>
-
 
       <section id="debt" class="bg-white">
         <div class="text-constrained mx-auto text-center">
           <i class="hidden fa-solid fa-circle-check fa-3x mb-3 text-primary bg-white rounded-full"></i>
-          <h2 class="display-2 gradient-text">Be Debt Free</h2>
+          <h2 class="display-2">Be Debt Free</h2>
           <p class="pretitle text-primary" data-aos="fade-up"><i class="fa-solid fa-circle-check"></i> Completed 2023</p>
 
-          <p class="lead mb-0">We dreamed of being debt-free since January 2017 &mdash; when we started the year with a $45 million debt balance largely due to facility-building projects.</p>
+          <p class="lead mb-0">
+            We dreamed of being debt-free since January 2017 &mdash; when we started the year with a $45 million debt balance largely due to facility-building
+            projects.
+          </p>
 
-          <script src="https://fast.wistia.com/embed/medias/skqxx3cwhf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding my-6 rounded-xl overflow-hidden" data-aos="fade-up" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=6bac43" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+          <script src="https://fast.wistia.com/embed/medias/skqxx3cwhf.jsonp" async></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+          <div class="wistia_responsive_padding my-6 rounded-xl overflow-hidden" data-aos="fade-up" style="padding: 56.25% 0 0 0; position: relative">
+            <div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+              <span
+                class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=6bac43"
+                style="display: inline-block; height: 100%; position: relative; width: 100%"
+                >&nbsp;</span
+              >
+            </div>
+          </div>
 
-          <p>In 2017, NewSpring’s leadership team made two important decisions: we won’t take on any additional debt, and we will give 10% of our general tithes and offerings to other Christ-centered churches and mission organizations.</p>
+          <p>
+            In 2017, NewSpring’s leadership team made two important decisions: we won’t take on any additional debt, and we will give 10% of our general tithes
+            and offerings to other Christ-centered churches and mission organizations.
+          </p>
 
-          <p class="mb-0">Within six years, the entire $45 million was paid off! During that same timeframe, we were able to give away close to $25 million to 600+ organizations!</p>
-
-          
+          <p class="mb-0">
+            Within six years, the entire $45 million was paid off! During that same timeframe, we were able to give away close to $25 million to 600+
+            organizations!
+          </p>
         </div>
       </section>
 
-      <section id="church-planting" class="bg-gray-darker text-white px-0" style="background: rgb(75,51,64);
-      background: linear-gradient(321deg, rgba(75,51,64,1) 0%, rgba(141,78,70,1) 100%);">
+      <section id="church-planting" class="bg-olive text-white px-0">
         <div class="text-constrained mx-auto px-4 px-sm-7 px-md-0">
           <div class="text-center">
             <h2 class="display-2">Plant Ten New Churches</h2>
-            <p class="lead text-white o-50">We will identify, train, and send out people we believe have been called by God and are ready to start a new church — not a NewSpring campus.</p>
-            <p>We believe these new churches will be planted outside the state of South Carolina. We also strongly believe God will raise up other people in our church who will feel called to go and be a part of these church plants.</p>
+            <p class="lead text-white o-50">
+              We will identify, train, and send out people we believe have been called by God and are ready to start a new church — not a NewSpring campus.
+            </p>
+            <p>
+              We believe these new churches will be planted outside the state of South Carolina. We also strongly believe God will raise up other people in our
+              church who will feel called to go and be a part of these church plants.
+            </p>
 
             <div class="position-relative overflow-hidden text-white p-5 my-6 my-md-7 py-md-6 rounded-xl" data-aos="fade-up">
               <div class="fullscreen bg-black o-20"></div>
@@ -146,61 +163,63 @@
 
           <!-- Slider main container -->
           <div id="church-planting-swiper" class="swiper-container text-left">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper mb-6">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
-                <div
-                  class="fullscreen background-cover background-bottom"
-                  style="background-image: url('https://images.unsplash.com/photo-1627818653012-054f17eb0648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2672&q=80')"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mb-6">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1627818653012-054f17eb0648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2672&q=80');
+                    "></div>
 
-                <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
+                  <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
 
-                <div class="bring-forward text-constrained mx-auto">
-                  <h3 class="h5">May 2023 Church Planting Update</h3>
-                  <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
-                </div>
-              </section>
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5">May 2023 Church Planting Update</h3>
+                    <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
+                  </div>
+                </section>
+              </div>
+
+              <div class="swiper-slide">
+                <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1550633794-58a2127a9027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');
+                    "></div>
+
+                  <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
+
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5">Peoria Church Plant</h3>
+                    <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
+                  </div>
+                </section>
+              </div>
+
+              <div class="swiper-slide">
+                <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1444664361762-afba083a4d77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
+                    "></div>
+
+                  <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
+
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5">Sept 2023 Church Planting Update</h3>
+                    <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
+                  </div>
+                </section>
+              </div>
             </div>
 
-            <div class="swiper-slide">
-              <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
-                <div
-                  class="fullscreen background-cover background-bottom"
-                  style="
-                    background-image: url('https://images.unsplash.com/photo-1550633794-58a2127a9027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');
-                  "></div>
-
-                <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
-
-                <div class="bring-forward text-constrained mx-auto">
-                  <h3 class="h5">Peoria Church Plant</h3>
-                  <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
-                </div>
-              </section>
-            </div>
-
-            <div class="swiper-slide">
-              <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
-                <div
-                  class="fullscreen background-cover background-bottom"
-                  style="
-                    background-image: url('https://images.unsplash.com/photo-1444664361762-afba083a4d77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
-                  "></div>
-
-                <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
-
-                <div class="bring-forward text-constrained mx-auto">
-                  <h3 class="h5">Sept 2023 Church Planting Update</h3>
-                  <p class="mb-0"><a href="#" class="btn btn-xs btn-primary drop-shadow">Read Update</a></p>
-                </div>
-              </section>
-            </div>
-          </div>
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -208,13 +227,20 @@
       <section id="campus-facilities" class="bg-gray-lighter position-relative px-0">
         <div
           class="hidden fullscreen background-cover background-top o-80"
-          style="background-image: url('https://images.unsplash.com/photo-1550498178-466f87328eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3050&q=80')"></div>
-        <div class="hidden fullscreen o-100" style="background: rgb(35,93,95);
-  background: linear-gradient(0deg, rgba(35,93,95,0) 50%, rgba(35,93,95,1) 100%);"></div>
+          style="
+            background-image: url('https://images.unsplash.com/photo-1550498178-466f87328eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3050&q=80');
+          "></div>
+        <div
+          class="hidden fullscreen o-100"
+          style="background: rgb(35, 93, 95); background: linear-gradient(0deg, rgba(35, 93, 95, 0) 50%, rgba(35, 93, 95, 1) 100%)"></div>
         <div class="text-constrained mx-auto text-center px-4 px-sm-7 px-md-0">
-          <h2 class="display-3 gradient-text">All NewSpring Campuses in Permanent Homes</h2>
-        
-          <p class="lead">Out of our 14 locations across the state, our <a href="/locations/aiken" class="text-gray">Aiken</a>, <a href="/locations/charleston" class="text-gray">Charleston</a>, <a href="/locations/lake-wylie" class="text-gray">Lake Wylie</a>, and <a href="/locations/myrtle-beach" class="text-gray">Myrtle Beach</a> campuses are still leasing their facilities.</p>
+          <h2 class="display-3">All NewSpring Campuses in Permanent Homes</h2>
+
+          <p class="lead">
+            Out of our 14 locations across the state, our <a href="/locations/aiken" class="text-gray">Aiken</a>,
+            <a href="/locations/charleston" class="text-gray">Charleston</a>, <a href="/locations/lake-wylie" class="text-gray">Lake Wylie</a>, and
+            <a href="/locations/myrtle-beach" class="text-gray">Myrtle Beach</a> campuses are still leasing their facilities.
+          </p>
           <p>We’d love to see each of these campuses established in their permanent facility by 2030!</p>
 
           <p class="d-flex justify-content-center flex-column flex-sm-row gap-y-1 gap-x-1 gap-y-sm-0">
@@ -228,7 +254,7 @@
             <p class="h4 mb-0">News From</p>
             <a href="/topics/facilities" class="btn btn-primary font-bold"><i class="fa-solid fa-tag mr-1"></i>facilities</a>
           </div>
-          
+
           <!-- Slider main container -->
           <div id="campus-facilities-swiper" class="swiper-container my-5 mt-md-6 text-left">
             <!-- Additional required wrapper -->
@@ -238,7 +264,9 @@
                 <section class="position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden" data-aos="fade-up">
                   <div
                     class="fullscreen background-cover background-bottom"
-                    style="background-image: url('https://images.unsplash.com/photo-1517089152318-42ec560349c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80')"></div>
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1517089152318-42ec560349c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80');
+                    "></div>
 
                   <div class="fullscreen" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.9) 70%)"></div>
 
@@ -288,7 +316,6 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-
       </section>
 
       <section id="questions" class="text-center">
@@ -298,7 +325,6 @@
           <p class="mb-0"><a href="/workflows/152" class="btn btn-primary">Contact Us</a></p>
         </div>
       </section>
-
     </div>
 
     <footer class="bg-gray-dark text-white px-4 py-7 px-md-7 py-md-8 text-center">
@@ -408,11 +434,9 @@
     </script>
 
     <script>
-	    
-      var scroll = new SmoothScroll('a[data-scroll]');
+      var scroll = new SmoothScroll("a[data-scroll]");
 
       $(".collapse").collapse();
-
     </script>
   </body>
 </html>
