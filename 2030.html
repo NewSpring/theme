@@ -42,7 +42,12 @@
       :root {
         --pine: #2a4930;
         --olive: #8d8b53;
-        --sage: #cfdcb1;
+        --sage: #e6edd6;
+      }
+
+      .fill-white,
+      .fill-white path {
+        fill: #fff;
       }
 
       .bg-pine {
@@ -53,6 +58,29 @@
       }
       .bg-sage {
         background-color: var(--sage);
+      }
+
+      .text-pine {
+        color: var(--pine);
+      }
+      .text-olive {
+        color: var(--olive);
+      }
+      .text-sage {
+        color: var(--sage);
+      }
+
+      .fill-pine,
+      .fill-pine path {
+        fill: var(--pine);
+      }
+      .fill-olive,
+      .fill-olive path {
+        fill: var(--olive);
+      }
+      .fill-sage,
+      .fill-sage path {
+        fill: var(--sage);
       }
     </style>
     <section class="bring-forward p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center shadow-md" style="z-index: 100">
@@ -83,84 +111,78 @@
     </section>
 
     <div id="content">
-      <section class="bg-pine position-relative text-white d-flex justify-content-center align-content-center text-center pb-9">
-        <div class="fullscreen background-cover background-center o-20" style="background-image: url('/Themes/new/Assets/Images/2030_hero_2x1.jpg')"></div>
+      <section class="bg-pine position-relative text-white ratio-portrait ratio-sm-landscape d-flex justify-content-center align-items-end text-center pt-10">
         <div
-          class="fullscreen o-0"
-          style="background: rgb(20, 20, 20); background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 100%)"></div>
+          class="fullscreen background-cover background-center o-30 grayscale"
+          style="background-image: url('/Themes/new/Assets/Images/2030_hero_2x1.jpg')"></div>
+        <div
+          class="fullscreen o-100"
+          style="background: rgb(42, 73, 48); background: linear-gradient(180deg, rgba(42, 73, 48, 0) 10%, rgba(42, 73, 48, 1) 90%)"></div>
         <div class="bring-forward text-constrained" style="height: max-content !important">
-          <h1 class="display-3">We want everyone everywhere to have an everyday relationship with Jesus.</h1>
-          <p>
+          <svg id="Layer_1" class="fill-sage mb-5 w-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.73 115.1">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #2b4930;
+                }
+              </style>
+            </defs>
+            <path
+              class="cls-1"
+              d="m13.25,30.33c.35,4.39.57,12.19.64,14.24h.42c.5-1.28,2.98-7.37,6.52-14.24l11.05-21.47c.71-1.35,1.06-2.41,1.06-3.12,0-1.49-1.49-1.91-4.39-1.98l.5-2.48h15.24l-.5,2.48c-3.83.57-5.1,1.63-7.65,6.52L15.16,50.1h-6.52L4.61,10.06c-.42-4.18-.99-5.95-4.61-6.31L.5,1.28h17.15l-.5,2.48c-4.39.14-5.88,1.35-5.6,5.1l1.7,21.47Z" />
+            <path
+              class="cls-1"
+              d="m52.58,41.45c-.28,1.13-.43,2.13-.43,2.83,0,1.7.78,2.41,2.98,2.41.71,0,1.56-.07,2.62-.21l.21,2.2c-3.26,1.49-5.67,2.06-7.94,2.06-3.12,0-4.68-1.91-4.68-5.24,0-1.2.21-2.55.57-4.04l3.97-16.44c.28-1.06.43-2.2.43-2.69,0-2.48-1.63-3.47-5.53-3.47l.5-2.2c1.84-.92,4.89-1.7,7.09-1.7,2.98,0,4.75,1.42,4.75,5.03,0,1.13-.21,2.55-.57,4.11l-3.97,17.36Zm3.33-32.53c-2.48,0-4.39-1.98-4.39-4.46s1.91-4.46,4.39-4.46,4.39,1.98,4.39,4.46-1.91,4.46-4.39,4.46Z" />
+            <path
+              class="cls-1"
+              d="m64.92,47.9l1.2-6.94h4.46c-.21,5.24,1.63,6.87,6.38,6.87,4.18,0,7.87-1.77,7.87-6.38,0-3.4-1.98-4.61-5.24-6.02l-3.61-1.56c-4.11-1.77-6.87-4.25-6.87-9.14,0-6.8,6.24-10.42,13.32-10.42,5.46,0,8.43,1.63,9.99,2.69l-1.06,6.38h-4.32c-.14-3.69-1.56-5.81-6.02-5.81-3.76,0-6.09,2.05-6.09,5.53,0,2.2.78,3.76,4.11,5.17l3.61,1.56c5.32,2.27,8.15,4.82,8.15,9.78,0,6.73-6.02,11.48-14.38,11.48-6.94,0-9.99-2.13-11.48-3.19Z" />
+            <path
+              class="cls-1"
+              d="m108.64,41.45c-.28,1.13-.43,2.13-.43,2.83,0,1.7.78,2.41,2.98,2.41.71,0,1.56-.07,2.62-.21l.21,2.2c-3.26,1.49-5.67,2.06-7.94,2.06-3.12,0-4.68-1.91-4.68-5.24,0-1.2.21-2.55.57-4.04l3.97-16.44c.28-1.06.43-2.2.43-2.69,0-2.48-1.63-3.47-5.53-3.47l.5-2.2c1.84-.92,4.89-1.7,7.09-1.7,2.98,0,4.75,1.42,4.75,5.03,0,1.13-.21,2.55-.57,4.11l-3.97,17.36Zm3.33-32.53c-2.48,0-4.39-1.98-4.39-4.46s1.91-4.46,4.39-4.46,4.39,1.98,4.39,4.46-1.91,4.46-4.39,4.46Z" />
+            <path
+              class="cls-1"
+              d="m136.21,51.09c-8.08,0-13.11-5.6-13.11-13.61,0-13.18,8.79-23.1,18.64-23.1,8.57,0,13.11,6.09,13.11,13.75,0,12.19-7.51,22.96-18.64,22.96Zm5.24-33.31c-2.83,0-5.31,1.7-7.23,4.46-2.69,3.9-4.32,9.92-4.32,16.3,0,5.53,1.84,9.14,6.59,9.14,2.55,0,4.75-1.2,6.45-3.19,3.33-3.83,5.1-10.56,5.1-17.43,0-5.95-1.91-9.28-6.59-9.28Z" />
+            <path
+              class="cls-1"
+              d="m188.51,24.45c.21-.99.35-1.91.35-2.55,0-1.7-.71-2.55-2.34-2.55-4.39,0-9.5,6.73-12.26,11.41l-4.11,19.35h-6.45l5.31-25.08c.21-1.06.35-1.98.35-2.76,0-2.48-1.35-3.4-5.24-3.4l.5-2.2c1.84-.92,4.46-1.7,6.94-1.7,2.62,0,4.18,1.91,4.18,5.67,0,.85-.14,2.62-.5,4.18,3.26-5.1,8.22-10.49,14.1-10.49,4.39,0,6.17,2.83,6.17,6.52,0,.92-.14,1.91-.35,2.98l-3.76,17.64c-.21.99-.42,2.05-.42,2.83,0,1.7.78,2.41,2.98,2.41.71,0,1.56-.07,2.55-.21l.21,2.2c-3.26,1.49-5.53,2.06-7.23,2.06-3.61,0-5.03-1.98-5.03-5.24,0-1.13.21-2.55.5-4.04l3.54-17.01Z" />
+            <path
+              class="cls-1"
+              d="m10.73,107.05l19.27-18.94c2.57-2.57,4.4-4.94,4.4-8.25,0-3.99-2.91-6.36-6.9-6.36-4.6,0-7.03,2.71-7.03,7.24v.95h-8.86v-1.35c0-9.4,6.15-14.47,15.83-14.47s16.3,5.48,16.3,13.93c0,6.9-4.8,11.36-9.26,15.42l-12.31,11.29h21.3v7.64H10.73v-7.1Z" />
+            <path
+              class="cls-1"
+              d="m54.89,98.6v-16.23c0-9.67,6.97-16.5,17.85-16.5s17.85,6.83,17.85,16.5v16.23c0,9.67-6.97,16.5-17.85,16.5s-17.85-6.83-17.85-16.5Zm26.38-16.37c0-5.75-3.25-8.72-8.52-8.72s-8.52,2.98-8.52,8.72v16.5c0,5.75,3.25,8.72,8.52,8.72s8.52-2.98,8.52-8.72v-16.5Z" />
+            <path
+              class="cls-1"
+              d="m103.72,66.82h29.76v7.51l-12.11,12.1c7.71.34,14,4.87,14,13.73s-7.91,14.95-17.52,14.95-16.84-5.07-17.04-14.81h8.66c.34,4.46,3.58,7.3,8.45,7.3s8.25-3.25,8.25-7.24c0-4.19-2.91-6.83-8.18-6.83h-6.97v-7.51l11.09-11.77h-18.39v-7.44Z" />
+            <path
+              class="cls-1"
+              d="m146.26,98.6v-16.23c0-9.67,6.97-16.5,17.85-16.5s17.85,6.83,17.85,16.5v16.23c0,9.67-6.97,16.5-17.85,16.5s-17.85-6.83-17.85-16.5Zm26.37-16.37c0-5.75-3.25-8.72-8.52-8.72s-8.52,2.98-8.52,8.72v16.5c0,5.75,3.25,8.72,8.52,8.72s8.52-2.98,8.52-8.72v-16.5Z" />
+          </svg>
+          <p class="text-white">
             In 2020, our leadership team prayed and sought the Lord for the future of NewSpring Church. We believe He made three things abundantly clear. We
             call these goals “Vision 2030.”
           </p>
-          <p class="mb-0"><a href="#values" data-scroll class="btn btn-primary drop-shadow">Learn More</a></p>
+
+          <p class="mb-0"><a href="#values" data-scroll class="btn btn-primary">Learn More</a></p>
         </div>
       </section>
 
-      <section id="debt" class="bg-white">
-        <div class="text-constrained mx-auto text-center">
-          <i class="hidden fa-solid fa-circle-check fa-3x mb-3 text-primary bg-white rounded-full"></i>
-          <h2 class="display-2">Be Debt Free</h2>
-          <p class="pretitle text-primary" data-aos="fade-up"><i class="fa-solid fa-circle-check"></i> Completed 2023</p>
-
-          <p class="lead mb-0">
-            We dreamed of being debt-free since January 2017 &mdash; when we started the year with a $45 million debt balance largely due to facility-building
-            projects.
-          </p>
-
-          <script src="https://fast.wistia.com/embed/medias/skqxx3cwhf.jsonp" async></script>
-          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding my-6 rounded-xl overflow-hidden" data-aos="fade-up" style="padding: 56.25% 0 0 0; position: relative">
-            <div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-              <span
-                class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=6bac43"
-                style="display: inline-block; height: 100%; position: relative; width: 100%"
-                >&nbsp;</span
-              >
-            </div>
-          </div>
-
-          <p>
-            In 2017, NewSpring’s leadership team made two important decisions: we won’t take on any additional debt, and we will give 10% of our general tithes
-            and offerings to other Christ-centered churches and mission organizations.
-          </p>
-
-          <p class="mb-0">
-            Within six years, the entire $45 million was paid off! During that same timeframe, we were able to give away close to $25 million to 600+
-            organizations!
-          </p>
-        </div>
-      </section>
-
-      <section id="church-planting" class="bg-olive text-white px-0">
+      <section id="church-planting" class="bg-pine text-white px-0 pt-0">
         <div class="text-constrained mx-auto px-4 px-sm-7 px-md-0">
           <div class="text-center">
-            <h2 class="display-2">Plant Ten New Churches</h2>
+            <h2 class="display-2 text-sage">Plant Ten Churches</h2>
             <p class="lead text-white o-50">
               We will identify, train, and send out people we believe have been called by God and are ready to start a new church — not a NewSpring campus.
             </p>
             <p>
-              We believe these new churches will be planted outside the state of South Carolina. We also strongly believe God will raise up other people in our
-              church who will feel called to go and be a part of these church plants.
+              We believe these new churches will be planted outside the state of South Carolina through
+              <a href="https://newspringnetwork.com">NewSpring Network</a>. We also strongly believe God will raise up other people in our church who will feel
+              called to go and be a part of these church plants!
             </p>
-
-            <div class="position-relative overflow-hidden text-white p-5 my-6 my-md-7 py-md-6 rounded-xl" data-aos="fade-up">
-              <div class="fullscreen bg-black o-20"></div>
-              <div class="bring-forward">
-                <p class="lead text-white">Is God calling you to plant or be part of planting a church?</p>
-                <p class="mb-0"><a href="#" class="btn btn-primary">Connect With Us</a></p>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div>
-          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-y-1 gap-x-2 mb-5" data-aos="fade-up">
-            <p class="h4 mb-0">News From</p>
-            <a href="/topics/church-planting" class="btn btn-primary font-bold"><i class="fa-solid fa-tag mr-1"></i>church planting</a>
-          </div>
-
+        <div class="mt-6">
           <!-- Slider main container -->
           <div id="church-planting-swiper" class="swiper-container text-left">
             <!-- Additional required wrapper -->
@@ -224,7 +246,7 @@
         </div>
       </section>
 
-      <section id="campus-facilities" class="bg-gray-lighter position-relative px-0">
+      <section id="campus-facilities" class="bg-white text-pine position-relative px-0">
         <div
           class="hidden fullscreen background-cover background-top o-80"
           style="
@@ -236,25 +258,15 @@
         <div class="text-constrained mx-auto text-center px-4 px-sm-7 px-md-0">
           <h2 class="display-3">All NewSpring Campuses in Permanent Homes</h2>
 
-          <p class="lead">
-            Out of our 14 locations across the state, our <a href="/locations/aiken" class="text-gray">Aiken</a>,
-            <a href="/locations/charleston" class="text-gray">Charleston</a>, <a href="/locations/lake-wylie" class="text-gray">Lake Wylie</a>, and
-            <a href="/locations/myrtle-beach" class="text-gray">Myrtle Beach</a> campuses are still leasing their facilities.
+          <p class="lead">Out of our 14 locations across the state, some campuses are still leasing their facilities.</p>
+          <p>
+            We want to see the <a href="/locations/aiken">Aiken</a>, <a href="/locations/charleston">Charleston</a>,
+            <a href="/locations/lake-wylie">Lake Wylie</a>, and <a href="/locations/myrtle-beach">Myrtle Beach</a> campuses established in their permanent
+            facility by 2030. We are excited about having a permanent presence in these communities!
           </p>
-          <p>We’d love to see each of these campuses established in their permanent facility by 2030!</p>
-
-          <p class="d-flex justify-content-center flex-column flex-sm-row gap-y-1 gap-x-1 gap-y-sm-0">
-            <a href="/give/now" target="_blank" class="btn btn-primary">Give Now</a>
-          </p>
-          <p>Learn more about <a href="/give">why we give.</a></p>
         </div>
 
         <div class="text-center mt-6 mt-md-7">
-          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-y-1 gap-x-2 mb-5" data-aos="fade-up">
-            <p class="h4 mb-0">News From</p>
-            <a href="/topics/facilities" class="btn btn-primary font-bold"><i class="fa-solid fa-tag mr-1"></i>facilities</a>
-          </div>
-
           <!-- Slider main container -->
           <div id="campus-facilities-swiper" class="swiper-container my-5 mt-md-6 text-left">
             <!-- Additional required wrapper -->
@@ -318,11 +330,50 @@
         </div>
       </section>
 
+      <section id="debt" class="bg-pine text-white">
+        <div class="text-constrained mx-auto text-center">
+          <i class="hidden fa-solid fa-circle-check fa-3x mb-3 text-primary bg-white rounded-full"></i>
+          <h2 class="display-2">Be Debt Free</h2>
+          <p class="pretitle text-primary" data-aos="fade-up"><i class="fa-solid fa-circle-check"></i> Completed 2023</p>
+
+          <p class="lead mb-0 text-white">
+            We dreamed of being debt-free since January 2017—when we started the year with a $45 million debt balance largely due to facility-building projects.
+          </p>
+
+          <script src="https://fast.wistia.com/embed/medias/skqxx3cwhf.jsonp" async></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+          <div class="wistia_responsive_padding my-6 rounded-xl overflow-hidden" data-aos="fade-up" style="padding: 56.25% 0 0 0; position: relative">
+            <div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+              <span
+                class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=6bac43"
+                style="display: inline-block; height: 100%; position: relative; width: 100%"
+                >&nbsp;</span
+              >
+            </div>
+          </div>
+
+          <p>
+            In 2017, NewSpring’s leadership team made two important decisions: we won’t take on any additional debt, and we will give 10% of our general tithes
+            and offerings to other Christ-centered churches and mission organizations.
+          </p>
+
+          <p class="mb-0">
+            Within six years, the entire $45 million was paid off! During that same timeframe, we were able to give away close to $25 million to 600+
+            organizations.
+          </p>
+        </div>
+      </section>
+
       <section id="questions" class="text-center">
         <div class="text-constrained mx-auto">
-          <h2>Have questions?</h2>
-          <p>We’d love to answer any questions you might have.</p>
-          <p class="mb-0"><a href="/workflows/152" class="btn btn-primary">Contact Us</a></p>
+          <h2 class="display-3 text-pine">How do we fund this vision?</h2>
+          <p class="lead">Vision 2030 becomes more of a reality when we trust God at His Word and give our tithes and offerings.</p>
+          <p>
+            Every year, the <a href="/overflow">Overflow Offering</a> gives us an opportunity to take a huge stride toward our goals. Learn more about why we
+            give or give your tithe or offering below!
+          </p>
+          <p><a href="/give/now" class="btn btn-primary">Give Now</a></p>
+          <p class="mb-0">Have any questions? <a href="/workflows/152">Contact us!</a></p>
         </div>
       </section>
     </div>
