@@ -36,6 +36,9 @@
 
     <link rel="stylesheet" href="./Themes/new/Styles/bootstrap.css" />
     <link rel="stylesheet" href="./Themes/new/Styles/theme.css" />
+
+    <!-- PureCounter -->
+    <script src="./Themes/new/Scripts/counter-min.js"></script>
   </head>
   <body>
     <section class="p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center drop-shadow">
@@ -417,15 +420,21 @@
           <div class="d-grid grid-cols-12 gap-x-5 mt-6 text-left">
             <div class="col-span-12">
               <h3 class="h5 text-blue-light">Total Given</h3>
-              <h4 class="display-2">$338,992.81</h4>
+              <h4 class="display-2">
+                $<span data-purecounter-start="0" data-purecounter-end="338992.81" data-purecounter-decimals="2" class="purecounter"> 0 </span>
+              </h4>
             </div>
             <div class="col-span-6">
               <h3 class="h5 text-blue-light">Unique Givers</h3>
-              <h4 class="display-3">225</h4>
+              <h4 class="display-3">
+                <span data-purecounter-start="0" data-purecounter-end="225" class="purecounter"> 0 </span>
+              </h4>
             </div>
             <div class="col-span-6">
               <h3 class="h5 text-blue-light">Days Left</h3>
-              <h4 class="display-3">121</h4>
+              <h4 class="display-3">
+                <span data-purecounter-start="0" data-purecounter-end="121" class="purecounter"> 0 </span>
+              </h4>
             </div>
           </div>
         </div>
@@ -521,7 +530,7 @@
 
       <section id="questions" class="text-center">
         <div class="text-constrained mx-auto">
-          <h2>Still Have Questions?</h2>
+          <h2>Still have questions?</h2>
           <p>We’d love to answer any questions you might have.</p>
           <p class="mb-0"><a href="/workflows/152" class="btn btn-primary bg-blue">Contact Us</a></p>
         </div>
@@ -578,6 +587,24 @@
 
         $(document).ready(function () {
           swiper.update();
+          new PureCounter({
+            // Setting that can't' be overriden on pre-element
+            selector: ".purecounter", // HTML query selector for spesific element
+
+            // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
+            start: 0, // Starting number [uint]
+            end: 100, // End number [uint]
+            duration: 2, // The time in seconds for the animation to complete [seconds]
+            delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+            once: true, // Counting at once or recount when the element in view [boolean]
+            pulse: false, // Repeat count for certain time [boolean:false|seconds]
+            decimals: 0, // How many decimal places to show. [uint]
+            legacy: true, // If this is true it will use the scroll event listener on browsers
+            filesizing: false, // This will enable/disable File Size format [boolean]
+            currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
+            formater: "us-US", // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
+            separator: true, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
+          });
         });
       </script>
     </div>

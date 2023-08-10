@@ -3,7 +3,7 @@ document.addEventListener(
   function () {
     let content = document.querySelector("#content");
 
-    if(content === null) {
+    if (content === null) {
       content = document.querySelector("body");
     }
 
@@ -11,8 +11,6 @@ document.addEventListener(
     let elementsToAnimate = content.querySelectorAll(
       "h1:not([data-aos], [data-aos] *), h2:not([data-aos], [data-aos] *), h3:not([data-aos], [data-aos] *), h4:not([data-aos], [data-aos] *), h5:not([data-aos], [data-aos] *), h6:not([data-aos], [data-aos] *), p:not([data-aos], [data-aos] *), i:not([data-aos], [data-aos] *), .dropdown-toggle"
     );
-
-    console.log(elementsToAnimate);
 
     // Loop through and add data attributes
     elementsToAnimate.forEach(function (element, index) {
@@ -22,7 +20,7 @@ document.addEventListener(
     // Initiate AOS
     AOS.init({
       // Global settings:
-      disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      disable: "phone", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
       initClassName: "aos-init", // class applied after initialization
       animatedClassName: "aos-animate", // class applied on animation
