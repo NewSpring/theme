@@ -87,6 +87,19 @@
           background-color: var(--overflow-kraft);
         }
 
+        .btn.bg-blue:hover {
+          background-color: var(--overflow-blue);
+        }
+        .btn.bg-blue-light:hover {
+          background-color: var(--overflow-blue-light);
+        }
+        .btn.bg-blue-dark:hover {
+          background-color: var(--overflow-blue-dark);
+        }
+        .btn.bg-kraft:hover {
+          background-color: var(--overflow-kraft);
+        }
+
         .text-blue {
           color: var(--overflow-blue);
         }
@@ -112,6 +125,18 @@
         .fill-kraft {
           fill: var(--overflow-kraft);
         }
+
+        .swiper-pagination-bullet-active {
+          background-color: var(--overflow-blue) !important;
+        }
+
+        #content a:not(.btn) {
+          color: var(--overflow-blue);
+        }
+
+        #content input::placeholder {
+          color: #ccc;
+        }
       </style>
 
       <section class="bg-blue position-relative text-white d-flex justify-content-center align-content-center text-center">
@@ -125,79 +150,166 @@
             We want every NewSpring campus to be a physical place where heaven meets earth, community flourishes, and Jesus is glorified. The Overflow Offering
             isn't just a yearly event &mdash; it's an opportunity to trust God with an investment to see lives changed in Aiken, SC.
           </p>
-          <p class="hidden">One church. Many locations.</p>
-          <p class="mb-0"><a href="/give/now" data-scroll class="btn btn-primary bg-blue">Give Now</a></p>
+          <p class="mb-0"><a href="#give" data-scroll class="btn btn-primary bg-blue">Give Now</a></p>
         </div>
       </section>
 
-      <section id="story">
-        <div class="page-constrained mx-auto text-center mb-6">
-          <p class="pretitle">The Overflow Story</p>
-          <h2 class="display-2 px-md-4 my-6 text-blue-dark">God always <span class="text-blue">overflows in generosity</span> toward us.</h2>
-        </div>
-        <div class="text-constrained mx-auto text-center">
-          <p>
-            For the past several years, we wanted to build an intentional season where we focused on building His kingdom in South Carolina. That’s what led us
-            to start the annual rhythm of the Overflow Offering. We wanted to be able to expand wisely without adding debt!
-          </p>
-        </div>
+      <section id="story" class="px-0 pb-0">
+        <div class="px-6">
+          <div class="page-constrained mx-auto text-center mb-6">
+            <p class="pretitle">The Overflow Story</p>
+            <h2 class="display-2 px-md-4 my-6 text-blue-dark">God always <span class="text-blue">overflows in generosity</span> toward us.</h2>
+          </div>
+          <div class="text-constrained mx-auto text-center">
+            <p>
+              For the past several years, we wanted to build an intentional season where we focused on building His kingdom in South Carolina. That’s what led
+              us to start the annual rhythm of the Overflow Offering. We wanted to be able to expand wisely without adding debt!
+            </p>
+          </div>
 
-        <div id="timeline" class="page-constrained mx-auto timeline my-6 my-md-7 px-1 px-sm-6">
-          <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
-            <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-0 pr-md-6 pr-lg-7 text-md-right">
-              <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2020</span><br />Bluffton Campus</h3>
-              <p class="mb-0">
-                We were able to purchase and renovation a facility for NewSpring Bluffton, formerly known as the Hilton Head Campus. They went from meeting on
-                Sunday nights at New Life Church to moving into their own permanent home in July 2021!
-              </p>
+          <div id="timeline" class="page-constrained mx-auto timeline my-6 my-md-8 px-1 px-sm-6">
+            <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
+              <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-0 pr-md-6 pr-lg-7 text-md-right">
+                <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2020</span><br />Bluffton Campus</h3>
+                <p class="mb-0">
+                  We were able to purchase and renovation a facility for NewSpring Bluffton, formerly known as the Hilton Head Campus. They went from meeting on
+                  Sunday nights at New Life Church to moving into their own permanent home in July 2021!
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
+              <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-6 pl-lg-7 col-start-md-2">
+                <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2021</span><br />Aiken Land</h3>
+                <p class="mb-0">
+                  NewSpring Aiken is rapidly outgrowing their space; what a great problem to have! We needed room to grow. Thanks to our generous church, we
+                  were able to purchase land for Aiken’s permanent facility.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
+              <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-0 pr-md-6 pr-lg-7 text-md-right">
+                <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2022</span><br />Eliminate Debt Balance</h3>
+                <p class="mb-0">
+                  In 2017, our leadership team made a decision not to accrue new debt. Within five years, we paid off $37M! In March 2023, we celebrated that
+                  NewSpring Church is officially debt free.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
-            <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-6 pl-lg-7 col-start-md-2">
-              <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2021</span><br />Aiken Campus</h3>
-              <p class="mb-0">
-                NewSpring Aiken is rapidly outgrowing their space; what a great problem to have! We needed room to grow. Thanks to our generous church, we were
-                able to purchase land for Aiken’s permanent facility.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline--item d-grid grid-cols-1 grid-cols-md-2 align-items-center">
-            <div class="py-6 py-md-6 pl-5 pl-sm-6 pl-md-0 pr-md-6 pr-lg-7 text-md-right">
-              <h3 class="h5 mb-1 text-blue"><span class="display-3 text-blue-dark">2022</span><br />Eliminate Debt Balance</h3>
-              <p class="mb-0">
-                In 2017, our leadership team made a decision not to accrue new debt. Within five years, we paid off $37M! In March 2023, we celebrated that
-                NewSpring Church is officially debt free.
-              </p>
-            </div>
+          <div class="text-constrained mx-auto text-center">
+            <h3 class="h5 text-blue mb-5"><span class="display-1 text-blue-dark">2023</span><br />Build Aiken Campus</h3>
+            <p>Because of your generosity, we were able to purchase the land for the new Aiken Campus in 2021. But Aiken's story isn't done yet!</p>
+            <p>
+              <a href="#stories" class="btn btn-primary bg-blue mb-2 mb-sm-0" data-scroll>Read the Aiken Story</a>
+              <a href="#give" class="btn btn-default" data-scroll>Give Now</a>
+            </p>
           </div>
         </div>
 
-        <div class="text-constrained mx-auto text-center">
-          <p class="text-danger">Anim reprehenderit ex incididunt qui magna anim dolor laborum minim qui.</p>
-          <p><a href="/beliefs" class="btn btn-primary bg-blue">Read the Aiken Story</a></p>
-        </div>
+        <div
+          class="ratio-landscape ratio-lg-thin bg-white background-cover background-top"
+          style="background-image: url('./Themes/new/Assets/Images/overflow_aikenariel_2x1.jpg')"></div>
       </section>
 
-      <section id="stories" class="bg-kraft text-white px-0">
-        <div class="px-5 text-constrained mx-auto text-center mb-6 mb-md-8">
-          <p class="pretitle text-white o-50">The Aiken Story</p>
-          <h2 class="display-3">We want NewSpring Aiken to point to Jesus — literally.</h2>
+      <section id="stories" class="bg-blue-light text-blue-dark px-0 overflow-hidden">
+        <div class="px-5 text-constrained mx-auto text-center mb-6">
+          <p class="pretitle text-white o-70">The Aiken Story</p>
+          <h2 class="text-white display-3">We want NewSpring Aiken to point to Jesus — literally.</h2>
           <p>
             Our buildings should be areas where our community can comfortably gather, worship, and form tight-knit friendships. That’s why we want every
             NewSpring campus to exist in a permanent home by 2030.
           </p>
           <p>
             In 2021, because of our church’s radical generosity, we were able to purchase the land for the Aiken Campus facility. This year, the Overflow
-            Offering focuses on breaking ground and development of NewSpring Aiken’s facility. We can’t wait to hear stories of life change from Aiken; stories
-            like ___’s, ____’s, and ____’s.
+            Offering focuses on breaking ground and development of NewSpring Aiken’s facility. 
           </p>
         </div>
 
+        <!-- NEWS SWIPER -->
+        <div class="text-center mt-6 mt-md-7">
+          <!-- Slider main container -->
+          <div id="campus-facilities-swiper" class="swiper-container my-5 mt-md-6 text-left">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mb-6">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="d-block text-decoration-none position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden"
+                  data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1517089152318-42ec560349c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80');
+                    "></div>
+
+                  <div class="fullscreen o-100" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%)"></div>
+
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5 mb-0">Aiken Development Update</h3>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="d-block text-decoration-none position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden"
+                  data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1517089152318-42ec560349c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80');
+                    "></div>
+
+                  <div class="fullscreen o-100" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%)"></div>
+
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5 mb-0">Aiken Development Update</h3>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="d-block text-decoration-none position-relative bg-black text-white px-4 pt-10 pb-5 px-md-5 pb-md-5 rounded-lg overflow-hidden"
+                  data-aos="fade-up">
+                  <div
+                    class="fullscreen background-cover background-bottom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1517089152318-42ec560349c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80');
+                    "></div>
+
+                  <div class="fullscreen o-100" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 100%)"></div>
+
+                  <div class="bring-forward text-constrained mx-auto">
+                    <h3 class="h5 mb-0">Aiken Development Update</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <p><a href="#" class="btn btn-primary bg-blue">See More Updates</a></p>
+        </div>
+        <div class="px-5 px-md-8 page-constrained mx-auto text-center my-8 my-md-9">
+          <h3 class="text-white display-3">
+            We can’t wait to hear more stories of life change from Aiken; stories like
+            <a href="#storyone" class="text-decoration-none" data-scroll>Maliek’s</a>,
+            <a href="#storytwo" class="text-decoration-none" data-scroll>Kelsey’s</a>, and
+            <a href="#storythree" class="text-decoration-none" data-scroll>Tom’s</a>.
+          </h3>
+        </div>
+
         <!-- STORIES -->
-        <div class="d-grid grid-cols-1 gap-y-6 gap-y-md-8">
-          <div class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7">
+        <div class="d-grid grid-cols-1 gap-y-6 gap-y-md-9">
+          <div id="storyone" class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7">
             <div class="ratio-square col-span-11 col-span-md-6 col-span-xl-4" data-aos="fade-right">
               <div
                 class="position-relative ratio-square rounded-2x rounded-l-0 background-cover background-center"
@@ -208,17 +320,17 @@
             </div>
             <div class="col-span-12 col-span-md-6 col-span-xl-5 d-flex align-items-center" data-aos="fade-left">
               <div class="p-4 p-md-6 py-md-0">
-                <h3 class="h3">“I truly love the culture of understanding.</h3>
+                <h3 class="text-white">“I truly love the culture of understanding.</h3>
                 <p>
                   Our job is pretty flexible, and I cannot possibly think of another place where my family truly comes first. Also, I love that I am not allowed
                   to take myself too seriously, which makes for a fun working environment.”
                 </p>
-                <p class="mb-0 text-white"><span class="lead font-bold text-blue">Maliek Burrell</span><br />Worship Leader</p>
+                <p class="mb-0 text-blue-dark"><span class="lead font-bold text-blue">Maliek Burrell</span><br />Worship Leader</p>
               </div>
             </div>
           </div>
 
-          <div class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7 rtl">
+          <div id="storytwo" class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7 rtl">
             <div class="position-relative ratio-square col-span-11 col-span-md-6 col-span-xl-4" data-aos="fade-left">
               <div
                 class="ratio-square rounded-2x rounded-r-0 background-cover background-center"
@@ -229,17 +341,17 @@
             </div>
             <div class="col-span-12 col-span-md-6 col-span-xl-5 d-flex align-items-center ltr" data-aos="fade-right">
               <div class="p-4 p-md-6 py-md-0">
-                <h3 class="h3">“I have loved working at NewSpring because it feels like a genuine team.</h3>
+                <h3 class="text-white">“I have loved working at NewSpring because it feels like a genuine team.</h3>
                 <p>
                   Everyone is friendly, generous, and wants to see each other win. Because leaders have always cared about and invested in my growth both at
                   work and at home, I am so much wiser and all-around healthier than I was before working here.”
                 </p>
-                <p class="mb-0 text-white"><span class="lead font-bold text-blue">Kelsey Estrada</span><br />KidSpring Art Director</p>
+                <p class="mb-0 text-blue-dark"><span class="lead font-bold text-blue">Kelsey Estrada</span><br />KidSpring Art Director</p>
               </div>
             </div>
           </div>
 
-          <div class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7">
+          <div id="storythree" class="d-grid grid-cols-12 gap-y-4 gap-y-sm-6 gap-x-md-6 gap-x-xl-7">
             <div class="position-relative ratio-square col-span-11 col-span-md-6 col-span-xl-4" data-aos="fade-right">
               <div
                 class="ratio-square rounded-2x rounded-l-0 background-cover background-center"
@@ -247,12 +359,12 @@
             </div>
             <div class="col-span-12 col-span-md-6 col-span-xl-5 d-flex align-items-center" data-aos="fade-left">
               <div class="p-4 p-md-6 py-md-0">
-                <h3 class="h3">“I've spent many years of my life working at NewSpring. They've been—without a doubt—the best years of my life!</h3>
+                <h3 class="text-white">“I've spent many years of my life working at NewSpring. They've been—without a doubt—the best years of my life!</h3>
                 <p>
                   It's an incredible environment where the people you work for and serve alongside care about you, your family, and your walk with God. Each day
                   my tires hit the parking lot, I'm excited to be here! I can't imagine a better place to invest my life building the kingdom of God!”
                 </p>
-                <p class="mb-0 text-white"><span class="lead font-bold text-blue">Tom Haren</span><br />Outreach Coordinator</p>
+                <p class="mb-0 text-blue-dark"><span class="lead font-bold text-blue">Tom Haren</span><br />Outreach Coordinator</p>
               </div>
             </div>
           </div>
@@ -268,35 +380,35 @@
           <div class="wistia_responsive_padding my-6 rounded-xl overflow-hidden" data-aos="fade-up" style="padding: 56.25% 0 0 0; position: relative">
             <div class="wistia_responsive_wrapper" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%">
               <span
-                class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=6bac43"
+                class="wistia_embed wistia_async_skqxx3cwhf popover=true popoverAnimateThumbnail=false videoFoam=true playerColor=a9c2e6"
                 style="display: inline-block; height: 100%; position: relative; width: 100%"
                 >&nbsp;</span
               >
             </div>
           </div>
-          <p><a href="/give/now" class="btn btn-primary bg-blue">Give Now</a></p>
+          <p><a href="#give" data-scroll class="btn btn-primary bg-blue">Give Now</a></p>
           <p>Learn more about <a href="/give" class="text-blue">how and why we give.</a></p>
         </div>
       </section>
 
       <section id="give" class="bg-blue-dark text-white">
         <div class="text-constrained mx-auto text-center">
-          <h2 class="display-3">Give Now</h2>
-          <input type="text" class="mb-5 border-0 rounded-full display-3 text-gray-darker" />
+          <h2 class="display-3 mb-5">Give Now</h2>
+          <input type="text" class="h3 px-5 p-3 w-100 mb-4 border-0 rounded-full text-gray-darker text-center" placeholder="Enter an amount" />
           <p><a href="/give/now" class="btn btn-primary bg-blue">Give Now</a></p>
 
-          <div class="d-grid grid-cols-12 text-left">
+          <div class="d-grid grid-cols-12 gap-x-5 mt-6 text-left">
             <div class="col-span-12">
               <h3 class="h5 text-blue-light">Total Given</h3>
-              <h4 class="display-1">$338,992.81</h4>
+              <h4 class="display-2">$338,992.81</h4>
             </div>
             <div class="col-span-6">
               <h3 class="h5 text-blue-light">Unique Givers</h3>
-              <h4 class="display-2">225</h4>
+              <h4 class="display-3">225</h4>
             </div>
             <div class="col-span-6">
-              <h3 class="h5 text-blue-light">Days Remaining</h3>
-              <h4 class="display-2">121</h4>
+              <h3 class="h5 text-blue-light">Days Left</h3>
+              <h4 class="display-3">121</h4>
             </div>
           </div>
         </div>
@@ -316,8 +428,8 @@
                 href="#collapseOne"
                 aria-expanded="true"
                 aria-controls="collapseOne">
-                <h3 class="h5">Where do I go when I get there?</h3>
-                <i class="fa-light fa-lg fa-minus ml-5 mt-1"></i>
+                <h3 class="h5 text-blue-dark">Where do I go when I get there?</h3>
+                <i class="text-blue-dark fa-light fa-lg fa-minus ml-5 mt-1"></i>
               </div>
               <div id="collapseOne" class="collapse text-blue-dark" role="tabpanel" aria-labelledby="headingOne">
                 <p>
@@ -340,8 +452,8 @@
                 href="#collapseTwo"
                 aria-expanded="true"
                 aria-controls="collapseTwo">
-                <h3 class="h5">What do you do for kids?</h3>
-                <i class="fa-light fa-lg fa-plus ml-5 mt-1"></i>
+                <h3 class="h5 text-blue-dark">What do you do for kids?</h3>
+                <i class="text-blue-dark fa-light fa-lg fa-plus ml-5 mt-1"></i>
               </div>
               <div id="collapseTwo" class="collapse in text-blue-dark" role="tabpanel" aria-labelledby="headingOne">
                 <p>
@@ -364,8 +476,8 @@
                 href="#collapseThree"
                 aria-expanded="true"
                 aria-controls="collapseThree">
-                <h3 class="h5">How long is the service?</h3>
-                <i class="fa-light fa-lg fa-plus ml-5 mt-1"></i>
+                <h3 class="h5 text-blue-dark">How long is the service?</h3>
+                <i class="text-blue-dark fa-light fa-lg fa-plus ml-5 mt-1"></i>
               </div>
               <div id="collapseThree" class="collapse in text-blue-dark" role="tabpanel" aria-labelledby="headingOne">
                 <p>
@@ -385,8 +497,8 @@
                 href="#collapseFour"
                 aria-expanded="true"
                 aria-controls="collapseFour">
-                <h3 class="h5">What should I wear?</h3>
-                <i class="fa-light fa-lg fa-plus ml-5 mt-1"></i>
+                <h3 class="h5 text-blue-dark">What should I wear?</h3>
+                <i class="text-blue-dark fa-light fa-lg fa-plus ml-5 mt-1"></i>
               </div>
               <div id="collapseFour" class="collapse in text-blue-dark" role="tabpanel" aria-labelledby="headingOne">
                 <p>Most people dress casually, but you are welcome to wear whatever makes you comfortable.</p>
@@ -398,11 +510,65 @@
 
       <section id="questions" class="text-center">
         <div class="text-constrained mx-auto">
-          <h2>Still have questions?</h2>
+          <h2>Still Have Questions?</h2>
           <p>We’d love to answer any questions you might have.</p>
           <p class="mb-0"><a href="/workflows/152" class="btn btn-primary bg-blue">Contact Us</a></p>
         </div>
       </section>
+
+      <script>
+        let isMobile = false;
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          isMobile = true;
+        }
+
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1.15,
+          spaceBetween: 15,
+          breakpoints: {
+            667: {
+              slidesPerView: 1.15,
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 1.7,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 2.6,
+              spaceBetween: 15,
+            },
+            1400: {
+              slidesPerView: 2.9,
+              spaceBetween: 15,
+            },
+            2300: {
+              slidesPerView: 3.7,
+              spaceBetween: 15,
+            },
+          },
+          speed: 200,
+          loop: false,
+          cssMode: isMobile,
+          centeredSlides: true,
+          roundLengths: true,
+          grabCursor: true,
+          resistanceRatio: 0.3,
+          keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+
+        $(document).ready(function () {
+          swiper.update();
+        });
+      </script>
     </div>
 
     <footer class="bg-gray-dark text-white px-4 py-7 px-md-7 py-md-8 text-center">
