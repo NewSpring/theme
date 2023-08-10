@@ -1,5 +1,4 @@
 .timeline {
-  
   .timeline--item {
     min-height: 100px;
 
@@ -8,7 +7,7 @@
 
       // Nodes
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 0;
@@ -17,23 +16,27 @@
         width: 20px;
         height: 20px;
         border-radius: 1000px;
-        background-color: var(--gray-darker);
+        background-color: #fff;
         border: 4px solid var(--gray-light);
         z-index: 1;
+      }
+
+      .bg-gray-darker &:before {
+        background-color: var(--gray-darker);
       }
     }
 
     & > div {
       // Connecting Lines
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0%;
         left: 0;
         width: 4px;
         margin-left: -2px;
         height: 100%;
-        background-color: var(--gray-light)
+        background-color: var(--gray-light);
       }
     }
 
@@ -58,9 +61,8 @@
       font-size: 3em;
     }
   }
-  
-  .timeline .timeline--item:nth-child(2n+1) > div {
 
+  .timeline .timeline--item:nth-child(2n + 1) > div {
     // Nodes
     &:before {
       left: auto;
@@ -77,5 +79,4 @@
       margin-right: -2px;
     }
   }
-
 }
