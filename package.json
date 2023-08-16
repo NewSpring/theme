@@ -4,7 +4,7 @@
   "description": "The external website RockRMS theme styles for NewSpring Church.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/NewSpring/theme/issues"
   },
-  "homepage": "https://github.com/NewSpring/theme#readme"
+  "homepage": "https://github.com/NewSpring/theme#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
