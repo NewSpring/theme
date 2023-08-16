@@ -1,0 +1,19 @@
+{
+  "name": "newspring-theme",
+  "version": "1.0.0",
+  "description": "The external website RockRMS theme styles for NewSpring Church.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewSpring/theme.git"
+  },
+  "author": "Brian Kalwat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewSpring/theme/issues"
+  },
+  "homepage": "https://github.com/NewSpring/theme#readme"
+}
