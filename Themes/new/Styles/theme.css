@@ -22494,6 +22494,9 @@ section {
 footer a:hover {
   color: #ffffff;
 }
+.wistia_popover_overlay {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
 @media (min-width: 576px) {
   section {
     padding-left: 96px;
