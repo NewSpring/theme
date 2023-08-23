@@ -124,12 +124,6 @@
       "oAP" : "\/locations.html",
       "oF" : 0
     },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
-    },
     "\/overflow.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -145,38 +139,6 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
-    },
-    "\/public\/css\/bootstrap.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/css\/bootstrap-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/css\/theme.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/css\/theme-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/index.html",
-      "oF" : 0
     },
     "\/Styles\/_blocks-checkinadmin.less" : {
       "aP" : 0,
@@ -4301,6 +4263,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/Themes\/new\/Assets\/Images\/overflow_stories_cody.gif" : {
+      "ft" : 4194304,
+      "iS" : 1508067,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/overflow_stories_cody.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
     "\/Themes\/new\/Assets\/SVG\/easter\/1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -4639,17 +4611,6 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/Themes\/new\/Scripts\/accordions-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/Themes\/new\/Scripts\/counter-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/Themes\/new\/Scripts\/counter-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
