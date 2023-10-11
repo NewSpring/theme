@@ -66,7 +66,7 @@
     {% assign item = 'newspring_articles' | PersistedDataset | OrderBy:'PublishDateTime' | Shuffle | First %}
     {% assign item = 'newspring_articles' | PersistedDataset | Where:'Id',3614 | First %}
     <div id="content" class="max-w-full">
-      <section class="pt-8 pt-lg-9 pb-0">
+      <section class="pb-0">
         <div class="page-constrained mx-auto text-center mb-5 mb-md-7">
           <p class="pretitle text-gray">{{ item.ContentType }}</p>
           <h2 class="display-3" title="{{ item.Id }}">{{ item.Title }}</h2>
@@ -83,10 +83,30 @@
           {{ item.Content | HtmlDecode }}
 
         </div>
+
       </section>
 
-      <section class="pt-0">
-        <h2 class="display-3 py-7 py-lg-8 text-center">Discover more of what matters to you.</h2>
+      <!-- {% contentchannelitem id:'{{ item.Id }}' iterator:'items' %}
+          {% assign itemEntity = items | First %}
+        {% endcontentchannelitem %}
+        {% assign cta = itemEntity | Attribute:'CalltoAction','Object' %}
+        {% if cta != empty %}
+          {% assign ctaImageLandscape = cta | Attribute:'ImageLandscape' %}
+          {% assign ctaImage = cta | Attribute:'ImageSquare' | Default:ctaImageLandscape %}
+        <div class="px-5 page-constrained mx-auto">
+          <section class="py-8 position-relative bg-white rounded-xl overflow-hidden">
+            <div class="fullscreen background-cover background-center o-20" style="background-image: url('{{ ctaImage }}');"></div>
+            <div class="fullscreen o-70" style="background: linear-gradient(180deg, rgba(255,255,255, 0.2) 30%, rgba(255,255,255, 0.9) 100%)"></div>
+            <div class="bring-forward">
+              <h2 class="">{{ cta | Attribute:'Heading' }}</h2>
+              <p class="mb-0"><a href="{{ cta | Attribute:'Link' }}" class="btn btn-primary">{{ cta | Attribute:'LinkText' }}</a></p>
+            </div>
+          </section>
+        </div>
+        {% endif %} -->
+
+      <section>
+        <h2 class="hidden display-3 py-7 py-lg-8 text-center">Discover more of what matters to you.</h2>
 
         {% if item.RelatedItems != null %}
           {% assign relatedItems = item.RelatedItems %}
@@ -115,12 +135,12 @@
                   {% endcapture %}
                   <div class="col-span-12">
                     <div class="d-grid grid-cols-12 gap-3 gap-sm-4 gap-lg-5 align-items-sm-center">
-                      <div class="col-span-3">
+                      <div class="col-span-3 col-span-lg-2">
                         <a href="{{ RelatedItem.Permalink }}">
                           <div class="ratio-square background-cover background-center rounded-md" style="background-image:url('{{ imageUrl | Trim }}');"></div>
                         </a>
                       </div>
-                      <div class="col-span-9 pr-1 height-max-content">
+                      <div class="col-span-9 col-span-lg-10 pr-1 height-max-content">
                           <p class="font-sans font-bold tracking-tight text-gray mb-1"><small>{{ RelatedItem.ContentType }}</small></p>
                           <h3 class="h6 md-h5 mb-0"><a href="{{ RelatedItem.Permalink }}">{{ RelatedItem.Title }}</a></h3>
                       </div>
@@ -161,7 +181,7 @@
 
       <section class="bg-gray-lighter text-center">
         <div class="text-constrained mx-auto">
-          <h3 class="display-3">Resources for your everyday relationship with Jesus, <span class="text-primary">delivered to your inbox.</span></h3>
+          <h3 class="h1 font-black tracking-tight">Resources for your everyday relationship with Jesus, <span class="text-primary">delivered to your inbox.</span></h3>
           <input type="text" class="bg-white h6 px-5 py-4 w-100 w-sm-75 mb-5 border-0 rounded-full text-gray-darker text-center" placeholder="Enter your email address" />
           <p><a href="#" class="btn btn-primary bg-blue-dark">Sign Up</a></p>
         </div>
