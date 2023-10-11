@@ -16,6 +16,7 @@ h6,
 
   a {
     color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -111,7 +112,7 @@ blockquote {
   border: none;
   font-style: italic;
   font-weight: 900;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.5px;
   line-height: 1.08;
   font-size: @font-size-blockquote;
 
@@ -122,10 +123,37 @@ blockquote {
   }
 }
 
+
+.prose {
+
+  // Yellow Diagonal
+  blockquote {
+    position: relative;
+    font-family: @font-family-headings;
+    font-style: normal;
+    // text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: ~"@{spacing-10}px" 0;
+    color: black;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 5%;
+      left: -5%;
+      width: 110%;
+      height: 90%;
+      background-color: #fff14f;
+      z-index: -1;
+      transform: rotate(-1deg);
+    }
+  }
+}
+
 .lead {
   font-size: @font-size-lead;
   line-height: 1.32;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   font-style: italic;
   color: @gray;
 }
@@ -136,7 +164,7 @@ blockquote {
 }
 
 small {
-  font-size: 75%;
+  font-size: 90%;
 }
 
 .no-wrap {
@@ -229,6 +257,10 @@ a {
   text-decoration: none;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 @media @sm {
   .display-1 {
     font-size: ceil(@font-size-display-1 * 1.18); // 76px
@@ -283,6 +315,27 @@ a {
 }
 
 @media @md {
+  .prose {
+    font-size: 110%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    p,
+    blockquote {
+      margin-bottom: (@spacer*9);
+    }
+  }
+
+  small { 
+    font-size: 95%;
+  }
+
   .display-1 {
     font-size: ceil(@font-size-display-1 * 1.43); // 92px
     letter-spacing: -3px;
@@ -294,7 +347,7 @@ a {
   }
 
   .display-3 {
-    font-size: ceil(@font-size-display-3 * 1.4); // 68px
+    font-size: ceil(@font-size-display-3 * 1.5); // 72px
     letter-spacing: -2px;
   }
 
@@ -342,7 +395,7 @@ a {
   blockquote {
     font-size: ceil(@font-size-blockquote * 1.1); // 36px
     line-height: 1.16;
-    letter-spacing: -1.1px;
+    letter-spacing: -0.5px;
   }
 
   .lead {
