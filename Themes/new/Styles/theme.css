@@ -16801,7 +16801,7 @@ blockquote footer {
   color: black;
 }
 .prose blockquote:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5%;
   left: -5%;
@@ -16823,7 +16823,9 @@ blockquote footer {
   letter-spacing: -0.5px;
 }
 small {
+  display: inline-block;
   font-size: 90%;
+  line-height: 1.5;
 }
 .no-wrap {
   white-space: nowrap;
@@ -16895,6 +16897,7 @@ mark {
   background-color: #fff14f;
 }
 a {
+  transition: all 0.2s ease-in-out;
   text-decoration: underline;
 }
 .list-none {
@@ -16967,7 +16970,8 @@ a {
     margin-bottom: 36px;
   }
   small {
-    font-size: 95%;
+    font-size: 85%;
+    line-height: 1.2;
   }
   .display-1 {
     font-size: 92px;
@@ -17022,6 +17026,9 @@ a {
   }
   .lead {
     font-size: 28px;
+  }
+  a:not(.btn):hover {
+    opacity: 0.75;
   }
 }
 .btn {

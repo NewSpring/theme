@@ -123,9 +123,7 @@ blockquote {
   }
 }
 
-
 .prose {
-
   // Yellow Diagonal
   blockquote {
     position: relative;
@@ -137,7 +135,7 @@ blockquote {
     color: black;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 5%;
       left: -5%;
@@ -164,7 +162,9 @@ blockquote {
 }
 
 small {
+  display: inline-block;
   font-size: 90%;
+  line-height: 1.5;
 }
 
 .no-wrap {
@@ -246,6 +246,7 @@ mark {
 }
 
 a {
+  transition: all 0.2s ease-in-out;
   text-decoration: underline;
 }
 
@@ -332,8 +333,9 @@ a {
     }
   }
 
-  small { 
-    font-size: 95%;
+  small {
+    font-size: 85%;
+    line-height: 1.2;
   }
 
   .display-1 {
@@ -400,5 +402,9 @@ a {
 
   .lead {
     font-size: ceil(@font-size-lead * 1.15); // 28px
+  }
+
+  a:not(.btn):hover {
+    opacity: 0.75;
   }
 }
