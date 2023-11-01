@@ -21,7 +21,6 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/3e0f7fab68.js" crossorigin="anonymous"></script>
 
-
     <script src="./Themes/new/Scripts/accordions-min.js"></script>
 
     <!-- Swiper.js -->
@@ -62,92 +61,70 @@
       </div>
     </section>
 
-    {% assign fallbackImage = 'Global' | Attribute:'ImageLandscape' %}
-    {% assign item = 'newspring_articles' | PersistedDataset | OrderBy:'PublishDateTime' | Shuffle | First %}
-    {% assign item = 'newspring_articles' | PersistedDataset | Where:'Id',3614 | First %}
+    {% assign fallbackImage = 'Global' | Attribute:'ImageLandscape' %} {% assign item = 'newspring_articles' | PersistedDataset | OrderBy:'PublishDateTime' |
+    Shuffle | First %} {% assign item = 'newspring_articles' | PersistedDataset | Where:'Id',24323 | First %}
     <div id="content" class="max-w-full">
       <section class="pb-0">
         <div class="page-constrained mx-auto text-center mb-5 mb-md-7">
           <p class="pretitle text-gray">{{ item.ContentType }}</p>
           <h2 class="display-3" title="{{ item.Id }}">{{ item.Title }}</h2>
           {% if item.Communicators != empty %}
-            <p class="lead">By {% for communicator in item.Communicators %}{{ communicator.Name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+          <p class="lead">By {% for communicator in item.Communicators %}{{ communicator.Name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
           {% endif %}
-          
         </div>
         <div class="text-constrained mx-auto prose">
           {% if item.ImageLandscape != empty %}
-            <div class="hidden ratio-landscape background-cover background-center mb-5 rounded-md" style="background-image:url('{{ item.ImageLandscape }}');"></div>
-          {% endif %}
-
-          {{ item.Content | HtmlDecode }}
-
+          <div
+            class="hidden ratio-landscape background-cover background-center mb-5 rounded-md"
+            style="background-image:url('{{ item.ImageLandscape }}');"></div>
+          {% endif %} {{ item.Content | HtmlDecode }}
         </div>
-
       </section>
 
-      <!-- {% contentchannelitem id:'{{ item.Id }}' iterator:'items' %}
-          {% assign itemEntity = items | First %}
-        {% endcontentchannelitem %}
-        {% assign cta = itemEntity | Attribute:'CalltoAction','Object' %}
-        {% if cta != empty %}
-          {% assign ctaImageLandscape = cta | Attribute:'ImageLandscape' %}
-          {% assign ctaImage = cta | Attribute:'ImageSquare' | Default:ctaImageLandscape %}
-        <div class="px-5 page-constrained mx-auto">
-          <section class="py-8 position-relative bg-white rounded-xl overflow-hidden">
-            <div class="fullscreen background-cover background-center o-20" style="background-image: url('{{ ctaImage }}');"></div>
-            <div class="fullscreen o-70" style="background: linear-gradient(180deg, rgba(255,255,255, 0.2) 30%, rgba(255,255,255, 0.9) 100%)"></div>
-            <div class="bring-forward">
-              <h2 class="">{{ cta | Attribute:'Heading' }}</h2>
-              <p class="mb-0"><a href="{{ cta | Attribute:'Link' }}" class="btn btn-primary">{{ cta | Attribute:'LinkText' }}</a></p>
-            </div>
-          </section>
-        </div>
-        {% endif %} -->
+      {% contentchannelitem id:'{{ item.Id }}' iterator:'items' %} {% assign itemEntity = items | First %} {% endcontentchannelitem %} {% assign cta =
+      itemEntity | Attribute:'CalltoAction','Object' %} {% if cta != empty %} {% assign ctaImageLandscape = cta | Attribute:'ImageLandscape' %} {% assign
+      ctaImage = cta | Attribute:'ImageSquare' | Default:ctaImageLandscape %}
+      <div class="px-5 px-md-0 mt-md-8 page-constrained mx-auto">
+        <section class="py-8 position-relative bg-white rounded-xl overflow-hidden">
+          <div class="fullscreen background-cover background-center o-20" style="background-image: url('{{ ctaImage }}');"></div>
+          <div class="fullscreen o-70" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.9) 100%)"></div>
+          <div class="bring-forward">
+            <h2 class="">{{ cta | Attribute:'Heading' }}</h2>
+            {{ cta.Content }}
+            <p class="mb-0"><a href="{{ cta | Attribute:'Link' }}" class="btn btn-primary">{{ cta | Attribute:'LinkText' }}</a></p>
+          </div>
+        </section>
+      </div>
+      {% endif %}
 
       <section>
-        <h2 class="hidden display-3 py-7 py-lg-8 text-center">Discover more of what matters to you.</h2>
+        <h2 class="display-3 py-7 py-lg-8 text-center">Discover more of what matters to you.</h2>
 
-        {% if item.RelatedItems != null %}
-          {% assign relatedItems = item.RelatedItems %}
-        {% else %}
-          {% assign relatedItems = 'newspring_articles' | PersistedDataset | Shuffle %}
-        {% endif %}
+        {% if item.RelatedItems != null %} {% assign relatedItems = item.RelatedItems %} {% else %} {% assign relatedItems = 'newspring_articles' |
+        PersistedDataset | Shuffle %} {% endif %}
 
         <div id="related" class="d-grid grid-cols-12 gap-4 gap-md-5 gap-lg-6 mb-5 page-constrained mx-auto">
-          
           <div class="col-span-12 col-span-lg-7">
             <p class="pretitle">{% if item.RelatedItems != null %}Related{% else %}Next Up{% endif %}</p>
             <div class="d-grid grid-cols-12 gap-4 mb-5">
-              {% for related in relatedItems limit:3 %}
-                {% assign RelatedItem = related.Dataset | PersistedDataset | Where:'Id',related.Id | First %}
-                {% if RelatedItem != null %}
-                  {% capture imageUrl %}
-                    {% if RelatedItem.VideoImageSquare != '' %}
-                      {{ RelatedItem.VideoImageSquare }}
-                    {% elseif RelatedItem.ImageSquare != '' %}
-                      {{ RelatedItem.ImageSquare }}
-                    {% elseif RelatedItem.ImageLandscape != '' %}
-                      {{ RelatedItem.ImageLandscape }}
-                    {% else %}
-                      {{ fallbackImage }}
-                    {% endif %}
-                  {% endcapture %}
-                  <div class="col-span-12">
-                    <div class="d-grid grid-cols-12 gap-3 gap-sm-4 gap-lg-5 align-items-sm-center">
-                      <div class="col-span-3 col-span-lg-2">
-                        <a href="{{ RelatedItem.Permalink }}">
-                          <div class="ratio-square background-cover background-center rounded-md" style="background-image:url('{{ imageUrl | Trim }}');"></div>
-                        </a>
-                      </div>
-                      <div class="col-span-9 col-span-lg-10 pr-1 height-max-content">
-                          <p class="font-sans font-bold tracking-tight text-gray mb-1"><small>{{ RelatedItem.ContentType }}</small></p>
-                          <h3 class="h6 md-h5 mb-0"><a href="{{ RelatedItem.Permalink }}">{{ RelatedItem.Title }}</a></h3>
-                      </div>
-                    </div>
+              {% for related in relatedItems limit:3 %} {% assign RelatedItem = related.Dataset | PersistedDataset | Where:'Id',related.Id | First %} {% if
+              RelatedItem != null %} {% capture imageUrl %} {% if RelatedItem.VideoImageSquare != '' %} {{ RelatedItem.VideoImageSquare }} {% elseif
+              RelatedItem.ImageSquare != '' %} {{ RelatedItem.ImageSquare }} {% elseif RelatedItem.ImageLandscape != '' %} {{ RelatedItem.ImageLandscape }} {%
+              else %} {{ fallbackImage }} {% endif %} {% endcapture %}
+              <div class="col-span-12">
+                <div class="d-grid grid-cols-12 gap-3 gap-sm-4 gap-lg-5 align-items-sm-center">
+                  <div class="col-span-3 col-span-lg-2">
+                    <a href="{{ RelatedItem.Permalink }}">
+                      <div class="ratio-square background-cover background-center rounded-md" style="background-image:url('{{ imageUrl | Trim }}');"></div>
+                    </a>
                   </div>
-                {% endif %}
-              {% endfor %}
+                  <div class="col-span-9 col-span-lg-10 pr-1 height-max-content">
+                    <p class="font-sans font-bold tracking-tight text-gray mb-1"><small>{{ RelatedItem.ContentType }}</small></p>
+                    <h3 class="h6 md-h5 mb-0"><a href="{{ RelatedItem.Permalink }}">{{ RelatedItem.Title }}</a></h3>
+                  </div>
+                </div>
+              </div>
+              {% endif %} {% endfor %}
             </div>
           </div>
           <div class="col-span-12 col-span-lg-5">
@@ -155,13 +132,9 @@
               <div class="col-span-12">
                 <p class="pretitle">Topics</p>
                 <div class="d-flex flex-wrap gap-2 mb-5">
-                  {% if item.Tags != empty %}
-                    {% assign tags = item.Tags %}
-                  {% else %}
-                    {% assign tags = 'tags' | PersistedDataset | Shuffle %}
-                  {% endif %}
-                  {% for tag in tags limit:6 %}
-                    <a href="/topics/{{ tag.Name }}" class="btn btn-sm btn-primary text-capitalize font-bold height-max-content">{{ tag.Name }}</a>
+                  {% if item.Tags != empty %} {% assign tags = item.Tags %} {% else %} {% assign tags = 'tags' | PersistedDataset | Shuffle %} {% endif %} {%
+                  for tag in tags limit:6 %}
+                  <a href="/topics/{{ tag.Name }}" class="btn btn-sm btn-primary text-capitalize font-bold height-max-content">{{ tag.Name }}</a>
                   {% endfor %}
 
                   <a href="/topics" class="btn btn-sm btn-tertiary text-capitalize font-bold height-max-content">Browse All Topics</a>
@@ -169,20 +142,25 @@
               </div>
               <div class="col-span-12">
                 <p class="pretitle">Search</p>
-                <input type="text" class="js-search-input bg-gray-lighter h6 px-4 py-3 w-100 mb-5 border-0 rounded-full text-gray-dark" placeholder="What can we help you find?" />
+                <input
+                  type="text"
+                  class="js-search-input bg-gray-lighter h6 px-4 py-3 w-100 mb-5 border-0 rounded-full text-gray-dark"
+                  placeholder="What can we help you find?" />
               </div>
             </div>
           </div>
-          
         </div>
-
       </section>
-
 
       <section class="bg-gray-lighter text-center">
         <div class="text-constrained mx-auto">
-          <h3 class="h1 font-black tracking-tight">Resources for your everyday relationship with Jesus, <span class="text-primary">delivered to your inbox.</span></h3>
-          <input type="text" class="bg-white h6 px-5 py-4 w-100 w-sm-75 mb-5 border-0 rounded-full text-gray-darker text-center" placeholder="Enter your email address" />
+          <h3 class="h1 font-black tracking-tight">
+            Resources for your everyday relationship with Jesus, <span class="text-primary">delivered to your inbox.</span>
+          </h3>
+          <input
+            type="text"
+            class="bg-white h6 px-5 py-4 w-100 w-sm-75 mb-5 border-0 rounded-full text-gray-darker text-center"
+            placeholder="Enter your email address" />
           <p><a href="#" class="btn btn-primary bg-blue-dark">Sign Up</a></p>
         </div>
       </section>
@@ -247,7 +225,7 @@
         var scroll = new SmoothScroll("a[data-scroll]");
 
         $(".collapse").collapse();
-        
+
         // AOS.init();
       });
     </script>
