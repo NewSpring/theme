@@ -8,69 +8,76 @@
 @cashmere: #e1dcd4;
 @red-wine: #710e02;
 @meringue: #f2ede9;
-@trench-coat: #ceb788;
+@trench-coat: #CAA06E;
+
+@font-face {
+  font-family: "AwesomeSerif";
+  src: 
+    local("AwesomeSerif"), 
+    url("/Themes/new/Assets/Fonts/AwesomeSerifItalic-BdRegular.otf") format("opentype");
+}
 
 .christmas-at-newspring {
   .bg-forrest {
-    background-color: @forrest;
+    background-color: @forrest !important;
   }
   .bg-alpine {
-    background-color: @alpine;
+    background-color: @alpine !important;
   }
   .bg-aged-wine {
-    background-color: @aged-wine;
+    background-color: @aged-wine !important;
   }
   .bg-aged-gold {
-    background-color: @aged-gold;
+    background-color: @aged-gold !important;
   }
   .bg-camel {
-    background-color: @camel;
+    background-color: @camel !important;
   }
   .bg-ice-skating {
-    background-color: @ice-skating;
+    background-color: @ice-skating !important;
   }
   .bg-cashmere {
-    background-color: @cashmere;
+    background-color: @cashmere !important;
   }
   .bg-red-wine {
-    background-color: @red-wine;
+    background-color: @red-wine !important;
   }
   .bg-meringue {
-    background-color: @meringue;
+    background-color: @meringue !important;
   }
   .bg-trench-coat {
-    background-color: @trench-coat;
+    background-color: @trench-coat !important;
   }
 
   .text-forrest {
-    color: @forrest;
+    color: @forrest !important;
   }
   .text-alpine {
-    color: @alpine;
+    color: @alpine !important;
   }
   .text-aged-wine {
-    color: @aged-wine;
+    color: @aged-wine !important;
   }
   .text-aged-gold {
-    color: @aged-gold;
+    color: @aged-gold !important;
   }
   .text-camel {
-    color: @camel;
+    color: @camel !important;
   }
   .text-ice-skating {
-    color: @ice-skating;
+    color: @ice-skating !important;
   }
   .text-cashmere {
-    color: @cashmere;
+    color: @cashmere !important;
   }
   .text-red-wine {
-    color: @red-wine;
+    color: @red-wine !important;
   }
   .text-meringue {
-    color: @meringue;
+    color: @meringue !important;
   }
   .text-trench-coat {
-    color: @trench-coat;
+    color: @trench-coat !important;
   }
 
   .fill-forrest {
@@ -105,13 +112,13 @@
   }
 
   .btn-primary {
-    background-color: @aged-gold;
+    background-color: @camel;
   }
 
   .btn-primary:hover,
   .btn-primary:active,
   .btn-primary:focus {
-    background-color: darken(@aged-gold, 10%);
+    background-color: darken(@camel, 10%);
   }
 
   .btn-secondary {
@@ -124,9 +131,20 @@
     background-color: darken(@red-wine, 10%);
   }
 
-  @font-face {
-    font-family: "AwesomeSerif";
-    src: local("AwesomeSerif"), url("/Themes/new/Assets/Fonts/AwesomeSerifItalic-BdRegular.otf") format("opentype");
+  a:not(.btn) {
+    color: @trench-coat;
+  }
+
+  a:not(.btn):hover,
+  a:not(.btn):active,
+  a:not(.btn):focus {
+    color: darken(@trench-coat, 10%);
+  }
+
+  .display-1,
+  .display-2,
+  .display-3 {
+    letter-spacing: 1px;
   }
 
   h1,
@@ -136,6 +154,7 @@
   h5,
   h6 {
     font-family: "AwesomeSerif", sans-serif;
-    letter-spacing: 1px !important;
+    font-weight: normal;
+    letter-spacing: .5px;
   }
 }
