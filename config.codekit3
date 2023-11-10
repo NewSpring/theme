@@ -73,6 +73,14 @@
       "oAP" : "\/beliefs.html",
       "oF" : 0
     },
+    "\/christmas.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/christmas.html",
+      "oF" : 0
+    },
     "\/easter.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4040,6 +4048,14 @@
       "oAP" : "\/tailwind.html",
       "oF" : 0
     },
+    "\/Themes\/new\/Assets\/Fonts\/AwesomeSerifItalic-BdRegular.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Fonts\/AwesomeSerifItalic-BdRegular.otf",
+      "oF" : 0
+    },
     "\/Themes\/new\/Assets\/Images\/2030_hero_2x1.jpg" : {
       "ft" : 16384,
       "iS" : 919248,
@@ -4129,6 +4145,110 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_gwu_light.png" : {
+      "ft" : 32768,
+      "iS" : 554161,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_gwu_light.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_kidspring_1x1.png" : {
+      "ft" : 32768,
+      "iS" : 782132,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_kidspring_1x1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_lockup.png" : {
+      "ft" : 32768,
+      "iS" : 878553,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_lockup.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_texture1.png" : {
+      "ft" : 32768,
+      "iS" : 93808,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_texture1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_texture2.png" : {
+      "ft" : 32768,
+      "iS" : 68093,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_texture2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_texture3.png" : {
+      "ft" : 32768,
+      "iS" : 20845,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_texture3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_texture4.png" : {
+      "ft" : 32768,
+      "iS" : 20845,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_texture4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/christmas_texture5.png" : {
+      "ft" : 32768,
+      "iS" : 8907,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/christmas_texture5.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/Themes\/new\/Assets\/Images\/jobs_hero_2x1.jpg" : {
@@ -4296,6 +4416,26 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/SVG\/christmas\/christmas-lockup.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/christmas\/christmas-lockup.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/christmas\/wreath.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/christmas\/wreath.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/Themes\/new\/Assets\/SVG\/easter\/1.svg" : {
       "ft" : 2097152,
@@ -4941,6 +5081,36 @@
       "oA" : 0,
       "oAP" : "\/Themes\/new\/Styles\/bootstrap.css",
       "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "rwU" : 0,
+      "sI" : 0,
+      "sU" : 0
+    },
+    "\/Themes\/new\/Styles\/christmas.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Styles\/christmas-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/Themes\/new\/Styles\/christmas.less" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "eJ" : 0,
+      "ft" : 1,
+      "iI" : 0,
+      "ma" : 0,
+      "mS" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Styles\/christmas.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "rwU" : 0,
