@@ -131,14 +131,25 @@
     background-color: darken(@red-wine, 10%);
   }
 
+  .btn-tertiary {
+    background-color: @alpine;
+    color: #fff;
+  }
+
+  .btn-tertiary:hover,
+  .btn-tertiary:active,
+  .btn-tertiary:focus {
+    background-color: darken(@alpine, 10%);
+  }
+
   a:not(.btn) {
-    color: @trench-coat;
+    color: @red-wine;
   }
 
   a:not(.btn):hover,
   a:not(.btn):active,
   a:not(.btn):focus {
-    color: darken(@trench-coat, 10%);
+    color: darken(@red-wine, 10%);
   }
 
   .display-1,
@@ -156,5 +167,13 @@
     font-family: "AwesomeSerif", sans-serif;
     font-weight: normal;
     letter-spacing: .5px;
+  }
+
+  h2 {
+    line-height: 1.15;
+  }
+
+  .outline-none {
+    outline: none;
   }
 }

@@ -108,13 +108,22 @@
 .christmas-at-newspring .btn-secondary:focus {
   background-color: #3f0801;
 }
+.christmas-at-newspring .btn-tertiary {
+  background-color: #033527;
+  color: #fff;
+}
+.christmas-at-newspring .btn-tertiary:hover,
+.christmas-at-newspring .btn-tertiary:active,
+.christmas-at-newspring .btn-tertiary:focus {
+  background-color: #000503;
+}
 .christmas-at-newspring a:not(.btn) {
-  color: #CAA06E;
+  color: #710e02;
 }
 .christmas-at-newspring a:not(.btn):hover,
 .christmas-at-newspring a:not(.btn):active,
 .christmas-at-newspring a:not(.btn):focus {
-  color: #bc8849;
+  color: #3f0801;
 }
 .christmas-at-newspring .display-1,
 .christmas-at-newspring .display-2,
@@ -130,4 +139,10 @@
   font-family: "AwesomeSerif", sans-serif;
   font-weight: normal;
   letter-spacing: 0.5px;
+}
+.christmas-at-newspring h2 {
+  line-height: 1.15;
+}
+.christmas-at-newspring .outline-none {
+  outline: none;
 }
