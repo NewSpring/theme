@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34484",
+  "creatorBuild" : "34518",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -97,6 +97,14 @@
       "oAP" : "\/finances.html",
       "oF" : 0
     },
+    "\/gauntlet.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gauntlet.html",
+      "oF" : 0
+    },
     "\/giving.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -154,12 +162,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/locations.html",
-      "oF" : 0
-    },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/overflow.html" : {
@@ -4423,6 +4425,16 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
+    "\/Themes\/new\/Assets\/SVG\/christmas\/bow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/christmas\/bow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Themes\/new\/Assets\/SVG\/christmas\/christmas-lockup.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -4468,6 +4480,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Themes\/new\/Assets\/SVG\/christmas\/porch.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/christmas\/small-bow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/christmas\/small-bow.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -4768,6 +4790,36 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Themes\/new\/Assets\/SVG\/easter\/lockup.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-mark-multi.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-mark-multi.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-wordmark-dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-wordmark-dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-wordmark-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-wordmark-light.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -6293,9 +6345,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0

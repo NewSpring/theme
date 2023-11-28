@@ -14,7 +14,7 @@
   font-family: "AwesomeSerif";
   src: 
     local("AwesomeSerif"), 
-    url("/Themes/new/Assets/Fonts/AwesomeSerifItalic-BdRegular.otf") format("opentype");
+    url("https://dg0ddngxdz549.cloudfront.net/newspring/christmas/2023/fonts/AwesomeSerifItalic-BdRegular.otf") format("opentype");
 }
 
 .christmas-at-newspring {
@@ -55,7 +55,7 @@
   .text-alpine {
     color: @alpine !important;
   }
-  .text-aged-wine {
+  .text-aged-wine,  .text-aged-wine * {
     color: @aged-wine !important;
   }
   .text-aged-gold {
@@ -176,4 +176,37 @@
   .outline-none {
     outline: none;
   }
+}
+
+.select-wrapper {
+  display: inline-block;
+  position: relative;
+  background-color: #6bac43;
+  border-radius: 1000px;
+}
+.select-wrapper select {
+  padding: 12px 25px;
+  padding-right: 45px;
+  background-color: transparent;
+  border: 0;
+  font-family: 'colfax-web', sans-serif;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  outline: none;
+  -webkit-appearance: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.select-wrapper:after {
+  content: '\f0d7';
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -14px;
+  font-weight: 900;
+  cursor: pointer;
 }

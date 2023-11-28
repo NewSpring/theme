@@ -1,262 +1,147 @@
+/* stylelint-disable */
+/* stylelint-enable */
+/*
+    The accent colors are deprecated and should not be used in new theme development. They will be
+    removed in Rock v 6.0.
+*/
 :root {
-  --bible-page: #ede4df;
-  --lakeside: #3333cc;
-  --riggs-field: #5f8c46;
-  --prayers-up: #de6588;
-  --tiger-paw: #de7840;
-  --group-hug: #645ca0;
-  --new-wave: #63aece;
-  --dandy-lion: #daba4d;
-  --not-quite-black: #302e35;
-  --gatorade: #c0d164;
-  --heat-stroke: #da5e56;
-  --lakeside-darker: #262698;
-  --riggs-field-darker: #3c592c;
-  --prayers-up-darker: #612c3b;
-  --tiger-paw-darker: #ab5c31;
-  --group-hug-darker: #2d2852;
-  --new-wave-darker: #265467;
-  --dandy-lion-darker: #a58d3a;
-  --gatorade-darker: #5c642e;
-  --heat-stroke-darker: #622723;
+  --color-fuscia: #e854be;
+  --color-blue: #215cd7;
+  --color-beige: #ede9d7;
+  --color-amber: #fd8a1a;
+  --color-red: #dd0e23;
+  --color-green: #618a00;
+  --color-yellow: #ffc240;
+  --color-purple: #8e69fb;
+  --color-sky: #acdde5;
+  --color-slate: #202427;
+  --color-pink: #f687a8;
+  --color-orange: #f05421;
+  --color-lime: #b9d956;
 }
-/* 
-
-  COLORS 
-  
-*/
-.text-bible-page {
-  color: var(--bible-page);
+.bg-fuscia {
+  background-color: var(--color-fuscia);
 }
-a.text-bible-page:hover {
-  color: var(--bible-page-darker);
+.bg-blue {
+  background-color: var(--color-blue);
 }
-.bg-bible-page {
-  background-color: var(--bible-page);
+.bg-beige {
+  background-color: var(--color-beige);
 }
-.fill-bible-page {
-  fill: var(--bible-page);
+.bg-amber {
+  background-color: var(--color-amber);
 }
-.text-lakeside {
-  color: var(--lakeside);
+.bg-red {
+  background-color: var(--color-red);
 }
-a.text-lakeside:hover {
-  color: var(--lakeside-darker);
+.bg-green {
+  background-color: var(--color-green);
 }
-.bg-lakeside {
-  background-color: var(--lakeside);
+.bg-yellow {
+  background-color: var(--color-yellow);
 }
-.bg-lakeside-darker {
-  background-color: var(--lakeside-darker);
+.bg-purple {
+  background-color: var(--color-purple);
 }
-.fill-lakeside {
-  fill: var(--lakeside);
+.bg-sky {
+  background-color: var(--color-sky);
 }
-.text-riggs-field {
-  color: var(--riggs-field);
+.bg-slate {
+  background-color: var(--color-slate);
 }
-a.text-riggs-field:hover {
-  color: var(--riggs-field-darker);
+.bg-pink {
+  background-color: var(--color-pink);
 }
-.bg-riggs-field {
-  background-color: var(--riggs-field);
+.bg-orange {
+  background-color: var(--color-orange);
 }
-.bg-riggs-field-darker {
-  background-color: var(--riggs-field-darker);
+.bg-lime {
+  background-color: var(--color-lime);
 }
-.fill-riggs-field {
-  fill: var(--riggs-field);
+.text-fuscia {
+  color: var(--color-fuscia);
 }
-.text-prayers-up {
-  color: var(--prayers-up);
+.text-blue {
+  color: var(--color-blue);
 }
-a.text-prayers-up:hover {
-  color: var(--prayers-up-darker);
+.text-beige {
+  color: var(--color-beige);
 }
-.bg-prayers-up {
-  background-color: var(--prayers-up);
+.text-amber {
+  color: var(--color-amber);
 }
-.fill-prayers-up {
-  fill: var(--prayers-up);
+.text-red {
+  color: var(--color-red);
 }
-.text-tiger-paw {
-  color: var(--tiger-paw);
+.text-green {
+  color: var(--color-green);
 }
-a.text-tiger-paw:hover {
-  color: var(--tiger-paw-darker);
+.text-yellow {
+  color: var(--color-yellow);
 }
-.bg-tiger-paw {
-  background-color: var(--tiger-paw);
+.text-purple {
+  color: var(--color-purple);
 }
-.bg-tiger-paw-darker {
-  background-color: var(--tiger-paw-darker);
+.text-sky {
+  color: var(--color-sky);
 }
-.fill-tiger-paw {
-  fill: var(--tiger-paw);
+.text-slate {
+  color: var(--color-slate);
 }
-.text-group-hug {
-  color: var(--group-hug);
+.text-pink {
+  color: var(--color-pink);
 }
-a.text-group-hug:hover {
-  color: var(--group-hug-darker);
+.text-orange {
+  color: var(--color-orange);
 }
-.text-group-hug-darker {
-  color: var(--group-hug-darker);
+.text-lime {
+  color: var(--color-lime);
 }
-a.text-group-hug-darker:hover {
-  color: var(--group-hug-darker-darker);
+.fill-fuscia {
+  fill: var(--color-fuscia);
 }
-.bg-group-hug {
-  background-color: var(--group-hug);
+.fill-blue {
+  fill: var(--color-blue);
 }
-.bg-group-hug-darker {
-  background-color: var(--group-hug-darker);
+.fill-beige {
+  fill: var(--color-beige);
 }
-.fill-group-hug {
-  fill: var(--group-hug);
+.fill-amber {
+  fill: var(--color-amber);
 }
-.text-new-wave {
-  color: var(--new-wave);
+.fill-red {
+  fill: var(--color-red);
 }
-a.text-new-wave:hover {
-  color: var(--new-wave-darker);
+.fill-green {
+  fill: var(--color-green);
 }
-.bg-new-wave {
-  background-color: var(--new-wave);
+.fill-yellow {
+  fill: var(--color-yellow);
 }
-.bg-new-wave-darker {
-  background-color: var(--new-wave-darker);
+.fill-purple {
+  fill: var(--color-purple);
 }
-.fill-new-wave {
-  fill: var(--new-wave);
+.fill-sky {
+  fill: var(--color-sky);
 }
-.text-dandy-lion {
-  color: var(--dandy-lion);
+.fill-slate {
+  fill: var(--color-slate);
 }
-a.text-dandy-lion:hover {
-  color: var(--dandy-lion-darker);
+.fill-pink {
+  fill: var(--color-pink);
 }
-.bg-dandy-lion {
-  background-color: var(--dandy-lion);
+.fill-orange {
+  fill: var(--color-orange);
 }
-.bg-dandy-lion-darker {
-  background-color: var(--dandy-lion-darker);
+.fill-lime {
+  fill: var(--color-lime);
 }
-.fill-dandy-lion {
-  fill: var(--dandy-lion);
+.btn-primary {
+  background-color: #f05421;
+  color: #ffffff;
 }
-.text-black {
-  color: var(--not-quite-black);
-}
-.bg-black {
-  background-color: var(--not-quite-black);
-}
-.fill-black {
-  fill: var(--not-quite-black);
-}
-.text-gatorade {
-  color: var(--gatorade);
-}
-a.text-gatorade:hover {
-  color: var(--gatorade-darker);
-}
-.bg-gatorade {
-  background-color: var(--gatorade);
-}
-.bg-gatorade-darker {
-  background-color: var(--gatorade-darker);
-}
-.fill-gatorade {
-  fill: var(--gatorade);
-}
-.text-heat-stroke {
-  color: var(--heat-stroke);
-}
-a.text-heat-stroke:hover {
-  color: var(--heat-stroke-darker);
-}
-.bg-heat-stroke {
-  background-color: var(--heat-stroke);
-}
-.bg-heat-stroke-darker {
-  background-color: var(--heat-stroke-darker);
-}
-.fill-heat-stroke {
-  fill: var(--heat-stroke);
-}
-/*
-  
-  Buttons
-
-*/
-.btn-heat-stroke,
-.btn-heat-stroke:hover,
-.btn-heat-stroke:focus {
-  background-color: var(--heat-stroke);
-  color: #fff;
-}
-.btn-group-hug,
-.btn-group-hug:hover,
-.btn-group-hug:focus {
-  background-color: var(--group-hug);
-  color: #fff;
-}
-.btn-prayers-up,
-.btn-prayers-up:hover,
-.btn-prayers-up:focus {
-  background-color: var(--prayers-up);
-  color: #fff;
-}
-.btn-new-wave,
-.btn-new-wave:hover,
-.btn-new-wave:focus {
-  background-color: var(--new-wave);
-  color: #fff;
-}
-.btn-gatorade,
-.btn-gatorade:hover,
-.btn-gatorade:focus {
-  background-color: var(--gatorade);
-  color: #fff;
-}
-/*
-
-  Backgrounds
-
-*/
-.bg-pattern {
-  background-color: transparent !important;
-  background-repeat: repeat;
-  background-size: 45%;
-  background-attachment: fixed;
-}
-.bg-pattern-combined {
-  background-image: url(https://dg0ddngxdz549.cloudfront.net/newspring/Gauntlet/2023/patterns/Combined.png);
-}
-.bg-pattern-bolts {
-  background-image: url(https://dg0ddngxdz549.cloudfront.net/newspring/Gauntlet/2023/patterns/Bolts2.png);
-}
-.bg-pattern-exclamation {
-  background-image: url(https://dg0ddngxdz549.cloudfront.net/newspring/Gauntlet/2023/patterns/Exclamation2.png);
-}
-.bg-pattern-flowers {
-  background-image: url(https://dg0ddngxdz549.cloudfront.net/newspring/Gauntlet/2023/patterns/Flowers2.png);
-}
-.bg-pattern-stars {
-  background-image: url(https://dg0ddngxdz549.cloudfront.net/newspring/Gauntlet/2023/patterns/Stars2.png);
-}
-@media only screen and (min-width: 500px) {
-  .bg-pattern {
-    background-size: 35%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .bg-pattern {
-    background-size: 25%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .bg-pattern {
-    background-size: 15%;
-  }
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #d03e0e;
 }

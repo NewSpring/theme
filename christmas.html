@@ -81,7 +81,7 @@
           <h1 class="display-2 mb-6 text-meringue">This year, we could all use some <span class="text-trench-coat">hope.</span></h1>
           <p>If this year has left you weary and in need of a breakthrough, you’re in just the right place. Hope came for those who needed it most over two thousand years ago, and it’s still on offer for us today. It is truly good news, and we can’t wait to celebrate it with you this Christmas season.</p>
           <div class="d-flex flex-column justify-content-center flex-md-row gap-y-3 gap-x-3">
-            <a href="#values" data-scroll class="btn btn-primary">See Service Times</a>
+            <a href="#locations" data-scroll class="btn btn-primary">See Service Times</a>
             <a href="#invite" data-scroll class="btn btn-link text-white">Invite a Friend</a>
           </div>
         </div>
@@ -93,19 +93,19 @@
 
       <section class="position-relative bg-cashmere">
         <div
-          class="fullscreen background-fixed o-40"
+          class="fullscreen background-fixed o-30"
           style="background-image: url('/Themes/new/Assets/Images/christmas_texture3.png'); background-repeat: repeat;"></div>
         <div class="d-grid grid-cols-1 grid-cols-lg-12 gap-y-6 gap-x-md-8 align-items-center rtl page-constrained mx-auto">
           <div class="col-span-lg-5 px-7 px-md-0">
             <img src="/Themes/new/Assets/SVG/christmas/wreath.svg" alt="Christmas Wreath Illustration">
           </div>
           <div class="col-span-lg-7 ltr text-center text-md-left" data-aos="fade-up">
-            <h2 class="h2 text-alpine mb-5">
+            <h2 class="h1 text-alpine mb-5">
               At NewSpring, you’ll find a <span class="text-camel">safe place</span> to bring what is weighing you down and find <span class="text-camel">hope-filled promises</span> to carry with you.
             </h2>
             <p>We’ll worship and celebrate together, serve free coffee, provide photo opportunities, and give a gift to every child!</p>
             <div class="d-flex flex-column flex-md-row gap-y-3 gap-x-3">
-              <a href="#values" data-scroll class="btn btn-secondary">See Service Times</a>
+              <a href="#locations" data-scroll class="btn btn-secondary">See Service Times</a>
               <a href="#invite" data-scroll class="btn btn-link text-red-wine">Invite a Friend</a>
             </div>
           </div>
@@ -223,22 +223,35 @@
       <section id="invite" class="position-relative bg-forrest text-white">
         <div
           class="fullscreen  background-fixed o-40"
-          style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); background-repeat: repeat;"></div>
+          style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); background-repeat: repeat;"></div>
         <div class="bring-forward mx-auto text-center">
           <p class="pretitle text-trench-coat">Invite a Friend!</p>
 
-          <div class="text-constrained mx-auto">
-          
+          <div class="text-constrained mx-auto" data-aos="fade-up">
             <h2 class="display-3">Hi <span class="js-name-box d-inline-block outline-none o-50" contenteditable></span>,</h2>
-            <p>I'd love it if you would join me to celebrate Christmas at NewSpring this year! I've included the service times and a link to the website with more details.</p>
-            <p>Which time would work best for you?</p>
-            <p><a href="sms:+15555555555&body=Come with me to celebrate Christmas at NewSpring!" class="js-share-button btn btn-primary">Send Invite!</a></p>
+            <span class="js-message">
+              <p>I'd love it if you would join me to celebrate Christmas at NewSpring this year! I've included the service times and a link to the website with more details.</p>
+
+              <p>Which time would work best for you?</p>
+            </span>
+            
+            <div class="select-wrapper bg-camel text-white mb-4">
+              <select class="js-campus-select text-white">
+                <option value="">Choose a Campus</option>
+                <option value="https://s3.amazonaws.com/ns.images/newspring/easter/2021/13602.digitalinvitecards-01.png">Aiken</option>
+                <option value="https://s3.amazonaws.com/ns.images/newspring/easter/2021/13602.digitalinvitecards-02.png">Anderson</option>
+                <option value="https://s3.amazonaws.com/ns.images/newspring/easter/2021/13602.digitalinvitecards-03.png">Bluffton</option>
+              </select>
+            </div>
+
+            <p class="mb-0"><a href="sms:+15555555555&body=Come with me to celebrate Christmas at NewSpring!" class="js-share-button btn btn-primary">Send Invite!</a></p>
           </div>
         </div>
       </section>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
 
+          // Select inner text function
           function selectElementContents(el) {
             var range = document.createRange();
             range.selectNodeContents(el);
@@ -247,7 +260,31 @@
             sel.addRange(range);
           }
 
+          // Strip HTML 
+          function removeTags(str) { 
+            if ((str===null) || (str==='')) 
+                return false; 
+            else
+                str = str.toString(); 
+                  
+            // Regular expression to identify HTML tags in 
+            // the input string. Replacing the identified 
+            // HTML tag with a null string. 
+            return str.replace( /(<([^>]+)>)/ig, ''); 
+          }
+
+          // Trim spaces
+          function trimSpaces(s) { 
+            s = s.replace(/(^\s*)|(\s*$)/gi,"");
+            s = s.replace(/[ ]{2,}/gi," "); 
+            s = s.replace(/\n /,"\n"); 
+            return s;
+          }
+
+          const shareButton = document.querySelector('.js-share-button');
           const nameBox = document.querySelector('.js-name-box');
+          const campusSelect = document.querySelector('.js-campus-select');
+          const shareMessage = document.querySelector('.js-message');
 
           // Define default content
           const nameBoxDefaultText = `(Friend's Name)`;
@@ -255,11 +292,32 @@
           // Add default content
           nameBox.innerText = nameBoxDefaultText;
           
+          // Click listener for name box
           nameBox.addEventListener("click", (e) => {
             if(nameBox.innerText == nameBoxDefaultText) {
               nameBox.classList.toggle('o-100','o-50');
               selectElementContents(nameBox);
             }
+          });
+
+          // Blur listener for name box
+          nameBox.addEventListener("blur", (e) => {
+            if(nameBox.innerText == nameBoxDefaultText) {
+              nameBox.classList.add('o-50');
+              nameBox.classList.remove('o-100');
+            } else if (nameBox.innerText == '') {
+              nameBox.innerText = nameBoxDefaultText;
+              nameBox.classList.add('o-50');
+              nameBox.classList.remove('o-100');
+            }
+          });
+
+          // Click box for share button
+          shareButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            let targetUrl = 'sms:%20&body=' + trimSpaces(removeTags(shareMessage.innerHTML));
+            console.log(targetUrl);
+            window.location.href = targetUrl;
           });
 
         }, false);
@@ -271,7 +329,7 @@
           class="fullscreen  background-fixed o-60"
           style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); background-repeat: repeat;"></div>
         <div class="text-constrained mx-auto text-center">
-          <h2 class="display-1 text-trench-coat">
+          <h2 class="display-1">
             Watch Online
           </h2>
           <p>Can't join us in person? Join us online on Friday, Dec. 23 at 6pm or Saturday, Dec. 24 at 2pm and 4pm.</p>
@@ -290,8 +348,8 @@
 
       <section id="faqs" class="position-relative bg-cashmere">
         <div
-          class="fullscreen background-fixed o-20"
-          style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); background-repeat: repeat;"></div>
+          class="fullscreen background-fixed o-40"
+          style="background-image: url('/Themes/new/Assets/Images/christmas_texture3.png'); background-repeat: repeat;"></div>
         <div class="fullscreen o-0" style="background: rgb(16,25,22); background: linear-gradient(180deg, rgba(16,25,22, 0) 0%, rgba(16,25,22, 1) 100%)"></div>
         <div class="text-constrained mx-auto">
           <span class="d-inline-block text-center mb-6">
@@ -384,6 +442,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      <section class="position-relative bg-camel text-white">
+        <div
+          class="fullscreen  background-fixed o-40"
+          style="background-image: url('/Themes/new/Assets/Images/christmas_texture3.png'); background-repeat: repeat;"></div>
+        <div class="text-constrained mx-auto text-center">
+          <h2 class="display-2 mb-5">
+            A Celebration of Advent
+          </h2>
+          <p class="lead text-white">A 25-Day Devotional</p>
+          <p>Exercitation voluptate sit fugiat irure exercitation ex ex anim consectetur proident consequat incididunt.</p>
+          <p><a href="https://newspring.cc/devotionals/advent-a-25-day-devotional" class="btn btn-secondary">Learn More</a></p>
         </div>
       </section>
 
