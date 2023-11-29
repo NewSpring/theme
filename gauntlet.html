@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="./Themes/new/Styles/gauntlet.css" />
   </head>
   <body class="bg-purple">
+
+    <!-- NewSpring Navigation -->
     <section class="hidden p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center drop-shadow">
       <div class="d-grid align-content-center">
         <a href="/" class="px-4 mb-0">
@@ -63,23 +65,32 @@
       </div>
     </section>
 
-    <section class="position-fixed bring-forward w-100 p-7 d-flex justify-content-between align-items-center">
-      <div class="fullscreen" style="background: rgb(0,0,0);
+    <!-- Gauntlet Navigation -->
+    <section class="bring-forward w-100 p-7 d-flex justify-content-between align-items-center">
+      <div class="hidden fullscreen" style="background: rgb(0,0,0);
       background: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 100%);"></div>
+      <div class="fullscreen bg-orange o-100"></div>
       <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg" alt="Gauntlet Logo" class="bring-forward w-100" style="max-width: 250px;">
-      <ul class="bring-forward d-flex align-items-center list-unstyled gap-x-5 mb-0">
-        <li><a href="#about" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">About</a></li>
-        <li><a href="#go" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">Go</a></li>
-        <li><a href="#schedule" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">Schedule</a></li>
-        <li><a href="#serve" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">Serve</a></li>
-        <li><a href="#give" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">Give</a></li>
-        <li><a href="#faq" class="h5 text-white text-decoration-none font-sans font-black tracking-tight">FAQ</a></li>
-        <li><a href="#sign-up" class="h6 btn btn-primary text-decoration-none font-sans font-black tracking-tight">Sign Up</a></li>
+      <ul class="bring-forward d-flex align-items-center list-unstyled mb-0">
+        <li><a href="#about" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">About</a></li>
+        <li><a href="#go" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Go</a></li>
+        <li><a href="#schedule" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Schedule</a></li>
+        <li><a href="#serve" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Serve</a></li>
+        <li><a href="#give" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Give</a></li>
+        <li><a href="#faq" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">FAQ</a></li>
+        <li><a href="#sign-up" class="h6 text-uppercase btn btn-secondary text-decoration-none font-sans font-black tracking-tight ml-3">Sign Up</a></li>
       </ul>
     </section>
 
-    <section class="position-relative ratio-video">
+    <!-- Hero -->
+    <section class="hidden position-relative ratio-video">
       <div class="fullscreen background-cover background-center" style="background-image: url('https://images.unsplash.com/photo-1519530782816-ba0c305fbb0d?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+    </section>
+
+    <section class="p-0 d-flex justify-content-center align-items-center ratio-tall ratio-sm-square ratio-md-video ratio-lg-landscape bg-white">
+      <div class="w-75 w-lg-50">
+        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-main-lockup.svg" alt="" class="w-100">
+      </div>
     </section>
 
     <div class="hidden d-grid grid-cols-2 grid-cols-md-4 grid-cols-lg-6">
@@ -98,7 +109,7 @@
     </div>
 
 
-
+    <!-- NewSpring Footer -->
     <footer class="hidden bg-gray-dark text-white px-4 py-7 px-md-7 py-md-8 text-center">
       <div class="d-flex flex-column flex-md-row flex-wrap justify-content-between align-content-end">
         <div data-aos="fade-up" class="w-100 w-md-auto height-max-content text-md-left">
@@ -150,5 +161,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
