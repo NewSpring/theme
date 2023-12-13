@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34484",
+  "creatorBuild" : "34518",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -162,12 +162,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/locations.html",
-      "oF" : 0
-    },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/overflow.html" : {
@@ -4801,6 +4795,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-24.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-24.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-main-lockup.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -4836,6 +4840,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gauntlet-wordmark-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-light.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -6361,9 +6375,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0

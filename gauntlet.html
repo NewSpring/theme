@@ -1,166 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gauntlet 2024 | NewSpring.cc</title>
 
-    <!-- jQuery -->
-    <script src="https://newspring.cc/Scripts/Bundles/RockJQueryLatest?v=04Na70l5xG-Ak3mWoqN6rMOm3L9-p3kgT_NPfUoJxck1"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gauntlet 2024 | NewSpring.cc</title>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script
+    src="https://newspring.cc/Scripts/Bundles/RockJQueryLatest?v=04Na70l5xG-Ak3mWoqN6rMOm3L9-p3kgT_NPfUoJxck1"></script>
 
-    <!-- Typekit -->
-    <link rel="stylesheet" href="https://use.typekit.net/bcm6gqj.css" />
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/3e0f7fab68.js" crossorigin="anonymous"></script>
+  <!-- Typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/bcm6gqj.css" />
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="./Themes/new/Scripts/dynamic-aos-min.js"></script>
-    <script src="./Themes/new/Scripts/accordions-min.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/3e0f7fab68.js"
+    crossorigin="anonymous"></script>
 
-    <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="./Themes/new/Scripts/dynamic-aos-min.js"></script>
+  <script src="./Themes/new/Scripts/accordions-min.js"></script>
 
-    <link rel="stylesheet" href="./Themes/new/Styles/bootstrap.css" />
-    <link rel="stylesheet" href="./Themes/new/Styles/theme.css" />
-    <link rel="stylesheet" href="./Themes/new/Styles/gauntlet.css" />
-  </head>
-  <body class="bg-purple">
+  <!-- Swiper.js -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- NewSpring Navigation -->
-    <section class="hidden p-0 w-100 bg-white d-grid grid-cols-2 justify-content-between align-content-center drop-shadow">
-      <div class="d-grid align-content-center">
-        <a href="/" class="px-4 mb-0">
-          <img src="./Themes/new/Assets/SVG/logo.svg" alt="NewSpring Church Logo" style="width: 160px; max-width: 160px" />
-        </a>
-      </div>
-      <div class="overflow-hidden text-right">
-        <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
-          <i class="fa-light fa-lg fa-bars"></i>
-        </a>
+  <link rel="stylesheet" href="./Themes/new/Styles/bootstrap.css" />
+  <link rel="stylesheet" href="./Themes/new/Styles/theme.css" />
+  <link rel="stylesheet" href="./Themes/new/Styles/gauntlet.css" />
+</head>
 
-        <span class="hidden-xs hidden-sm">
-          <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
-            <i class="fa-light fa-lg fa-location-dot"></i>
-          </a>
+<body class="bg-purple">
 
-          <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
-            <i class="fa-light fa-lg fa-magnifying-glass"></i>
-          </a>
-        </span>
-
-        <a href="#" class="d-inline-block no-underline p-4 text-gray-darker border-solid border-l border-gray-lighter">
-          <i class="fa-light fa-lg fa-circle-user"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- Gauntlet Navigation -->
-    <section class="bring-forward w-100 p-7 d-flex justify-content-between align-items-center">
-      <div class="hidden fullscreen" style="background: rgb(0,0,0);
-      background: linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 100%);"></div>
-      <div class="fullscreen bg-orange o-100"></div>
-      <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg" alt="Gauntlet Logo" class="bring-forward w-100" style="max-width: 250px;">
-      <ul class="bring-forward d-flex align-items-center list-unstyled mb-0">
-        <li><a href="#about" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">About</a></li>
-        <li><a href="#go" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Go</a></li>
-        <li><a href="#schedule" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Schedule</a></li>
-        <li><a href="#serve" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Serve</a></li>
-        <li><a href="#give" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">Give</a></li>
-        <li><a href="#faq" class="h6 text-uppercase py-5 px-3 text-white text-decoration-none font-sans font-black tracking-tight">FAQ</a></li>
-        <li><a href="#sign-up" class="h6 text-uppercase btn btn-secondary text-decoration-none font-sans font-black tracking-tight ml-3">Sign Up</a></li>
+  <!-- Gauntlet Navigation -->
+  <section class="position-relative bg-purple bring-forward w-100 p-5 p-lg-3">
+    <div class="fullscreen bg-black o-90"></div>
+    <div
+      class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center gap-y-5 w-100">
+      <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg"
+        alt="Gauntlet Logo" class="bring-forward w-100"
+        style="max-width: 250px;">
+      <ul
+        class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0">
+        <li><a href="#about"
+            class="d-inline-block h6 text-uppercase p-2 text-white text-decoration-none font-sans font-black tracking-tight mb-0">About</a>
+        </li>
+        <li><a href="#go"
+            class="d-inline-block h6 text-uppercase p-2 text-white text-decoration-none font-sans font-black tracking-tight mb-0">Go</a>
+        </li>
+        <li><a href="#serve"
+            class="d-inline-block h6 text-uppercase p-2 text-white text-decoration-none font-sans font-black tracking-tight mb-0">Serve</a>
+        </li>
+        <li><a href="#give"
+            class="d-inline-block h6 text-uppercase p-2 text-white text-decoration-none font-sans font-black tracking-tight mb-0">Give</a>
+        </li>
+        <li><a href="#sign-up"
+            class="d-inline-block h6 text-uppercase btn btn-primary text-decoration-none font-sans font-black tracking-tight mb-0">Sign
+            Up</a></li>
       </ul>
-    </section>
+    </div>
+  </section>
+
+  <div id="content">
 
     <!-- Hero -->
-    <section class="hidden position-relative ratio-video">
-      <div class="fullscreen background-cover background-center" style="background-image: url('https://images.unsplash.com/photo-1519530782816-ba0c305fbb0d?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
-    </section>
-
-    <section class="p-0 d-flex justify-content-center align-items-center ratio-tall ratio-sm-square ratio-md-video ratio-lg-landscape bg-white">
-      <div class="w-75 w-lg-50">
-        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-main-lockup.svg" alt="" class="w-100">
+    <section
+      class="position-relative d-flex justify-content-center align-items-center ratio-tall ratio-sm-square ratio-md-video ratio-lg-landscape bg-purple text-white overflow-hidden">
+      <div class="fullscreen background-cover background-center o-20 grayscale"
+        style="background-image: url('https://images.unsplash.com/photo-1519530782816-ba0c305fbb0d?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      </div>
+      <div class="fullscreen bg-black o-10"></div>
+      <div class="text-constrained text-center bring-forward">
+        <img src="/Themes/new/Assets/SVG/gauntlet/see-u-at-gauntlet-light.svg"
+          alt="" class="w-100 mb-5" style="max-width: 700px;">
+        <a href="">
+          <span class="text-orange fa-stack fa-2x">
+            <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa-solid fa-circle-play fa-stack-2x"></i>
+          </span>
+        </a>
       </div>
     </section>
 
-    <div class="hidden d-grid grid-cols-2 grid-cols-md-4 grid-cols-lg-6">
-      <div class="ratio-square bg-fuscia"></div>
-      <div class="ratio-square bg-blue"></div>
-      <div class="ratio-square bg-amber"></div>
-      <div class="ratio-square bg-red"></div>
-      <div class="ratio-square bg-green"></div>
-      <div class="ratio-square bg-yellow"></div>
-      <div class="ratio-square bg-purple"></div>
-      <div class="ratio-square bg-sky"></div>
-      <div class="ratio-square bg-slate"></div>
-      <div class="ratio-square bg-pink"></div>
-      <div class="ratio-square bg-orange"></div>
-      <div class="ratio-square bg-lime"></div>
+    <section id="about" class="p-0 bg-white">
+      <div class="">
+        <div class="d-grid grid-cols-1 grid-cols-lg-2">
+          <div
+            class="bg-white d-flex justify-content-center align-items-center">
+            <div class="p-8 text-constrained mx-auto text-center text-md-right">
+              <h2 class="display-2 text-fuscia">What is Gauntlet?</h2>
+              <p>Gauntlet is a week-long student summer camp
+                experience for
+                rising
+                seventh
+                grade students through graduated seniors. Students from across
+                South
+                Carolina will get together for a jam-packed week of fun, games,
+                friendship, powerful worship, and practical Bible-teaching.</p>
+              <p class="mb-0"><a href="#" class="btn btn-blue">Sign Up
+                  Now</a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative ratio-square bg-fuscia">
+              <div
+                class="fullscreen background-cover background-bottom o-20 grayscale"
+                style="background-image: url('https://images.unsplash.com/photo-1496024840928-4c417adf211d?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="go" class="bg-blue text-white">
+      <div class="text-constained mx-auto text-center">
+        <h2 class="display-2">Go to Gauntlet</h2>
+      </div>
+    </section>
+
+    <section id="serve" class="bg-yellow text-white">
+      <div class="text-constained mx-auto text-center">
+        <h2 class="display-2">Serve at Gauntlet</h2>
+      </div>
+    </section>
+
+    <section id="give" class="bg-fuscia text-white">
+      <div class="text-constained mx-auto text-center">
+        <h2 class="display-2">Give to Gauntlet</h2>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="position-relative p-5 p-md-8 bg-purple text-white">
+    <div class="fullscreen bg-black o-90"></div>
+    <div class="d-grid grid-cols-1 grid-cols-md-2 bring-forward">
+      <div>
+        <img src="./Themes/new/Assets/SVG/mark.svg" alt="NewSpring Church Logo"
+          class="mb-3" style="width: 40px; max-width: 40px" />
+        <h6 class="font-black text-uppercase">NewSpring Church</h6>
+        <p class="font-sans font-black tracking-tight text-uppercase">
+          <small><a href="https://www.rockrms.com"
+              class="text-white text-hover-white text-decoration-none"
+              target="_blank">Built on
+              <span class="position-relative fa-layers fa-lg fa-fw mx-1"
+                style="top: 3px">
+                <i class="fa-solid fa-circle" style="color: white"
+                  aria-hidden="true"></i>
+                <i class="fa-inverse fa-brands fa-rockrms"
+                  style="color: #ee7725; transform: scale(1.1)"
+                  data-fa-transform="shrink-6" aria-hidden="true"></i>
+              </span>
+              Rock RMS</a></small>
+        </p>
+      </div>
     </div>
+  </section>
 
 
-    <!-- NewSpring Footer -->
-    <footer class="hidden bg-gray-dark text-white px-4 py-7 px-md-7 py-md-8 text-center">
-      <div class="d-flex flex-column flex-md-row flex-wrap justify-content-between align-content-end">
-        <div data-aos="fade-up" class="w-100 w-md-auto height-max-content text-md-left">
-          <img src="./Themes/new/Assets/SVG/mark.svg" alt="NewSpring Church Logo" class="mb-3" style="width: 40px; max-width: 40px" />
-          <h6 class="font-black text-uppercase">NewSpring Church</h6>
-          <p>PO Box 1407<br />Anderson, SC 29622<br /><a href="#">(864) 965-9990</a></p>
-          <p class="font-sans font-medium">
-            <small
-              ><a href="https://www.rockrms.com" class="text-white text-hover-white text-decoration-none" target="_blank"
-                >Built on
-                <span class="position-relative fa-layers fa-lg fa-fw" style="top: 3px">
-                  <i class="fa-solid fa-circle" style="color: white" aria-hidden="true"></i>
-                  <i class="fa-inverse fa-brands fa-rockrms" style="color: #ee7725; transform: scale(1.1)" data-fa-transform="shrink-6" aria-hidden="true"></i>
-                </span>
-                Rock RMS</a
-              ></small
-            >
-          </p>
-          <p class="font-sans font-medium text-uppercase text-gray mb-0"><small>&copy; 2023 NewSpring Church</small></p>
-        </div>
-        <div data-aos="fade-up" class="height-max-content text-md-right">
-          <ul class="list-unstyled font-sans font-medium">
-            <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
-            <li><a href="#" class="text-decoration-none">Terms of Use</a></li>
-            <li><a href="#" class="text-decoration-none">Reprinting &amp; Reposting</a></li>
-          </ul>
-          <ul class="list-inline">
-            <li>
-              <a href="#" class="text-white">
-                <i class="fa-brands fa-xl fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-white">
-                <i class="fa-brands fa-xl fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-white">
-                <i class="fa-brands fa-xl fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-white">
-                <i class="fa-brands fa-xl fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+  <div class="hidden d-grid grid-cols-2 grid-cols-md-4 grid-cols-lg-6">
+    <div class="ratio-square bg-fuscia"></div>
+    <div class="ratio-square bg-blue"></div>
+    <div class="ratio-square bg-amber"></div>
+    <div class="ratio-square bg-red"></div>
+    <div class="ratio-square bg-green"></div>
+    <div class="ratio-square bg-yellow"></div>
+    <div class="ratio-square bg-purple"></div>
+    <div class="ratio-square bg-sky"></div>
+    <div class="ratio-square bg-slate"></div>
+    <div class="ratio-square bg-pink"></div>
+    <div class="ratio-square bg-orange"></div>
+    <div class="ratio-square bg-lime"></div>
+  </div>
 
-  </body>
+
+
+
+</body>
+
 </html>

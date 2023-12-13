@@ -4,284 +4,127 @@
     The accent colors are deprecated and should not be used in new theme development. They will be
     removed in Rock v 6.0.
 */
-:root {
-  --color-fuscia: #e854be;
-  --color-blue: #215cd7;
-  --color-beige: #ede9d7;
-  --color-amber: #fd8a1a;
-  --color-red: #dd0e23;
-  --color-green: #618a00;
-  --color-yellow: #ffc240;
-  --color-purple: #8e69fb;
-  --color-sky: #acdde5;
-  --color-slate: #202427;
-  --color-pink: #f687a8;
-  --color-orange: #f05421;
-  --color-lime: #b9d956;
-}
 .bg-fuscia {
-  background-color: var(--color-fuscia);
+  background-color: #e854be;
 }
 .bg-blue {
-  background-color: var(--color-blue);
+  background-color: #215cd7;
 }
 .bg-beige {
-  background-color: var(--color-beige);
+  background-color: #ede9d7;
 }
 .bg-amber {
-  background-color: var(--color-amber);
+  background-color: #fd8a1a;
 }
 .bg-red {
-  background-color: var(--color-red);
+  background-color: #dd0e23;
 }
 .bg-green {
-  background-color: var(--color-green);
+  background-color: #618a00;
 }
 .bg-yellow {
-  background-color: var(--color-yellow);
+  background-color: #ffc240;
 }
 .bg-purple {
-  background-color: var(--color-purple);
+  background-color: #8e69fb;
 }
 .bg-sky {
-  background-color: var(--color-sky);
+  background-color: #acdde5;
 }
 .bg-slate {
-  background-color: var(--color-slate);
+  background-color: #202427;
 }
 .bg-pink {
-  background-color: var(--color-pink);
+  background-color: #f687a8;
 }
 .bg-orange {
-  background-color: var(--color-orange);
-}
-.bg-lime {
-  background-color: var(--color-lime);
-}
-.text-fuscia {
-  color: var(--color-fuscia);
-}
-.text-blue {
-  color: var(--color-blue);
-}
-.text-beige {
-  color: var(--color-beige);
-}
-.text-amber {
-  color: var(--color-amber);
-}
-.text-red {
-  color: var(--color-red);
-}
-.text-green {
-  color: var(--color-green);
-}
-.text-yellow {
-  color: var(--color-yellow);
-}
-.text-purple {
-  color: var(--color-purple);
-}
-.text-sky {
-  color: var(--color-sky);
-}
-.text-slate {
-  color: var(--color-slate);
-}
-.text-pink {
-  color: var(--color-pink);
-}
-.text-orange {
-  color: var(--color-orange);
-}
-.text-lime {
-  color: var(--color-lime);
-}
-.fill-fuscia {
-  fill: var(--color-fuscia);
-}
-.fill-blue {
-  fill: var(--color-blue);
-}
-.fill-beige {
-  fill: var(--color-beige);
-}
-.fill-amber {
-  fill: var(--color-amber);
-}
-.fill-red {
-  fill: var(--color-red);
-}
-.fill-green {
-  fill: var(--color-green);
-}
-.fill-yellow {
-  fill: var(--color-yellow);
-}
-.fill-purple {
-  fill: var(--color-purple);
-}
-.fill-sky {
-  fill: var(--color-sky);
-}
-.fill-slate {
-  fill: var(--color-slate);
-}
-.fill-pink {
-  fill: var(--color-pink);
-}
-.fill-orange {
-  fill: var(--color-orange);
-}
-.fill-lime {
-  fill: var(--color-lime);
-}
-.btn-primary {
   background-color: #f05421;
-  color: #ffffff;
-}
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: #d03e0e;
-}
-/* stylelint-disable */
-/* stylelint-enable */
-/*
-    The accent colors are deprecated and should not be used in new theme development. They will be
-    removed in Rock v 6.0.
-*/
-:root {
-  --color-fuscia: #e854be;
-  --color-blue: #215cd7;
-  --color-beige: #ede9d7;
-  --color-amber: #fd8a1a;
-  --color-red: #dd0e23;
-  --color-green: #618a00;
-  --color-yellow: #ffc240;
-  --color-purple: #8e69fb;
-  --color-sky: #acdde5;
-  --color-slate: #202427;
-  --color-pink: #f687a8;
-  --color-orange: #f05421;
-  --color-lime: #b9d956;
-}
-.bg-fuscia {
-  background-color: var(--color-fuscia);
-}
-.bg-blue {
-  background-color: var(--color-blue);
-}
-.bg-beige {
-  background-color: var(--color-beige);
-}
-.bg-amber {
-  background-color: var(--color-amber);
-}
-.bg-red {
-  background-color: var(--color-red);
-}
-.bg-green {
-  background-color: var(--color-green);
-}
-.bg-yellow {
-  background-color: var(--color-yellow);
-}
-.bg-purple {
-  background-color: var(--color-purple);
-}
-.bg-sky {
-  background-color: var(--color-sky);
-}
-.bg-slate {
-  background-color: var(--color-slate);
-}
-.bg-pink {
-  background-color: var(--color-pink);
-}
-.bg-orange {
-  background-color: var(--color-orange);
 }
 .bg-lime {
-  background-color: var(--color-lime);
+  background-color: #b9d956;
 }
 .text-fuscia {
-  color: var(--color-fuscia);
+  color: #e854be;
 }
 .text-blue {
-  color: var(--color-blue);
+  color: #215cd7;
 }
 .text-beige {
-  color: var(--color-beige);
+  color: #ede9d7;
 }
 .text-amber {
-  color: var(--color-amber);
+  color: #fd8a1a;
 }
 .text-red {
-  color: var(--color-red);
+  color: #dd0e23;
 }
 .text-green {
-  color: var(--color-green);
+  color: #618a00;
 }
 .text-yellow {
-  color: var(--color-yellow);
+  color: #ffc240;
 }
 .text-purple {
-  color: var(--color-purple);
+  color: #8e69fb;
 }
 .text-sky {
-  color: var(--color-sky);
+  color: #acdde5;
 }
 .text-slate {
-  color: var(--color-slate);
+  color: #202427;
 }
 .text-pink {
-  color: var(--color-pink);
+  color: #f687a8;
 }
 .text-orange {
-  color: var(--color-orange);
+  color: #f05421;
 }
 .text-lime {
-  color: var(--color-lime);
+  color: #b9d956;
 }
 .fill-fuscia {
-  fill: var(--color-fuscia);
+  fill: #e854be;
 }
 .fill-blue {
-  fill: var(--color-blue);
+  fill: #215cd7;
 }
 .fill-beige {
-  fill: var(--color-beige);
+  fill: #ede9d7;
 }
 .fill-amber {
-  fill: var(--color-amber);
+  fill: #fd8a1a;
 }
 .fill-red {
-  fill: var(--color-red);
+  fill: #dd0e23;
 }
 .fill-green {
-  fill: var(--color-green);
+  fill: #618a00;
 }
 .fill-yellow {
-  fill: var(--color-yellow);
+  fill: #ffc240;
 }
 .fill-purple {
-  fill: var(--color-purple);
+  fill: #8e69fb;
 }
 .fill-sky {
-  fill: var(--color-sky);
+  fill: #acdde5;
 }
 .fill-slate {
-  fill: var(--color-slate);
+  fill: #202427;
 }
 .fill-pink {
-  fill: var(--color-pink);
+  fill: #f687a8;
 }
 .fill-orange {
-  fill: var(--color-orange);
+  fill: #f05421;
 }
 .fill-lime {
-  fill: var(--color-lime);
+  fill: #b9d956;
+}
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 .btn-primary {
   background-color: #f05421;
@@ -293,11 +136,56 @@
   background-color: #d03e0e;
 }
 .btn-secondary {
-  background-color: #000000;
+  background-color: #8e69fb;
   color: #ffffff;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background-color: #000000;
+  background-color: #6937fa;
+}
+.btn-blue {
+  background-color: #215cd7;
+  color: #ffffff;
+}
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+  color: #ffffff;
+  background-color: #1a49ab;
+}
+.btn-amber {
+  background-color: #fd8a1a;
+  color: #ffffff;
+}
+.btn-amber:hover,
+.btn-amber:active,
+.btn-amber:focus {
+  color: #ffffff;
+  background-color: #e27102;
+}
+body {
+  font-family: "colfax-web", sans-serif;
+}
+.lead {
+  color: inherit;
+  font-style: normal;
+  font-weight: inherit;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.display-1,
+.display-2,
+.display-3 {
+  text-transform: uppercase;
 }

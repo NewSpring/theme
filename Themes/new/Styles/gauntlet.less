@@ -3,6 +3,12 @@
 @import "_variables.less";
 @import "_variable-overrides.less";
 
+//
+//
+// VARIABLES
+//
+//
+
 @color-fuscia: #e854be;
 @color-blue: #215cd7;
 @color-beige: #ede9d7;
@@ -16,232 +22,135 @@
 @color-pink: #f687a8;
 @color-orange: #f05421;
 @color-lime: #b9d956;
-@btn-primary-bg: @color-orange;
-@btn-primary-fg: @white;
 
-:root {
-  --color-fuscia: @color-fuscia;
-  --color-blue: @color-blue;
-  --color-beige: @color-beige;
-  --color-amber: @color-amber;
-  --color-red: @color-red;
-  --color-green: @color-green;
-  --color-yellow: @color-yellow;
-  --color-purple: @color-purple;
-  --color-sky: @color-sky;
-  --color-slate: @color-slate;
-  --color-pink: @color-pink;
-  --color-orange: @color-orange;
-  --color-lime: @color-lime;
-}
+//
+//
+// HELPERS
+//
+//
 
-.bg-fuscia { background-color: var(--color-fuscia); }
-.bg-blue { background-color: var(--color-blue); }
-.bg-beige { background-color: var(--color-beige); }
-.bg-amber { background-color: var(--color-amber); }
-.bg-red { background-color: var(--color-red); }
-.bg-green { background-color: var(--color-green); }
-.bg-yellow { background-color: var(--color-yellow); }
-.bg-purple { background-color: var(--color-purple); }
-.bg-sky { background-color: var(--color-sky); }
-.bg-slate { background-color: var(--color-slate); }
-.bg-pink { background-color: var(--color-pink); }
-.bg-orange { background-color: var(--color-orange); }
-.bg-lime { background-color: var(--color-lime); }
+.bg-fuscia { background-color: @color-fuscia; }
+.bg-blue { background-color: @color-blue; }
+.bg-beige { background-color: @color-beige; }
+.bg-amber { background-color: @color-amber; }
+.bg-red { background-color: @color-red; }
+.bg-green { background-color: @color-green; }
+.bg-yellow { background-color: @color-yellow; }
+.bg-purple { background-color: @color-purple; }
+.bg-sky { background-color: @color-sky; }
+.bg-slate { background-color: @color-slate; }
+.bg-pink { background-color: @color-pink; }
+.bg-orange { background-color: @color-orange; }
+.bg-lime { background-color: @color-lime; }
 
-.text-fuscia { color: var(--color-fuscia); }
-.text-blue { color: var(--color-blue); }
-.text-beige { color: var(--color-beige); }
-.text-amber { color: var(--color-amber); }
-.text-red { color: var(--color-red); }
-.text-green { color: var(--color-green); }
-.text-yellow { color: var(--color-yellow); }
-.text-purple { color: var(--color-purple); }
-.text-sky { color: var(--color-sky); }
-.text-slate { color: var(--color-slate); }
-.text-pink { color: var(--color-pink); }
-.text-orange { color: var(--color-orange); }
-.text-lime { color: var(--color-lime); }
+.text-fuscia { color: @color-fuscia; }
+.text-blue { color: @color-blue; }
+.text-beige { color: @color-beige; }
+.text-amber { color: @color-amber; }
+.text-red { color: @color-red; }
+.text-green { color: @color-green; }
+.text-yellow { color: @color-yellow; }
+.text-purple { color: @color-purple; }
+.text-sky { color: @color-sky; }
+.text-slate { color: @color-slate; }
+.text-pink { color: @color-pink; }
+.text-orange { color: @color-orange; }
+.text-lime { color: @color-lime; }
 
-.fill-fuscia { fill: var(--color-fuscia); }
-.fill-blue { fill: var(--color-blue); }
-.fill-beige { fill: var(--color-beige); }
-.fill-amber { fill: var(--color-amber); }
-.fill-red { fill: var(--color-red); }
-.fill-green { fill: var(--color-green); }
-.fill-yellow { fill: var(--color-yellow); }
-.fill-purple { fill: var(--color-purple); }
-.fill-sky { fill: var(--color-sky); }
-.fill-slate { fill: var(--color-slate); }
-.fill-pink { fill: var(--color-pink); }
-.fill-orange { fill: var(--color-orange); }
-.fill-lime { fill: var(--color-lime); }
+.fill-fuscia { fill: @color-fuscia; }
+.fill-blue { fill: @color-blue; }
+.fill-beige { fill: @color-beige; }
+.fill-amber { fill: @color-amber; }
+.fill-red { fill: @color-red; }
+.fill-green { fill: @color-green; }
+.fill-yellow { fill: @color-yellow; }
+.fill-purple { fill: @color-purple; }
+.fill-sky { fill: @color-sky; }
+.fill-slate { fill: @color-slate; }
+.fill-pink { fill: @color-pink; }
+.fill-orange { fill: @color-orange; }
+.fill-lime { fill: @color-lime; }
 
+//
+//
+// BUTTONS
+//
+//
 
-.btn-primary {
-  background-color: @btn-primary-bg;
-  color: @btn-primary-fg;
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5px;
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: darken(@btn-primary-bg, 10%);
-}/* stylelint-disable */
-/* stylelint-enable */
-/*
-    The accent colors are deprecated and should not be used in new theme development. They will be
-    removed in Rock v 6.0.
-*/
-:root {
-  --color-fuscia: #e854be;
-  --color-blue: #215cd7;
-  --color-beige: #ede9d7;
-  --color-amber: #fd8a1a;
-  --color-red: #dd0e23;
-  --color-green: #618a00;
-  --color-yellow: #ffc240;
-  --color-purple: #8e69fb;
-  --color-sky: #acdde5;
-  --color-slate: #202427;
-  --color-pink: #f687a8;
-  --color-orange: #f05421;
-  --color-lime: #b9d956;
-}
-.bg-fuscia {
-  background-color: var(--color-fuscia);
-}
-.bg-blue {
-  background-color: var(--color-blue);
-}
-.bg-beige {
-  background-color: var(--color-beige);
-}
-.bg-amber {
-  background-color: var(--color-amber);
-}
-.bg-red {
-  background-color: var(--color-red);
-}
-.bg-green {
-  background-color: var(--color-green);
-}
-.bg-yellow {
-  background-color: var(--color-yellow);
-}
-.bg-purple {
-  background-color: var(--color-purple);
-}
-.bg-sky {
-  background-color: var(--color-sky);
-}
-.bg-slate {
-  background-color: var(--color-slate);
-}
-.bg-pink {
-  background-color: var(--color-pink);
-}
-.bg-orange {
-  background-color: var(--color-orange);
-}
-.bg-lime {
-  background-color: var(--color-lime);
-}
-.text-fuscia {
-  color: var(--color-fuscia);
-}
-.text-blue {
-  color: var(--color-blue);
-}
-.text-beige {
-  color: var(--color-beige);
-}
-.text-amber {
-  color: var(--color-amber);
-}
-.text-red {
-  color: var(--color-red);
-}
-.text-green {
-  color: var(--color-green);
-}
-.text-yellow {
-  color: var(--color-yellow);
-}
-.text-purple {
-  color: var(--color-purple);
-}
-.text-sky {
-  color: var(--color-sky);
-}
-.text-slate {
-  color: var(--color-slate);
-}
-.text-pink {
-  color: var(--color-pink);
-}
-.text-orange {
-  color: var(--color-orange);
-}
-.text-lime {
-  color: var(--color-lime);
-}
-.fill-fuscia {
-  fill: var(--color-fuscia);
-}
-.fill-blue {
-  fill: var(--color-blue);
-}
-.fill-beige {
-  fill: var(--color-beige);
-}
-.fill-amber {
-  fill: var(--color-amber);
-}
-.fill-red {
-  fill: var(--color-red);
-}
-.fill-green {
-  fill: var(--color-green);
-}
-.fill-yellow {
-  fill: var(--color-yellow);
-}
-.fill-purple {
-  fill: var(--color-purple);
-}
-.fill-sky {
-  fill: var(--color-sky);
-}
-.fill-slate {
-  fill: var(--color-slate);
-}
-.fill-pink {
-  fill: var(--color-pink);
-}
-.fill-orange {
-  fill: var(--color-orange);
-}
-.fill-lime {
-  fill: var(--color-lime);
-}
 .btn-primary {
   background-color: @color-orange;
-  color: #ffffff;
+  color: @white;
 }
+
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
   background-color: darken(@color-orange, 10%);
 }
 
-
 .btn-secondary {
-  background-color: @black;
-  color: #ffffff;
+  background-color: @color-purple;
+  color: @white;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background-color: darken(@black, 10%);
+  background-color: darken(@color-purple, 10%);
+}
+
+.btn-blue {
+  background-color: @color-blue;
+  color: @white;
+}
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+  color: @white;
+  background-color: darken(@color-blue, 10%);
+}
+
+.btn-amber {
+  background-color: @color-amber;
+  color: @white;
+}
+.btn-amber:hover,
+.btn-amber:active,
+.btn-amber:focus {
+  color: @white;
+  background-color: darken(@color-amber, 10%);
+}
+
+
+//
+//
+// TYPOGRAPHY
+//
+//
+
+body {
+  font-family: @font-family-headings;
+}
+
+.lead {
+  color: inherit;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.display-1,
+.display-2,
+.display-3 {
+  text-transform: uppercase;
 }
