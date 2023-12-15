@@ -18326,11 +18326,14 @@ button.swiper-pagination-bullet {
 .ratio-thin {
   aspect-ratio: 3 / 1;
 }
+.ratio-landscape {
+  aspect-ratio: 2 / 1;
+}
 .ratio-video {
   aspect-ratio: 16 / 9;
 }
-.ratio-landscape {
-  aspect-ratio: 2 / 1;
+.ratio-shuare {
+  aspect-ratio: 1.25 / 1;
 }
 .ratio-square {
   aspect-ratio: 1 / 1;
@@ -19148,11 +19151,14 @@ button.swiper-pagination-bullet {
   .ratio-sm-thin {
     aspect-ratio: 3 / 1;
   }
+  .ratio-sm-landscape {
+    aspect-ratio: 2 / 1;
+  }
   .ratio-sm-video {
     aspect-ratio: 16 / 9;
   }
-  .ratio-sm-landscape {
-    aspect-ratio: 2 / 1;
+  .ratio-sm-shuare {
+    aspect-ratio: 1.25 / 1;
   }
   .ratio-sm-square {
     aspect-ratio: 1 / 1;
@@ -19971,11 +19977,14 @@ button.swiper-pagination-bullet {
   .ratio-md-thin {
     aspect-ratio: 3 / 1;
   }
+  .ratio-md-landscape {
+    aspect-ratio: 2 / 1;
+  }
   .ratio-md-video {
     aspect-ratio: 16 / 9;
   }
-  .ratio-md-landscape {
-    aspect-ratio: 2 / 1;
+  .ratio-md-shuare {
+    aspect-ratio: 1.25 / 1;
   }
   .ratio-md-square {
     aspect-ratio: 1 / 1;
@@ -20794,11 +20803,14 @@ button.swiper-pagination-bullet {
   .ratio-lg-thin {
     aspect-ratio: 3 / 1;
   }
+  .ratio-lg-landscape {
+    aspect-ratio: 2 / 1;
+  }
   .ratio-lg-video {
     aspect-ratio: 16 / 9;
   }
-  .ratio-lg-landscape {
-    aspect-ratio: 2 / 1;
+  .ratio-lg-shuare {
+    aspect-ratio: 1.25 / 1;
   }
   .ratio-lg-square {
     aspect-ratio: 1 / 1;
@@ -21617,11 +21629,14 @@ button.swiper-pagination-bullet {
   .ratio-xl-thin {
     aspect-ratio: 3 / 1;
   }
+  .ratio-xl-landscape {
+    aspect-ratio: 2 / 1;
+  }
   .ratio-xl-video {
     aspect-ratio: 16 / 9;
   }
-  .ratio-xl-landscape {
-    aspect-ratio: 2 / 1;
+  .ratio-xl-shuare {
+    aspect-ratio: 1.25 / 1;
   }
   .ratio-xl-square {
     aspect-ratio: 1 / 1;
