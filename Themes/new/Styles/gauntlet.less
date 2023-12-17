@@ -11,7 +11,7 @@
 
 @color-fuscia: #e854be;
 @color-blue: #215cd7;
-@color-beige: #ede9d7;
+@color-beige: #f2f1ee;
 @color-amber: #fd8a1a;
 @color-red: #dd0e23;
 @color-green: #618a00;
@@ -33,9 +33,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-section {
-  scroll-margin-top: 108px;
-}
 
 //
 //
@@ -160,6 +157,28 @@ section {
 .btn-slate:focus {
   color: @white;
   background-color: darken(@color-slate, 10%);
+}
+
+.btn-black {
+  background-color: @black;
+  color: @white;
+}
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+  color: @white;
+  background-color: darken(@black, 10%);
+}
+
+.btn-white {
+  background-color: @white;
+  color: @black;
+}
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
+  color: @black;
+  background-color: darken(@white, 10%);
 }
 
 

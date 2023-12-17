@@ -46,7 +46,7 @@
     :root {
       --color-fuscia: #e854be;
       --color-blue: #215cd7;
-      --color-beige: #ede9d7;
+      --color-beige: #f2f1ee;
       --color-amber: #fd8a1a;
       --color-red: #dd0e23;
       --color-green: #618a00;
@@ -101,85 +101,88 @@
   </style>
 
   <!-- Gauntlet Navigation -->
-  <section
-    class="position-fixed bg-secondary w-100 p-5 px-sm-6 px-lg-3 py-lg-5 o-90"
+  <section class="position-fixed w-100 bg-beige p-5 px-sm-6 p-lg-4 o-100"
     style="z-index: 9999;">
-    <div class="fullscreen bg-black o-0"></div>
+    <div class="fullscreen bg-white o-0"></div>
     <div
       class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center gap-y-5 w-100">
       <a href="#top">
-        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg"
+        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
+          alt="Gauntlet Logo" class="hidden bring-forward w-100"
+          style="max-width: 200px;">
+        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-multi.svg"
           alt="Gauntlet Logo" class="bring-forward w-100"
-          style="max-width: 200px;"></a>
-      <ul
-        class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0">
-        <li><a href="#about" data-scroll
-            class="d-inline-block text-uppercase p-2 text-white text-decoration-none font-sans font-black mb-0">About</a>
-        </li>
-        <li><a href="#go" data-scroll
-            class="d-inline-block text-uppercase p-2 text-white text-decoration-none font-sans font-black mb-0">Go</a>
-        </li>
-        <li><a href="#serve" data-scroll
-            class="d-inline-block text-uppercase p-2 text-white text-decoration-none font-sans font-black mb-0">Serve</a>
-        </li>
-        <li><a href="#give" data-scroll
-            class="d-inline-block text-uppercase p-2 text-white text-decoration-none font-sans font-black mb-0">Give</a>
-        </li>
-        <li><a href="#"
-            class="d-inline-block text-uppercase py-2 px-4 rounded-full text-white text-decoration-none font-sans font-black mb-0 bg-primary">Sign
-            Up</a></li>
-      </ul>
+          style="max-width: 60px;">
+      </a>
+
+      <nav>
+        <ul
+          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0">
+          <li><a href="#about" data-scroll
+              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">About</a>
+          </li>
+          <li><a href="#go" data-scroll
+              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Go</a>
+          </li>
+          <li><a href="#serve" data-scroll
+              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Serve</a>
+          </li>
+          <li><a href="#give" data-scroll
+              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Give</a>
+          </li>
+          <li><a href="#"
+              class="d-inline-block text-uppercase py-2 px-4 rounded-full text-white text-decoration-none font-sans font-black mb-0 bg-primary">Sign
+              Up</a></li>
+        </ul>
+      </nav>
     </div>
   </section>
 
   <div id="content">
 
     <!-- Hero -->
-    <section class="p-0 position-relative bg-white text-white overflow-hidden">
-      <div class="fullscreen background-cover background-center o-10 grayscale"
-        style="background-image: url('https://images.unsplash.com/photo-1519530782816-ba0c305fbb0d?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <section class="vh-100 p-0 position-relative bg-beige overflow-hidden">
+      <div class="fullscreen background-center o-60"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="fullscreen bg-black o-10"></div>
-      <div class="page-constrained mx-auto">
-        <div
-          class="p-5 d-flex justify-content-center align-items-center ratio-tall ratio-sm-square ratio-md-video ratio-lg-shuare  bring-forward">
-          <div class="text-constrained text-center">
-            <img
-              src="/Themes/new/Assets/SVG/gauntlet/see-u-at-gauntlet-light.svg"
-              alt="" class="hidden w-100" style="max-width: 600px;"><br>
-            <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-bm.svg"
-              alt="Gauntlet Logo" class="w-100" style="max-width: 400px;">
+      <div class="fullscreen d-flex justify-content-center align-items-center">
+        <div class="px-8 text-center">
+          <h1 class="display-1">The <span class="text-blue">Best Week of the
+              Summer</span> Awaits U
+          </h1>
+          <p class="h4 text-fuscia mb-5">June 24-28 &nbsp;&middot;&nbsp;
+            Clemson, SC
+          </p>
 
-            <span
-              class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link clickable text-center wistia_embed_initialized"
-              style="display:inline; position:relative"
-              id="wistia-uaxqzj6n5z-1">
-              <div id="wistia_29.thumb_container" class="wistia_click_to_play"
-                style="position: relative; display: inline;">
+          <span
+            class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link clickable text-center wistia_embed_initialized"
+            style="display:inline; position:relative; z-index: 100;"
+            id="wistia-uaxqzj6n5z-1">
+            <div id="wistia_29.thumb_container" class="wistia_click_to_play"
+              style="position: relative; display: inline;">
+              <a href="#" class="btn btn-lg btn-primary">Play
+                Videoooo <i class="fa-solid fa-play ml-1"></i></a>
+            </div>
+          </span>
+          <script src="https://fast.wistia.com/embed/medias/uaxqzj6n5z.jsonp"
+            async=""></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js"
+            async=""></script>
 
-                <a href="#" data-aos="fade-up">
-                  <span class="text-orange fa-stack fa-2x hidden">
-                    <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
-                    <i class="fa-solid fa-circle-play fa-stack-2x"></i>
-                  </span>
-                </a>
-
-              </div>
-            </span>
-            <script src="https://fast.wistia.com/embed/medias/uaxqzj6n5z.jsonp"
-              async=""></script>
-            <script src="https://fast.wistia.com/assets/external/E-v1.js"
-              async=""></script>
-
-
-          </div>
         </div>
       </div>
+      <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
+        alt="Gauntlet Logo" class="w-100 position-absolute bottom-0 left-0"
+        style="margin-bottom: -8px;">
     </section>
 
 
-    <section id="about" class="bg-white">
-      <div class="text-constrained mx-auto text-center">
+    <section id="about"
+      class="position-relative vh-100 bg-black text-beige d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-center o-50"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-2">What is Gauntlet?</h2>
         <p>Gauntlet is a week-long student summer camp
           experience for
@@ -194,32 +197,44 @@
       </div>
     </section>
 
-    <section id="go" class="bg-secondary text-white">
-      <div class="text-constrained mx-auto text-center">
+    <section id="go"
+      class="position-relative vh-100 bg-secondary text-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-center o-30"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Go to Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
           Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
           dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
+        <p class="mb-0"><a href="#" class="btn btn-black">Sign Up
             to Go</a>
       </div>
     </section>
 
-    <section id="serve" class="bg-primary text-white">
-      <div class="text-constrained mx-auto text-center">
+    <section id="serve"
+      class="position-relative vh-100 bg-primary text-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-center o-0"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); z-index: 1;">
+      </div>
+      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Serve at Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
           Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
           dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-secondary">Sign Up
+        <p class="mb-0"><a href="#" class="btn btn-black">Sign Up
             to Serve</a>
       </div>
     </section>
 
-    <section id="give" class="bg-white">
-      <div class="text-constrained mx-auto text-center">
+    <section id="give"
+      class="position-relative vh-100 bg-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-center o-50"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); z-index: 1;">
+      </div>
+      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Give to Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.

@@ -7,9 +7,6 @@
 html {
   scroll-behavior: smooth;
 }
-section {
-  scroll-margin-top: 108px;
-}
 .bg-fuscia {
   background-color: #e854be;
 }
@@ -17,7 +14,7 @@ section {
   background-color: #215cd7;
 }
 .bg-beige {
-  background-color: #ede9d7;
+  background-color: #f2f1ee;
 }
 .bg-amber {
   background-color: #fd8a1a;
@@ -56,7 +53,7 @@ section {
   color: #215cd7;
 }
 .text-beige {
-  color: #ede9d7;
+  color: #f2f1ee;
 }
 .text-amber {
   color: #fd8a1a;
@@ -95,7 +92,7 @@ section {
   fill: #215cd7;
 }
 .fill-beige {
-  fill: #ede9d7;
+  fill: #f2f1ee;
 }
 .fill-amber {
   fill: #fd8a1a;
@@ -189,6 +186,26 @@ section {
 .btn-slate:focus {
   color: #ffffff;
   background-color: #090a0b;
+}
+.btn-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
+  color: #000000;
+  background-color: #e6e6e6;
 }
 body {
   font-family: "colfax-web", sans-serif;

@@ -22540,7 +22540,7 @@ section {
   filter: grayscale(1);
 }
 .page-constrained {
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .text-constrained {
   max-width: 700px;
