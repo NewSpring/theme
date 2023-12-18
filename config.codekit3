@@ -4861,11 +4861,31 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-light.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/see-u-at-gauntlet-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/u.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/u.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

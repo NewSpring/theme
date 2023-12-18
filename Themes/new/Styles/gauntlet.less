@@ -82,6 +82,11 @@ html {
 .fill-orange { fill: @color-orange; }
 .fill-lime { fill: @color-lime; }
 
+.h-0 { height: 0; }
+.svh-100 {
+  height: 100svh !important; /* new browsers */
+}
+
 //
 //
 // BUTTONS
@@ -210,4 +215,16 @@ h6, .h6,
 .display-2,
 .display-3 {
   text-transform: uppercase;
+}
+
+@media @lg {
+  .h-lg-100 {
+    height: 100%;
+  }
+  .w-lg-auto {
+    width: auto;
+  }
+  .display-3 {
+    font-size: 104px;
+  }
 }

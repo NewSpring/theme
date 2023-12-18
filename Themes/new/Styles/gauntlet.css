@@ -124,6 +124,13 @@ html {
 .fill-lime {
   fill: #b9d956;
 }
+.h-0 {
+  height: 0;
+}
+.svh-100 {
+  height: 100svh !important;
+  /* new browsers */
+}
 .btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -233,4 +240,15 @@ h6,
 .display-2,
 .display-3 {
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .h-lg-100 {
+    height: 100%;
+  }
+  .w-lg-auto {
+    width: auto;
+  }
+  .display-3 {
+    font-size: 104px;
+  }
 }

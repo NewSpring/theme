@@ -101,37 +101,46 @@
   </style>
 
   <!-- Gauntlet Navigation -->
-  <section class="position-fixed w-100 bg-beige p-5 px-sm-6 p-lg-4 o-100"
+  <section class="position-fixed w-100 p-4 px-sm-6 p-lg-4 o-100"
     style="z-index: 9999;">
-    <div class="fullscreen bg-white o-0"></div>
+    <div class="fullscreen bg-beige o-90"></div>
     <div
-      class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center gap-y-5 w-100">
-      <a href="#top">
-        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
-          alt="Gauntlet Logo" class="hidden bring-forward w-100"
-          style="max-width: 200px;">
-        <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-multi.svg"
-          alt="Gauntlet Logo" class="bring-forward w-100"
-          style="max-width: 60px;">
-      </a>
+      class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
+      <div
+        class="bring-forward d-flex justify-content-between align-items-center w-100 w-lg-auto">
+        <a href="#top">
+          <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
+            alt="Gauntlet Logo" class="hidden bring-forward w-100"
+            style="max-width: 200px;">
+          <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-multi.svg"
+            alt="Gauntlet Logo" class="bring-forward w-100"
+            style="max-width: 50px;">
+        </a>
 
-      <nav>
+        <a href="#" class="js-mobile-nav-trigger p-3 hidden-lg hidden-xl"><i
+            class="fa-solid fa-bars fa-xl text-orange"></i></a>
+      </div>
+
+      <nav class="js-mobile-nav h-0 h-lg-100 overflow-hidden w-100 w-lg-auto">
         <ul
-          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0">
-          <li><a href="#about" data-scroll
-              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">About</a>
+          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0 mt-5 mt-md-0 text-center">
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#about"
+              data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">About</a>
           </li>
-          <li><a href="#go" data-scroll
-              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Go</a>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#go" data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Go</a>
           </li>
-          <li><a href="#serve" data-scroll
-              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Serve</a>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#serve"
+              data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Serve</a>
           </li>
-          <li><a href="#give" data-scroll
-              class="d-inline-block text-uppercase p-2 text-black text-decoration-none font-sans font-black mb-0">Give</a>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#give" data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Give</a>
           </li>
-          <li><a href="#"
-              class="d-inline-block text-uppercase py-2 px-4 rounded-full text-white text-decoration-none font-sans font-black mb-0 bg-primary">Sign
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#go"
+              class="d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none h6 font-black mb-0 mt-2 mt-md-0 bg-primary"
+              style="padding-top: 9px !important; padding-bottom: 7px !important;">Sign
               Up</a></li>
         </ul>
       </nav>
@@ -141,14 +150,19 @@
   <div id="content">
 
     <!-- Hero -->
-    <section class="vh-100 p-0 position-relative bg-beige overflow-hidden">
-      <div class="fullscreen background-center o-60"
-        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+    <section class="svh-100 p-0 position-relative bg-beige overflow-hidden">
+      <div class="fullscreen background-fixed background-center o-50"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 2;">
       </div>
-      <div class="fullscreen d-flex justify-content-center align-items-center">
-        <div class="px-8 text-center">
-          <h1 class="display-1">The <span class="text-blue">Best Week of the
-              Summer</span> Awaits U
+      <div class="fullscreen background-cover background-bottom o-20 grayscale"
+        style="background-image: url('https://images.unsplash.com/photo-1570671973922-7c208a0780c3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); z-index: 0;">
+      </div>
+      <div
+        class="fullscreen px-3 px-md-5 d-flex justify-content-center align-items-center overflow-hidden"
+        style="z-index: 2;">
+        <div class="page-constrained text-center mt-8 mt-md-0 mb-md-7">
+          <h1 class="display-3">The <span class="text-blue">Best Week of the
+              Summer</span> Awaits
           </h1>
           <p class="h4 text-fuscia mb-5">June 24-28 &nbsp;&middot;&nbsp;
             Clemson, SC
@@ -160,7 +174,7 @@
             id="wistia-uaxqzj6n5z-1">
             <div id="wistia_29.thumb_container" class="wistia_click_to_play"
               style="position: relative; display: inline;">
-              <a href="#" class="btn btn-lg btn-primary">Play
+              <a href="#" class="btn btn-primary">Play
                 Videoooo <i class="fa-solid fa-play ml-1"></i></a>
             </div>
           </span>
@@ -179,10 +193,10 @@
 
     <section id="about"
       class="position-relative vh-100 bg-black text-beige d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-center o-50"
+      <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
+      <div class="bring-forward text-constrained mx-auto text-center">
         <h2 class="display-2">What is Gauntlet?</h2>
         <p>Gauntlet is a week-long student summer camp
           experience for
@@ -198,57 +212,71 @@
     </section>
 
     <section id="go"
-      class="position-relative vh-100 bg-secondary text-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-center o-30"
+      class="position-relative vh-100 bg-fuscia text-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-fixed background-center o-60"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
+      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Go to Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
           Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
           dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-black">Sign Up
+        <p class="mb-0"><a href="#" class="btn btn-blue">Sign Up
             to Go</a>
       </div>
     </section>
 
     <section id="serve"
-      class="position-relative vh-100 bg-primary text-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-center o-0"
-        style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); z-index: 1;">
+      class="position-relative vh-100 bg-blue text-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-fixed background-center o-30"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
+      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Serve at Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
           Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
           dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-black">Sign Up
+        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
             to Serve</a>
       </div>
     </section>
 
     <section id="give"
-      class="position-relative vh-100 bg-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-center o-50"
-        style="background-image: url('/Themes/new/Assets/Images/christmas_texture2.png'); z-index: 1;">
+      class="position-relative vh-100 bg-black text-white d-flex justify-content-center align-items-center">
+      <div class="fullscreen background-fixed background-center o-40"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-9 bring-forward text-constrained mx-auto text-center">
+      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
         <h2 class="display-1">Give to Gauntlet</h2>
         <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
           Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
           Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
           dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-primary">Give Now</a>
+        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
+            to Give</a>
       </div>
+    </section>
+
+    <section
+      class="pb-0 d-flex justify-content-center align-items-end bg-beige position-relative">
+      <div class="fullscreen background-fixed background-center o-70"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <img src="/Themes/new/Assets/SVG/gauntlet/see-u-at-gauntlet-dark.svg"
+        alt="See you at Gauntlet" class="w-100 text-constrained"
+        style="margin-bottom: -3px;">
     </section>
 
   </div>
 
   <section
-    class="position-relative px-5 py-8 p-md-8 bg-slate text-white text-center text-md-left">
-    <div class="page-constrained mx-auto">
+    class="position-relative px-5 py-8 p-md-8 bg-black text-white text-center text-md-left">
+    <div class="fullscreen background-fixed background-center o-40"
+      style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+    </div>
+    <div class="page-constrained mx-auto bring-forward">
       <div class="d-grid grid-cols-1 grid-cols-md-2 bring-forward">
         <div>
           <img src="./Themes/new/Assets/SVG/mark.svg"
@@ -291,7 +319,18 @@
   </div>
 
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mobileNavTrigger = document.querySelector('.js-mobile-nav-trigger');
+      const mobileNav = document.querySelector('.js-mobile-nav');
 
+      mobileNavTrigger.addEventListener("click", function (e) {
+        e.preventDefault();
+        mobileNav.classList.toggle('h-0');
+        console.log('clicked!');
+      });
+    });
+  </script>
 
 </body>
 
