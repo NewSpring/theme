@@ -14,9 +14,9 @@
 @color-beige: #f2f1ee;
 @color-amber: #fd8a1a;
 @color-red: #dd0e23;
-@color-green: #618a00;
+@color-green: #58770e;
 @color-yellow: #ffc240;
-@color-purple: #8e69fb;
+@color-purple: #7b57e7;
 @color-sky: #acdde5;
 @color-slate: #202427;
 @color-pink: #f687a8;
@@ -47,7 +47,7 @@ html {
 .bg-red { background-color: @color-red; }
 .bg-green { background-color: @color-green; }
 .bg-yellow { background-color: @color-yellow; }
-.bg-purple { background-color: @color-purple; }
+.bg-purple { background-color: darken(@color-purple, 5%); }
 .bg-sky { background-color: @color-sky; }
 .bg-slate { background-color: @color-slate; }
 .bg-pink { background-color: @color-pink; }
@@ -87,6 +87,10 @@ html {
   height: 100svh !important; /* new browsers */
 }
 
+.o-97 {
+  opacity: .97;
+}
+
 //
 //
 // BUTTONS
@@ -107,7 +111,7 @@ html {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: darken(@color-orange, 10%);
+  background-color: darken(@color-orange, 10%) !important;
 }
 
 .btn-secondary {
@@ -117,7 +121,7 @@ html {
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background-color: darken(@color-purple, 10%);
+  background-color: darken(@color-purple, 15%) !important;
 }
 
 .btn-blue {
@@ -142,6 +146,17 @@ html {
   background-color: darken(@color-amber, 10%);
 }
 
+.btn-yellow {
+  background-color: darken(@color-yellow, 15%);
+  color: @white;
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus {
+  color: @white;
+  background-color: darken(@color-yellow, 25%);
+}
+
 .btn-fuscia {
   background-color: @color-fuscia;
   color: @white;
@@ -162,6 +177,28 @@ html {
 .btn-slate:focus {
   color: @white;
   background-color: darken(@color-slate, 10%);
+}
+
+.btn-pink {
+  background-color: @color-pink;
+  color: @white;
+}
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus {
+  color: @white;
+  background-color: darken(@color-pink, 10%);
+}
+
+.btn-sky {
+  background-color: @color-sky;
+  color: @gray-darker;
+}
+.btn-sky:hover,
+.btn-sky:active,
+.btn-sky:focus {
+  color: @white;
+  background-color: darken(@color-sky, 10%);
 }
 
 .btn-black {
@@ -225,6 +262,6 @@ h6, .h6,
     width: auto;
   }
   .display-3 {
-    font-size: 104px;
+    // font-size: 104px;
   }
 }

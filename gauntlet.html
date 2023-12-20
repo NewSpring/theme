@@ -103,7 +103,7 @@
   <!-- Gauntlet Navigation -->
   <section class="position-fixed w-100 p-4 px-sm-6 p-lg-4 o-100"
     style="z-index: 9999;">
-    <div class="fullscreen bg-beige o-90"></div>
+    <div class="fullscreen bg-beige o-97"></div>
     <div
       class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
       <div
@@ -123,25 +123,35 @@
 
       <nav class="js-mobile-nav h-0 h-lg-100 overflow-hidden w-100 w-lg-auto">
         <ul
-          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-3 list-unstyled mb-0 mt-5 mt-md-0 text-center">
+          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-2 list-unstyled mb-0 mt-5 mt-md-0 text-center">
           <li class="d-inline-block w-100 w-lg-auto"><a href="#about"
               data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">About</a>
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">About</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#go" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Go</a>
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Go</a>
+          </li>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#give" data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Give</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#serve"
               data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Serve</a>
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Serve</a>
           </li>
-          <li class="d-inline-block w-100 w-lg-auto"><a href="#give" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none h6 font-black mb-0">Give</a>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#pray" data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Pray</a>
+          </li>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#parents"
+              data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Parents</a>
+          </li>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#faq" data-scroll
+              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">FAQs</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#go"
-              class="d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none h6 font-black mb-0 mt-2 mt-md-0 bg-primary"
-              style="padding-top: 9px !important; padding-bottom: 7px !important;">Sign
-              Up</a></li>
+              class="d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none text-uppercase font-black mb-0 mt-2 mt-md-0 bg-primary"
+              style="padding-top: 9px !important; padding-bottom: 7px !important;">Register
+              Now</a></li>
         </ul>
       </nav>
     </div>
@@ -154,14 +164,14 @@
       <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 2;">
       </div>
-      <div class="fullscreen background-cover background-bottom o-20 grayscale"
+      <div class="fullscreen background-cover background-center o-20 grayscale"
         style="background-image: url('https://images.unsplash.com/photo-1570671973922-7c208a0780c3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); z-index: 0;">
       </div>
       <div
         class="fullscreen px-3 px-md-5 d-flex justify-content-center align-items-center overflow-hidden"
         style="z-index: 2;">
         <div class="page-constrained text-center mt-8 mt-md-0 mb-md-7">
-          <h1 class="display-3">The <span class="text-blue">Best Week of the
+          <h1 class="display-1">The <span class="text-blue">Best Week of the
               Summer</span> Awaits
           </h1>
           <p class="h4 text-fuscia mb-5">June 24-28 &nbsp;&middot;&nbsp;
@@ -191,76 +201,358 @@
     </section>
 
 
-    <section id="about"
-      class="position-relative vh-100 bg-black text-beige d-flex justify-content-center align-items-center">
+    <section id="about" class="position-relative bg-black text-beige py-md-9">
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
+      <div class="page-constrained mx-auto">
+        <div
+          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
+          <div class="bring-forward">
+            <h2 class="display-2">What is Gauntlet?</h2>
+            <p class="h3 font-black text-fuscia">Gauntlet is a summer camp
+              experience like no
+              other.</p>
+            <p>Rising seventh
+              graders through graduated seniors will gather from across the
+              state
+              of
+              South Carolina for an incredible week of fun, games, friendship,
+              powerful worship, and practical Bible teaching. Join students from
+              every NewSpring campus as we learn how to grow in friendship with
+              God
+              together.</p>
+            <p class="mb-0"><a href="#" class="btn btn-primary">Get Your
+                Ticket</a>
+          </div>
+          <div>
+            <div class="text-constrained mx-auto">
+              <div class="d-grid grid-cols-1 gap-4">
+                <div>
+                  <h3 class="h5 font-black text-purple">Worship</h3>
+                  <p>We believe that worship invites the presence of God, and we
+                    can’t
+                    wait to encounter God as we worship together.</p>
+                </div>
+                <div>
+                  <h3 class="h5 font-black text-purple">Teaching</h3>
+                  <p>Each session is led by pastors and teachers who are
+                    passionate
+                    about sharing God’s Word and discipling a generation into a
+                    lifetime of following Jesus.</p>
+                </div>
+                <div>
+                  <h3 class="h5 font-black text-purple">Fun</h3>
+                  <p>Every student at Gauntlet will be part of high-energy team
+                    competitions, engaging activities, and daily free time.</p>
+                </div>
+                <div>
+                  <h3 class="h5 font-black text-purple">Small Groups</h3>
+                  <p>Students will spend time forming lifelong and encouraging
+                    friendships in small groups and larger community groups.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="go" class="position-relative bg-orange text-beige">
+      <div class="fullscreen background-fixed background-center o-50"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <div class="page-constrained mx-auto mb-6 mb-md-8">
+        <div
+          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
+          <div class="bring-forward">
+            <h2 class="display-3">Can you already see yourself at
+              Gauntlet?</h2>
+            <p>Ready to go to Gauntlet? Grab your spot today! Registrations
+              close April 14.
+            </p>
+            <p class="mb-0"><a href="#" class="btn btn-secondary">Register
+                Now</a>
+          </div>
+          <div>
+            <div class="text-constrained mx-auto">
+              <div class="d-grid grid-cols-1 gap-4">
+                <div data-aos="fade-up">
+                  <h3 class="h4 font-black mb-3">Early Bird Pricing</h3>
+                  <p class="display-1 mb-2 text-slate">$429</p>
+                  <p class="mb-0">Until March 6</p>
+                </div>
+                <div data-aos="fade-up">
+                  <h3 class="h4 font-black mb-3">Regular Pricing</h3>
+                  <p class="display-1 mb-2 text-slate">$450</p>
+                  <p class="mb-0">Begins March 7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bring-forward text-constrained mx-auto">
+        <div class="p-7 bg-beige text-gray-darker"
+          style="border: 5px solid #000;" data-aos="fade-up">
+          <h3 class="h3 font-black">We're here to help.</h3>
+          <p>Whatever the barrier, we’d love to talk about it and see if we can
+            help. To apply for financial assistance, please fill out the form
+            below.</p>
+          <p>If your student has a disability, or needs any additional support,
+            we’d love to try to accommodate them. Let us know about your
+            student’s
+            needs on the registration form, and we’ll work with you to give your
+            student the best week ever. For more information, you can email
+            <a href="#" class="text-orange">gauntlet@newspring.cc</a>
+          </p>
+          <p>[[ FINANCIAL ASSISTANCE FORM ]]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="#" class="hidden position-relative bg-orange text-beige">
+      <div class="fullscreen background-fixed background-center o-50"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
       <div class="bring-forward text-constrained mx-auto text-center">
-        <h2 class="display-2">What is Gauntlet?</h2>
-        <p>Gauntlet is a week-long student summer camp
-          experience for
-          rising
-          seventh
-          grade students through graduated seniors. Students from across
-          South
-          Carolina will get together for a jam-packed week of fun, games,
-          friendship, powerful worship, and practical Bible-teaching.</p>
-        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
-            Now</a>
+        <h2 class="display-3">Can you already see yourself at
+          Gauntlet?</h2>
+        <p>Ready to go to Gauntlet? Grab your spot today!
+        </p>
+      </div>
+      <div class="bring-forward page-constrained mx-auto my-6 my-md-8">
+        <div class="d-grid grid-cols-1 grid-cols-md-2 text-center gap-6">
+          <div data-aos="fade-up">
+            <h3 class="h4 font-black mb-3">Early Bird Pricing</h3>
+            <p class="display-1 mb-2 text-slate">$429</p>
+            <p class="mb-0">Until March 6</p>
+          </div>
+          <div data-aos="fade-up">
+            <h3 class="h4 font-black mb-3">Regular Pricing</h3>
+            <p class="display-1 mb-2 text-slate">$450</p>
+            <p class="mb-0">Begins March 7</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bring-forward text-constrained mx-auto text-center mb-6 mb-md-8">
+        <p class="h5 font-black">Registrations close April 14.</p>
+        <p class="mb-0"><a href="#" class="btn btn-secondary">Register Now</a>
+      </div>
+      <div class="bring-forward text-constrained mx-auto">
+        <div class="p-7 bg-beige text-gray-darker"
+          style="border: 5px solid #000;" data-aos="fade-up">
+          <h3 class="h3 font-black">We're here to help.</h3>
+          <p>Whatever the barrier, we’d love to talk about it and see if we can
+            help. To apply for financial assistance, please fill out the form
+            below.</p>
+          <p>If your student has a disability, or needs any additional support,
+            we’d love to try to accommodate them. Let us know about your
+            student’s
+            needs on the registration form, and we’ll work with you to give your
+            student the best week ever. For more information, you can email
+            <a href="#" class="text-orange">gauntlet@newspring.cc</a>
+          </p>
+          <p>[[ FINANCIAL ASSISTANCE FORM ]]</p>
+        </div>
       </div>
     </section>
 
-    <section id="go"
-      class="position-relative vh-100 bg-fuscia text-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-fixed background-center o-60"
+    <section id="give" class="position-relative bg-beige">
+      <div class="fullscreen background-fixed background-center o-100"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
-        <h2 class="display-1">Go to Gauntlet</h2>
-        <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
-          Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
-          Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
-          dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-blue">Sign Up
-            to Go</a>
+      <div class="text-constrained mx-auto text-center">
+        <h2 class="display-2">Give to Gauntlet</h2>
+        <span class="bring-forward">
+          <p>Gauntlet would not be possible
+            without the
+            generous support of our
+            NewSpring family. In fact, <span class="text-orange">the cost of
+              every
+              single student ticket is
+              discounted – even those who pay full price.</span> We supplement
+            the
+            cost of
+            youth camp because we believe in the next generation, and we want to
+            provide them a space to encounter God in a unique way this summer.
+          </p>
+          <p class="mb-0"><a href="#" class="btn btn-secondary">Give Now</a></p>
+        </span>
       </div>
     </section>
 
-    <section id="serve"
-      class="position-relative vh-100 bg-blue text-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-fixed background-center o-30"
+    <section id="serve" class="position-relative bg-purple text-beige">
+      <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
-        <h2 class="display-1">Serve at Gauntlet</h2>
-        <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
-          Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
-          Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
-          dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
+      <div class="page-constrained mx-auto mb-6 mb-md-8">
+        <div
+          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
+          <div class="bring-forward">
+            <h2 class="display-3">Serve at Gauntlet</h2>
+            <p>
+              Not only is Gauntlet a life-changing week for students, but it’s
+              also a faith-building week for volunteers! Our Group Leaders and
+              Support Volunteers are essential to creating a Gauntlet experience
+              students love year after year.
+            </p>
+            <p>We always have a 4-to-1 student-to-volunteer ratio because we
+              care about students and want every student to have a fun and safe
+              week. If you're interested in serving at Gauntlet as a Group
+              Leader, apply below.</p>
+            <p class="mb-0"><a href="#" class="btn btn-primary">Apply to Lead
+                a Group</a>
+          </div>
+          <div>
+            <div class="text-constrained mx-auto">
+              <div class="d-grid grid-cols-1 gap-4">
+                <p class="h5 font-black">What makes a great Gauntlet volunteer?
+                </p>
+                <div data-aos="fade-up">
+                  <h3 class="h4 font-black text-yellow mb-3">Mature</h3>
+                  <p class="mb-0">The best Gauntlet volunteers are mature
+                    Christians, like the ones Paul describes in 1 Timothy 3:1-7.
+                    In addition, you’ll want to genuinely desire to invest in
+                    students because you will spend a lot of time with the next
+                    generation.</p>
+                </div>
+                <div data-aos="fade-up">
+                  <h3 class="h4 font-black text-yellow mb-3">Flexible</h3>
+                  <p class="mb-0">Other qualities we look for in group leaders
+                    are someone who isn’t easily flustered, someone who will
+                    communicate well with students’ parents, someone who will be
+                    flexible when plans change, and decisive when students are
+                    at a stalemate.</p>
+                </div>
+                <div data-aos="fade-up">
+                  <h3 class="h4 font-black text-yellow mb-3">Responsible</h3>
+                  <p class="mb-0">Finally, great group leaders know it’s a big
+                    deal for parents to trust us with their students. They don’t
+                    take that responsibility lightly, and they work hard to make
+                    sure students have fun and stay safe.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pray" class="position-relative bg-beige">
+      <div class="fullscreen background-fixed background-center o-90"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <div class="text-constrained mx-auto text-center">
+        <h2 class="display-3">Pray for Gauntlet</h2>
+        <p>Prayer is one of our most powerful tools as we prepare for and send
+          students to Gauntlet. Would you partner with us in praying for
+          students, leaders, and volunteers this year? We know that God wants to
+          meet with each and every student at Gauntlet, and we can’t wait to ask
+          Him to do what only He can do in their lives.</p>
+      </div>
+      <div class="page-constrained mx-auto">
+        <div
+          class="d-grid grid-cols-1 grid-cols-lg-3 gap-3 gap-md-6 my-6 my-md-7 text-center">
+          <div data-aos="fade-up">
+            <h3 class="mb-2 font-black text-amber">Encounter</h3>
+            <p>Pray that every student would encounter God at Gauntlet.</p>
+          </div>
+          <div data-aos="fade-up">
+            <h3 class="mb-2 font-black text-amber">Friendship</h3>
+            <p>Pray that every student would grow in friendship with God at
+              Gauntlet.</p>
+          </div>
+          <div data-aos="fade-up">
+            <h3 class="mb-2 font-black text-amber">Safety</h3>
+            <p>Pray for the safety of every student, leader, and volunteer who
+              attends Gauntlet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bring-forward text-constrained mx-auto text-center">
+        <p>In the days ahead, we’ll post a sign-up link to 24/7 prayer to cover
+          the entire week of Gauntlet. We would love for you to join us in
+          praying hour by hour during our summer camp!</p>
+        <p class="hidden mb-0"><a href="#" class="btn btn-primary">Sign Up
             to Serve</a>
       </div>
     </section>
 
-    <section id="give"
-      class="position-relative vh-100 bg-black text-white d-flex justify-content-center align-items-center">
-      <div class="fullscreen background-fixed background-center o-40"
+    <section id="parents" class="position-relative bg-black text-beige">
+      <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="pt-md-9 bring-forward text-constrained mx-auto text-center">
-        <h2 class="display-1">Give to Gauntlet</h2>
-        <p>Non in velit quis ullamco. Mollit do nisi mollit labore quis irure.
-          Nulla deserunt Lorem ex eiusmod tempor aute amet veniam est pariatur.
-          Non ad anim aute consequat reprehenderit amet dolore id dolore anim ad
-          dolor anim.</p>
-        <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
-            to Give</a>
+      <div class="bring-forward text-constrained mx-auto">
+        <h2 class="display-3 text-center">For Parents</h2>
+        <p>As we get closer to Gauntlet, every campus will hold parent meetings.
+          These meetings are designed to answer all your questions and equip you
+          with everything you and your student(s) need to know to have a great
+          week. We encourage all parents/guardians to make all efforts to attend
+          the scheduled parent meeting.</p>
+        <p>We’ll cover everything from what to pack to where to park – you don’t
+          want to miss this meeting. Plus, it’s a great chance to connect with
+          the Fuse staff, who will be hanging out with your student(s) in
+          Clemson. If you are unable to attend, please contact your local Fuse
+          Director.</p>
       </div>
     </section>
 
+    <section id="faq" class="position-relative bg-beige">
+      <div class="fullscreen background-fixed background-center o-40"
+        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+      </div>
+      <div class="bring-forward text-constrained mx-auto mb-6 mb-md-7">
+        <h2 class="display-3 text-center">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-questions bring-forward text-constrained mx-auto">
+        <div class="faq-question" data-aos="fade-up">
+          <a href="#faq_1" data-toggle="collapse"
+            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center mb-5 mb-md-6 text-decoration-none text-black">
+            <div class="col-span-5 col-span-lg-11">
+              <h3 class="h5 mb-0">How much does it
+                cost to go to Gauntlet as a
+                student? As a volunteer?</h3>
+            </div>
+            <div class="col-span-1 col-span-lg-1 text-right">
+              <i class="fa-regular fa-circle-plus fa-2x"></i>
+            </div>
+          </a>
+          <div id="faq_1" class="collapse in">
+            <p>Early Bird student pricing is $429 and will be
+              available until
+              March 6, so register quickly! Full-price tickets are $450 and will
+              be available from March 7 to April 14. Your first student ticket
+              will be full price, and each student's ticket price following will
+              be $350. Tickets cover
+              students’ transportation, rooms, meals, resources, and all
+              Gauntlet
+              activities. If your student wants to purchase snacks or a souvenir
+              from the Gauntlet Store, they’ll need some extra spending money.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <style>
+      .faq-question * {
+        text-transform: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('.collapse').collapse();
+      });
+    </script>
+
+
     <section
-      class="pb-0 d-flex justify-content-center align-items-end bg-beige position-relative">
+      class="hidden pb-0 d-flex justify-content-center align-items-end bg-beige position-relative">
       <div class="fullscreen background-fixed background-center o-70"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -271,7 +563,7 @@
 
   </div>
 
-  <section
+  <footer
     class="position-relative px-5 py-8 p-md-8 bg-black text-white text-center text-md-left">
     <div class="fullscreen background-fixed background-center o-40"
       style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
@@ -300,7 +592,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
 
   <div class="hidden d-grid grid-cols-2 grid-cols-md-4 grid-cols-lg-6">

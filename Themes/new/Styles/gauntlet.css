@@ -23,13 +23,13 @@ html {
   background-color: #dd0e23;
 }
 .bg-green {
-  background-color: #618a00;
+  background-color: #58770e;
 }
 .bg-yellow {
   background-color: #ffc240;
 }
 .bg-purple {
-  background-color: #8e69fb;
+  background-color: #6941e4;
 }
 .bg-sky {
   background-color: #acdde5;
@@ -62,13 +62,13 @@ html {
   color: #dd0e23;
 }
 .text-green {
-  color: #618a00;
+  color: #58770e;
 }
 .text-yellow {
   color: #ffc240;
 }
 .text-purple {
-  color: #8e69fb;
+  color: #7b57e7;
 }
 .text-sky {
   color: #acdde5;
@@ -101,13 +101,13 @@ html {
   fill: #dd0e23;
 }
 .fill-green {
-  fill: #618a00;
+  fill: #58770e;
 }
 .fill-yellow {
   fill: #ffc240;
 }
 .fill-purple {
-  fill: #8e69fb;
+  fill: #7b57e7;
 }
 .fill-sky {
   fill: #acdde5;
@@ -131,6 +131,9 @@ html {
   height: 100svh !important;
   /* new browsers */
 }
+.o-97 {
+  opacity: 0.97;
+}
 .btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -143,16 +146,16 @@ html {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #d03e0e;
+  background-color: #d03e0e !important;
 }
 .btn-secondary {
-  background-color: #8e69fb;
+  background-color: #7b57e7;
   color: #ffffff;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background-color: #6937fa;
+  background-color: #4b1ed3 !important;
 }
 .btn-blue {
   background-color: #215cd7;
@@ -174,6 +177,16 @@ html {
   color: #ffffff;
   background-color: #e27102;
 }
+.btn-yellow {
+  background-color: #f3a500;
+  color: #ffffff;
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus {
+  color: #ffffff;
+  background-color: #c08200;
+}
 .btn-fuscia {
   background-color: #e854be;
   color: #ffffff;
@@ -193,6 +206,26 @@ html {
 .btn-slate:focus {
   color: #ffffff;
   background-color: #090a0b;
+}
+.btn-pink {
+  background-color: #f687a8;
+  color: #ffffff;
+}
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus {
+  color: #ffffff;
+  background-color: #f25886;
+}
+.btn-sky {
+  background-color: #acdde5;
+  color: #1c1c1c;
+}
+.btn-sky:hover,
+.btn-sky:active,
+.btn-sky:focus {
+  color: #ffffff;
+  background-color: #85cdd9;
 }
 .btn-black {
   background-color: #000000;
@@ -247,8 +280,5 @@ h6,
   }
   .w-lg-auto {
     width: auto;
-  }
-  .display-3 {
-    font-size: 104px;
   }
 }
