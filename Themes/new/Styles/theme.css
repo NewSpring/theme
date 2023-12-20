@@ -16906,6 +16906,9 @@ a {
 .text-decoration-none a {
   text-decoration: none;
 }
+.text-transform-none {
+  text-transform: none !important;
+}
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -18710,11 +18713,29 @@ button.swiper-pagination-bullet {
 .left-75 {
   left: 75%;
 }
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.rotate-45-counter {
+  transform: rotate(-45deg);
+}
 .rotate-90 {
   transform: rotate(90deg);
 }
 .rotate-90-counter {
   transform: rotate(-90deg);
+}
+.rotate-135 {
+  transform: rotate(135deg);
+}
+.rotate-135-counter {
+  transform: rotate(-135deg);
+}
+.rotate-315 {
+  transform: rotate(315deg);
+}
+.rotate-315-counter {
+  transform: rotate(-315deg);
 }
 .flip-x {
   transform: scaleX(-1);
@@ -19535,11 +19556,29 @@ button.swiper-pagination-bullet {
   .left-sm-75 {
     left: 75%;
   }
+  .rotate-sm-45 {
+    transform: rotate(45deg);
+  }
+  .rotate-sm-45-counter {
+    transform: rotate(-45deg);
+  }
   .rotate-sm-90 {
     transform: rotate(90deg);
   }
   .rotate-sm-90-counter {
     transform: rotate(-90deg);
+  }
+  .rotate-sm-135 {
+    transform: rotate(135deg);
+  }
+  .rotate-sm-135-counter {
+    transform: rotate(-135deg);
+  }
+  .rotate-sm-315 {
+    transform: rotate(315deg);
+  }
+  .rotate-sm-315-counter {
+    transform: rotate(-315deg);
   }
   .flip-sm-x {
     transform: scaleX(-1);
@@ -20361,11 +20400,29 @@ button.swiper-pagination-bullet {
   .left-md-75 {
     left: 75%;
   }
+  .rotate-md-45 {
+    transform: rotate(45deg);
+  }
+  .rotate-md-45-counter {
+    transform: rotate(-45deg);
+  }
   .rotate-md-90 {
     transform: rotate(90deg);
   }
   .rotate-md-90-counter {
     transform: rotate(-90deg);
+  }
+  .rotate-md-135 {
+    transform: rotate(135deg);
+  }
+  .rotate-md-135-counter {
+    transform: rotate(-135deg);
+  }
+  .rotate-md-315 {
+    transform: rotate(315deg);
+  }
+  .rotate-md-315-counter {
+    transform: rotate(-315deg);
   }
   .flip-md-x {
     transform: scaleX(-1);
@@ -21187,11 +21244,29 @@ button.swiper-pagination-bullet {
   .left-lg-75 {
     left: 75%;
   }
+  .rotate-lg-45 {
+    transform: rotate(45deg);
+  }
+  .rotate-lg-45-counter {
+    transform: rotate(-45deg);
+  }
   .rotate-lg-90 {
     transform: rotate(90deg);
   }
   .rotate-lg-90-counter {
     transform: rotate(-90deg);
+  }
+  .rotate-lg-135 {
+    transform: rotate(135deg);
+  }
+  .rotate-lg-135-counter {
+    transform: rotate(-135deg);
+  }
+  .rotate-lg-315 {
+    transform: rotate(315deg);
+  }
+  .rotate-lg-315-counter {
+    transform: rotate(-315deg);
   }
   .flip-lg-x {
     transform: scaleX(-1);
@@ -22013,11 +22088,29 @@ button.swiper-pagination-bullet {
   .left-xl-75 {
     left: 75%;
   }
+  .rotate-xl-45 {
+    transform: rotate(45deg);
+  }
+  .rotate-xl-45-counter {
+    transform: rotate(-45deg);
+  }
   .rotate-xl-90 {
     transform: rotate(90deg);
   }
   .rotate-xl-90-counter {
     transform: rotate(-90deg);
+  }
+  .rotate-xl-135 {
+    transform: rotate(135deg);
+  }
+  .rotate-xl-135-counter {
+    transform: rotate(-135deg);
+  }
+  .rotate-xl-315 {
+    transform: rotate(315deg);
+  }
+  .rotate-xl-315-counter {
+    transform: rotate(-315deg);
   }
   .flip-xl-x {
     transform: scaleX(-1);

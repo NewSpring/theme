@@ -16,7 +16,7 @@
 @color-red: #dd0e23;
 @color-green: #58770e;
 @color-yellow: #ffc240;
-@color-purple: #7b57e7;
+@color-purple: #6d49d9;
 @color-sky: #acdde5;
 @color-slate: #202427;
 @color-pink: #f687a8;
@@ -31,6 +31,7 @@
 
 html {
 	scroll-behavior: smooth;
+  scroll-padding-top: 79px; 
 }
 
 
@@ -89,6 +90,23 @@ html {
 
 .o-97 {
   opacity: .97;
+}
+
+.h-max {
+  height: max-content;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+[data-toggle="collapse"] i {
+  transition: all .3s ease-in-out;
+}
+
+.collapse {
+  overflow: hidden;
 }
 
 //
@@ -255,6 +273,10 @@ h6, .h6,
 }
 
 @media @lg {
+  html {
+    scroll-padding-top: 91px; 
+  }
+
   .h-lg-100 {
     height: 100%;
   }

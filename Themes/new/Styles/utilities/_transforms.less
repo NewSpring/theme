@@ -18,11 +18,29 @@
 }
 
 .transform-breakpoints(@infix) {
+  .rotate@{infix}-45 {
+    transform: rotate(45deg);
+  }
+  .rotate@{infix}-45-counter {
+    transform: rotate(-45deg);
+  }
   .rotate@{infix}-90 {
     transform: rotate(90deg);
   }
   .rotate@{infix}-90-counter {
     transform: rotate(-90deg);
+  }
+  .rotate@{infix}-135 {
+    transform: rotate(135deg);
+  }
+  .rotate@{infix}-135-counter {
+    transform: rotate(-135deg);
+  }
+  .rotate@{infix}-315 {
+    transform: rotate(315deg);
+  }
+  .rotate@{infix}-315-counter {
+    transform: rotate(-315deg);
   }
   .flip@{infix}-x {
     transform: scaleX(-1);

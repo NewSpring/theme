@@ -101,57 +101,74 @@
   </style>
 
   <!-- Gauntlet Navigation -->
-  <section class="position-fixed w-100 p-4 px-sm-6 p-lg-4 o-100"
+  <section
+    class="position-fixed bg-black text-white w-100 p-3 px-sm-6 px-lg-8 py-lg-2 o-100 overflow-hidden"
     style="z-index: 9999;">
-    <div class="fullscreen bg-beige o-97"></div>
+    <div class="fullscreen background-fixed background-center o-60"
+      style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
+    </div>
     <div
-      class="page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
+      class="bring-forward page-constrained mx-auto d-flex flex-column flex-lg-row justify-content-between align-items-center w-100">
       <div
         class="bring-forward d-flex justify-content-between align-items-center w-100 w-lg-auto">
         <a href="#top">
           <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
             alt="Gauntlet Logo" class="hidden bring-forward w-100"
             style="max-width: 200px;">
-          <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-multi.svg"
+          <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-light.svg"
             alt="Gauntlet Logo" class="bring-forward w-100"
-            style="max-width: 50px;">
+            style="max-width: 45px;">
         </a>
-
-        <a href="#" class="js-mobile-nav-trigger p-3 hidden-lg hidden-xl"><i
-            class="fa-solid fa-bars fa-xl text-orange"></i></a>
+        <nav class="hidden-lg hidden-xl">
+          <ul
+            class="bring-forward d-flex align-items-center gap-x-3 list-unstyled mb-0 text-center">
+            <li class="d-inline-block w-100 w-lg-auto"><a href="#go"
+                class="position-relative d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none text-uppercase font-black mb-0 bg-primary"
+                style="padding-top: 9px !important; padding-bottom: 7px !important;">Register</a>
+            </li>
+            <li class="d-inline-block w-100 w-lg-auto">
+              <a href="#"
+                class="js-mobile-nav-trigger position-relative py-3 pl-3 pr-2"
+                style="top: 1px">
+                <i class="fa-solid fa-bars fa-xl text-beige"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <nav class="js-mobile-nav h-0 h-lg-100 overflow-hidden w-100 w-lg-auto">
+      <nav class="js-mobile-nav h-0 h-lg-100 w-100 w-lg-auto">
         <ul
-          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-2 list-unstyled mb-0 mt-5 mt-md-0 text-center">
+          class="bring-forward d-flex flex-column flex-lg-row align-items-center gap-x-2 gap-x-lg-0 list-unstyled mb-0 mt-5 mt-md-0 text-center">
           <li class="d-inline-block w-100 w-lg-auto"><a href="#about"
               data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">About</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">About</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#go" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Go</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">Go</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#give" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Give</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">Give</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#serve"
               data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Serve</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">Serve</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#pray" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Pray</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">Pray</a>
           </li>
           <li class="d-inline-block w-100 w-lg-auto"><a href="#parents"
               data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">Parents</a>
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">Parents</a>
           </li>
-          <li class="d-inline-block w-100 w-lg-auto"><a href="#faq" data-scroll
-              class="d-inline-block w-100 px-2 py-3 py-md-2 text-gray-darker text-decoration-none text-uppercase font-black mb-0">FAQs</a>
+          <li class="d-inline-block w-100 w-lg-auto"><a href="#faqs" data-scroll
+              class="d-inline-block w-100 px-2 py-3 px-lg-3 py-lg-4 text-white text-decoration-none text-uppercase font-black mb-0">FAQs</a>
           </li>
-          <li class="d-inline-block w-100 w-lg-auto"><a href="#go"
-              class="d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none text-uppercase font-black mb-0 mt-2 mt-md-0 bg-primary"
-              style="padding-top: 9px !important; padding-bottom: 7px !important;">Register
-              Now</a></li>
+          <li class="w-100 w-lg-auto hidden-xs hidden-sm hidden-md"><a
+              href="#go"
+              class="position-relative d-inline-block w-100 py-2 px-4 rounded-full text-white text-decoration-none text-uppercase font-black mb-0 mt-2 mt-md-0 ml-md-3 bg-primary"
+              style="top: -1px; padding-top: 9px !important; padding-bottom: 7px !important;">Register</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -170,8 +187,8 @@
       <div
         class="fullscreen px-3 px-md-5 d-flex justify-content-center align-items-center overflow-hidden"
         style="z-index: 2;">
-        <div class="page-constrained text-center mt-8 mt-md-0 mb-md-7">
-          <h1 class="display-1">The <span class="text-blue">Best Week of the
+        <div class="text-constrained text-center mt-8 mt-md-0">
+          <h1 class="display-2">The <span class="text-blue">Best Week of the
               Summer</span> Awaits
           </h1>
           <p class="h4 text-fuscia mb-5">June 24-28 &nbsp;&middot;&nbsp;
@@ -179,12 +196,12 @@
           </p>
 
           <span
-            class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link clickable text-center wistia_embed_initialized"
+            class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link playerColor=f05421 text-center wistia_embed_initialized"
             style="display:inline; position:relative; z-index: 100;"
             id="wistia-uaxqzj6n5z-1">
             <div id="wistia_29.thumb_container" class="wistia_click_to_play"
               style="position: relative; display: inline;">
-              <a href="#" class="btn btn-primary">Play
+              <a href="#" class="btn btn-lg btn-primary drop-shadow">Play
                 Videoooo <i class="fa-solid fa-play ml-1"></i></a>
             </div>
           </span>
@@ -197,11 +214,13 @@
       </div>
       <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
         alt="Gauntlet Logo" class="w-100 position-absolute bottom-0 left-0"
-        style="margin-bottom: -8px;">
+        style="margin-bottom: -4px;">
     </section>
 
 
-    <section id="about" class="position-relative bg-black text-beige py-md-9">
+
+    <section id="about"
+      class="pt-8 pt-xl-9 position-relative bg-black text-beige">
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -222,34 +241,75 @@
               every NewSpring campus as we learn how to grow in friendship with
               God
               together.</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary">Get Your
+            <p class="mb-0"><a href="#go" class="btn btn-primary">Get Your
                 Ticket</a>
           </div>
           <div>
             <div class="text-constrained mx-auto">
-              <div class="d-grid grid-cols-1 gap-4">
-                <div>
-                  <h3 class="h5 font-black text-purple">Worship</h3>
-                  <p>We believe that worship invites the presence of God, and we
-                    can’t
-                    wait to encounter God as we worship together.</p>
+              <div class="d-grid grid-cols-1 gap-2 bring-forward">
+                <div data-aos="fade-up">
+                  <a href="#about_1" data-toggle="collapse" data-parent="#about"
+                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                    <div class="col-span-5 col-span-lg-11">
+                      <h3 class="h4 font-black text-purple mb-0">Worship</h3>
+                    </div>
+                    <div class="col-span-1 col-span-lg-1 text-right">
+                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                    </div>
+                  </a>
+                  <div id="about_1" class="collapse text-beige">
+                    <p>We believe that worship invites the presence of God, and
+                      we can’t wait to encounter God as we worship together.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="h5 font-black text-purple">Teaching</h3>
-                  <p>Each session is led by pastors and teachers who are
-                    passionate
-                    about sharing God’s Word and discipling a generation into a
-                    lifetime of following Jesus.</p>
+                <div data-aos="fade-up">
+                  <a href="#about_2" data-toggle="collapse" data-parent="#about"
+                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                    <div class="col-span-5 col-span-lg-11">
+                      <h3 class="h4 font-black text-purple mb-0">Teaching</h3>
+                    </div>
+                    <div class="col-span-1 col-span-lg-1 text-right">
+                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                    </div>
+                  </a>
+                  <div id="about_2" class="collapse text-beige">
+                    <p>Each session is led by pastors and teachers who are
+                      passionate about sharing God’s Word and discipling a
+                      generation into a lifetime of following Jesus.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="h5 font-black text-purple">Fun</h3>
-                  <p>Every student at Gauntlet will be part of high-energy team
-                    competitions, engaging activities, and daily free time.</p>
+                <div data-aos="fade-up">
+                  <a href="#about_3" data-toggle="collapse" data-parent="#about"
+                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                    <div class="col-span-5 col-span-lg-11">
+                      <h3 class="h4 font-black text-purple mb-0">Fun</h3>
+                    </div>
+                    <div class="col-span-1 col-span-lg-1 text-right">
+                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                    </div>
+                  </a>
+                  <div id="about_3" class="collapse text-beige">
+                    <p>Every student at Gauntlet will be part of high-energy
+                      team competitions, engaging activities, and daily free
+                      time.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="h5 font-black text-purple">Small Groups</h3>
-                  <p>Students will spend time forming lifelong and encouraging
-                    friendships in small groups and larger community groups.</p>
+                <div data-aos="fade-up">
+                  <a href="#about_4" data-toggle="collapse" data-parent="#about"
+                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                    <div class="col-span-5 col-span-lg-11">
+                      <h3 class="h4 font-black text-purple mb-0">Small Groups
+                      </h3>
+                    </div>
+                    <div class="col-span-1 col-span-lg-1 text-right">
+                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                    </div>
+                  </a>
+                  <div id="about_4" class="collapse text-beige">
+                    <p>Students will spend time forming lifelong and encouraging
+                      friendships in small groups and larger community groups.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,7 +318,10 @@
       </div>
     </section>
 
-    <section id="go" class="position-relative bg-orange text-beige">
+
+
+    <section id="go"
+      class="px-3 px-sm-5 px-md-7 px-lg-8 position-relative bg-orange text-beige">
       <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -276,7 +339,7 @@
           </div>
           <div>
             <div class="text-constrained mx-auto">
-              <div class="d-grid grid-cols-1 gap-4">
+              <div class="d-grid grid-cols-1 gap-4 gap-lg-6">
                 <div data-aos="fade-up">
                   <h3 class="h4 font-black mb-3">Early Bird Pricing</h3>
                   <p class="display-1 mb-2 text-slate">$429</p>
@@ -294,7 +357,7 @@
       </div>
 
       <div class="bring-forward text-constrained mx-auto">
-        <div class="p-7 bg-beige text-gray-darker"
+        <div class="p-5 p-lg-7 bg-beige text-gray-darker"
           style="border: 5px solid #000;" data-aos="fade-up">
           <h3 class="h3 font-black">We're here to help.</h3>
           <p>Whatever the barrier, we’d love to talk about it and see if we can
@@ -312,53 +375,7 @@
       </div>
     </section>
 
-    <section id="#" class="hidden position-relative bg-orange text-beige">
-      <div class="fullscreen background-fixed background-center o-50"
-        style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
-      </div>
-      <div class="bring-forward text-constrained mx-auto text-center">
-        <h2 class="display-3">Can you already see yourself at
-          Gauntlet?</h2>
-        <p>Ready to go to Gauntlet? Grab your spot today!
-        </p>
-      </div>
-      <div class="bring-forward page-constrained mx-auto my-6 my-md-8">
-        <div class="d-grid grid-cols-1 grid-cols-md-2 text-center gap-6">
-          <div data-aos="fade-up">
-            <h3 class="h4 font-black mb-3">Early Bird Pricing</h3>
-            <p class="display-1 mb-2 text-slate">$429</p>
-            <p class="mb-0">Until March 6</p>
-          </div>
-          <div data-aos="fade-up">
-            <h3 class="h4 font-black mb-3">Regular Pricing</h3>
-            <p class="display-1 mb-2 text-slate">$450</p>
-            <p class="mb-0">Begins March 7</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bring-forward text-constrained mx-auto text-center mb-6 mb-md-8">
-        <p class="h5 font-black">Registrations close April 14.</p>
-        <p class="mb-0"><a href="#" class="btn btn-secondary">Register Now</a>
-      </div>
-      <div class="bring-forward text-constrained mx-auto">
-        <div class="p-7 bg-beige text-gray-darker"
-          style="border: 5px solid #000;" data-aos="fade-up">
-          <h3 class="h3 font-black">We're here to help.</h3>
-          <p>Whatever the barrier, we’d love to talk about it and see if we can
-            help. To apply for financial assistance, please fill out the form
-            below.</p>
-          <p>If your student has a disability, or needs any additional support,
-            we’d love to try to accommodate them. Let us know about your
-            student’s
-            needs on the registration form, and we’ll work with you to give your
-            student the best week ever. For more information, you can email
-            <a href="#" class="text-orange">gauntlet@newspring.cc</a>
-          </p>
-          <p>[[ FINANCIAL ASSISTANCE FORM ]]</p>
-        </div>
-      </div>
-    </section>
+
 
     <section id="give" class="position-relative bg-beige">
       <div class="fullscreen background-fixed background-center o-100"
@@ -384,14 +401,16 @@
       </div>
     </section>
 
+
+
     <section id="serve" class="position-relative bg-purple text-beige">
-      <div class="fullscreen background-fixed background-center o-50"
+      <div class="fullscreen background-fixed background-center o-30"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
       <div class="page-constrained mx-auto mb-6 mb-md-8">
         <div
-          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
-          <div class="bring-forward">
+          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left">
+          <div class="bring-forward h-max position-sticky">
             <h2 class="display-3">Serve at Gauntlet</h2>
             <p>
               Not only is Gauntlet a life-changing week for students, but it’s
@@ -412,7 +431,7 @@
                 <p class="h5 font-black">What makes a great Gauntlet volunteer?
                 </p>
                 <div data-aos="fade-up">
-                  <h3 class="h4 font-black text-yellow mb-3">Mature</h3>
+                  <h3 class="h4 font-black mb-3">Mature</h3>
                   <p class="mb-0">The best Gauntlet volunteers are mature
                     Christians, like the ones Paul describes in 1 Timothy 3:1-7.
                     In addition, you’ll want to genuinely desire to invest in
@@ -420,7 +439,7 @@
                     generation.</p>
                 </div>
                 <div data-aos="fade-up">
-                  <h3 class="h4 font-black text-yellow mb-3">Flexible</h3>
+                  <h3 class="h4 font-black mb-3">Flexible</h3>
                   <p class="mb-0">Other qualities we look for in group leaders
                     are someone who isn’t easily flustered, someone who will
                     communicate well with students’ parents, someone who will be
@@ -428,7 +447,7 @@
                     at a stalemate.</p>
                 </div>
                 <div data-aos="fade-up">
-                  <h3 class="h4 font-black text-yellow mb-3">Responsible</h3>
+                  <h3 class="h4 font-black mb-3">Responsible</h3>
                   <p class="mb-0">Finally, great group leaders know it’s a big
                     deal for parents to trust us with their students. They don’t
                     take that responsibility lightly, and they work hard to make
@@ -441,12 +460,14 @@
       </div>
     </section>
 
+
+
     <section id="pray" class="position-relative bg-beige">
       <div class="fullscreen background-fixed background-center o-90"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
       <div class="text-constrained mx-auto text-center">
-        <h2 class="display-3">Pray for Gauntlet</h2>
+        <h2 class="display-1">Pray for Gauntlet</h2>
         <p>Prayer is one of our most powerful tools as we prepare for and send
           students to Gauntlet. Would you partner with us in praying for
           students, leaders, and volunteers this year? We know that God wants to
@@ -481,6 +502,8 @@
       </div>
     </section>
 
+
+
     <section id="parents" class="position-relative bg-black text-beige">
       <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
@@ -500,19 +523,51 @@
       </div>
     </section>
 
-    <section id="faq" class="position-relative bg-beige">
+
+
+    <section id="faqs" class="position-relative bg-beige">
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
       <div class="bring-forward text-constrained mx-auto mb-6 mb-md-7">
         <h2 class="display-3 text-center">Frequently Asked Questions</h2>
       </div>
-      <div class="faq-questions bring-forward text-constrained mx-auto">
-        <div class="faq-question" data-aos="fade-up">
+      <div
+        class="d-flex flex-column gap-y-3 bring-forward text-constrained mx-auto">
+        <div data-aos="fade-up">
           <a href="#faq_1" data-toggle="collapse"
-            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center mb-5 mb-md-6 text-decoration-none text-black">
+            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
             <div class="col-span-5 col-span-lg-11">
-              <h3 class="h5 mb-0">How much does it
+              <h3 class="h5 text-transform-none">Where is Gauntlet?</h3>
+            </div>
+            <div class="col-span-1 col-span-lg-1 text-right">
+              <i class="fa-regular fa-circle-plus fa-2x"></i>
+            </div>
+          </a>
+          <div id="faq_1" class="collapse text-purple">
+            <p>Clemson, South Carolina</p>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <a href="#faq_2" data-toggle="collapse"
+            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
+            <div class="col-span-5 col-span-lg-11">
+              <h3 class="h5 text-transform-none">What are the dates for
+                Gauntlet?</h3>
+            </div>
+            <div class="col-span-1 col-span-lg-1 text-right">
+              <i class="fa-regular fa-circle-plus fa-2x"></i>
+            </div>
+          </a>
+          <div id="faq_2" class="collapse text-purple">
+            <p>June 24-28, 2024</p>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <a href="#faq_3" data-toggle="collapse"
+            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
+            <div class="col-span-5 col-span-lg-11">
+              <h3 class="h5 text-transform-none">How much does it
                 cost to go to Gauntlet as a
                 student? As a volunteer?</h3>
             </div>
@@ -520,7 +575,7 @@
               <i class="fa-regular fa-circle-plus fa-2x"></i>
             </div>
           </a>
-          <div id="faq_1" class="collapse in">
+          <div id="faq_3" class="collapse text-purple">
             <p>Early Bird student pricing is $429 and will be
               available until
               March 6, so register quickly! Full-price tickets are $450 and will
@@ -539,16 +594,6 @@
       </div>
 
     </section>
-    <style>
-      .faq-question * {
-        text-transform: none;
-      }
-    </style>
-    <script>
-      $(document).ready(function () {
-        $('.collapse').collapse();
-      });
-    </script>
 
 
     <section
@@ -564,18 +609,27 @@
   </div>
 
   <footer
-    class="position-relative px-5 py-8 p-md-8 bg-black text-white text-center text-md-left">
-    <div class="fullscreen background-fixed background-center o-40"
+    class="position-relative px-7 py-8 px-md-8 bg-black text-white text-center text-md-left">
+    <div class="fullscreen background-fixed background-center o-50"
       style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
     </div>
     <div class="page-constrained mx-auto bring-forward">
-      <div class="d-grid grid-cols-1 grid-cols-md-2 bring-forward">
+      <div class="d-grid grid-cols-1 bring-forward text-center">
         <div>
-          <img src="./Themes/new/Assets/SVG/mark.svg"
-            alt="NewSpring Church Logo" class="mb-3"
-            style="width: 40px; max-width: 40px" />
-          <h6 class="font-black text-uppercase">NewSpring Church</h6>
-          <p class="font-sans font-black tracking-tight text-uppercase mb-0">
+          <img src="Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg"
+            alt="" class="d-inline-block w-75 w-sm-50 w-lg-25 mb-5">
+          <p class=""><small>Gauntlet is the
+              student summer camp of
+              <a href="https://newspring.cc" class="text-white">NewSpring
+                Church</a>.</small></p>
+          <a href="https://newspring.cc">
+            <img src="./Themes/new/Assets/SVG/mark.svg"
+              alt="NewSpring Church Logo" class="mb-5"
+              style="width: 50px; max-width: 50px" /></a>
+          <img src="/Themes/new/Assets/SVG/logo-light.svg" alt=""
+            class="mb-5 hidden" style="max-width: 200px;">
+
+          <p class="font-sans font-black tracking-tight text-uppercase mb-5">
             <small><a href="https://www.rockrms.com"
                 class="text-white text-hover-white text-decoration-none"
                 target="_blank">Built on
@@ -589,6 +643,9 @@
                 </span>
                 Rock RMS</a></small>
           </p>
+          <p class="font-black text-uppercase mb-0"><small><i
+                class="fa-regular fa-copyright fa-xs mr-1"></i> 2024 NewSpring
+              Church</small></p>
         </div>
       </div>
     </div>
@@ -613,13 +670,34 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const mobileNavTrigger = document.querySelector('.js-mobile-nav-trigger');
-      const mobileNav = document.querySelector('.js-mobile-nav');
+      const mobileNavTrigger = document.querySelector(".js-mobile-nav-trigger");
+      const navigation = document.querySelector(".js-mobile-nav");
+      const navigationLinks = navigation.querySelectorAll("a");
+      const collapseElements = document.querySelectorAll("[data-toggle='collapse']");
 
+      // Open navigation on mobile when trigger is clicked
       mobileNavTrigger.addEventListener("click", function (e) {
         e.preventDefault();
-        mobileNav.classList.toggle('h-0');
-        console.log('clicked!');
+        navigation.classList.toggle("h-0");
+      });
+
+      // Close navigation on mobile when navigation link is clicked
+      let hideNavOnMobile = () => {
+        navigation.classList.add("h-0");
+      }
+
+      navigationLinks.forEach((item) => {
+        item.addEventListener("click", hideNavOnMobile)
+      });
+
+      // Add functionality to collapsable elements
+      collapseElements.forEach((item) => {
+        item.addEventListener("click", function () {
+          // const collapseElementId = item.href.split('#')[1];
+          // const collapseElement = document.querySelector('#' + collapseElementId);
+          const collapseIcon = item.querySelector('.fa-circle-plus');
+          collapseIcon.classList.toggle('rotate-135');
+        })
       });
     });
   </script>
