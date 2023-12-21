@@ -297,6 +297,18 @@ a.text-purple:hover {
 a.text-blue:hover {
   color: #215cd7;
 }
+.display-1 {
+  font-size: 52px;
+}
+.display-2 {
+  font-size: 51px;
+}
+#navigation a {
+  font-size: 125%;
+}
+[data-toggle='collapse'] i {
+  margin-top: -7px;
+}
 @media (min-width: 576px) {
   a.text-purple:hover {
     color: #5029c6;
@@ -313,6 +325,19 @@ a.text-blue:hover {
     color: #215cd7;
   }
 }
+@media (min-width: 768px) {
+  #navigation a {
+    font-size: 100%;
+  }
+  .display-1 {
+    font-size: 92px;
+    letter-spacing: -3px;
+  }
+  .display-2 {
+    font-size: 84px;
+    letter-spacing: -2.7px;
+  }
+}
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 91px;
@@ -321,6 +346,9 @@ a.text-blue:hover {
     display: block;
     height: auto !important;
     overflow: visible;
+  }
+  .svh-lg-100 {
+    height: svh100;
   }
   .h-lg-100 {
     height: 100%;

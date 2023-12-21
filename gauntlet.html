@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="./Themes/new/Styles/gauntlet.css" />
 </head>
 
-<body id="top" class="bg-slate">
+<body id="top" class="bg-black">
   <style>
     :root {
       --color-fuscia: #e854be;
@@ -110,9 +110,9 @@
 
   <!-- Gauntlet Navigation -->
   <section
-    class="position-fixed bg-black text-white w-100 p-3 px-sm-6 px-lg-8 py-lg-2 o-100 overflow-hidden"
+    class="position-fixed bg-black text-white w-100 p-3 px-sm-6 px-lg-8 py-lg-2 o-100 overflow-hidden shadow"
     style="z-index: 9999;">
-    <div class="fullscreen background-fixed background-center o-60"
+    <div class="fullscreen background-top o-50"
       style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
     </div>
     <div
@@ -184,18 +184,18 @@
   <div id="content">
 
     <!-- Hero -->
-    <section class="svh-100 p-0 position-relative bg-beige overflow-hidden">
-      <div class="fullscreen background-fixed background-center o-50"
+    <section class="svh-100 p-0 position-relative bg-beige">
+      <div class="fullscreen background-fixed background-center o-60"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 2;">
       </div>
       <div class="fullscreen background-cover background-center o-20 grayscale"
         style="background-image: url('https://images.unsplash.com/photo-1570671973922-7c208a0780c3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); z-index: 0;">
       </div>
       <div
-        class="fullscreen px-3 px-md-5 d-flex justify-content-center align-items-center overflow-hidden"
+        class="fullscreen px-3 px-md-5 d-flex justify-content-center align-items-center"
         style="z-index: 2;">
-        <div class="text-constrained text-center mt-8 mt-md-0">
-          <h1 class="display-2">The <span class="text-blue">Best Week of the
+        <div class="page-constrained text-center mt-8 mt-md-0">
+          <h1 class="display-1">The <span class="text-blue">Best Week of the
               Summer</span> Awaits
           </h1>
           <p class="h4 text-fuscia mb-5">June 24-28 &nbsp;&middot;&nbsp;
@@ -203,11 +203,9 @@
           </p>
 
           <span
-            class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link playerColor=f05421 text-center wistia_embed_initialized"
-            style="display:inline; position:relative; z-index: 100;"
+            class="wistia_embed wistia_async_uaxqzj6n5z popover=true popoverContent=link playerColor=f05421 text-center wistia_embed_initialized d-inline-block mb-5 mb-sm-0"
             id="wistia-uaxqzj6n5z-1">
-            <div id="wistia_29.thumb_container" class="wistia_click_to_play"
-              style="position: relative; display: inline;">
+            <div id="wistia_29.thumb_container" class="wistia_click_to_play">
               <a href="#" class="btn btn-lg btn-primary drop-shadow">Play
                 Videoooo <i class="fa-solid fa-play ml-1"></i></a>
             </div>
@@ -220,21 +218,22 @@
         </div>
       </div>
       <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-dark.svg"
-        alt="Gauntlet Logo" class="w-100 position-absolute bottom-0 left-0"
+        alt="Gauntlet Logo"
+        class="w-100 position-absolute bottom-0 left-0 o-100"
         style="margin-bottom: -4px;">
     </section>
 
 
 
-    <section id="about" class=" pt-xl-9 position-relative bg-black text-beige">
+    <section id="about" class=" position-relative bg-black text-beige">
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
       <div class="page-constrained mx-auto">
         <div
-          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
-          <div class="bring-forward">
-            <p class="display-3 font-black text-beige">Gauntlet is a <span
+          class="d-grid grid-cols-1 grid-cols-lg-12 gap-y-4 gap-x-8 text-center text-lg-left  align-items-center">
+          <div class="col-span-lg-7">
+            <p class="display-3 font-black text-beige">A <span
                 class="text-secondary">summer
                 camp
                 experience</span> like no
@@ -248,124 +247,128 @@
               every NewSpring campus as we learn how to grow in friendship with
               God
               together.</p>
-            <p class="mb-0"><a href="#go" class="btn btn-primary">Get Your
-                Ticket</a>
+            <p class="hidden-xs hidden-sm mb-0 bring-forward"><a href="#go"
+                class="btn btn-primary">Get Your
+                Ticket</a></p>
           </div>
-          <div>
+          <div class="col-span-lg-5 max-h-content">
             <div class="text-constrained mx-auto">
-              <div class="d-grid grid-cols-1 gap-2 bring-forward">
-                <div class="panel-group" id="about_accordion" role="tablist"
-                  aria-multiselectable="true">
+              <div
+                class="panel-group d-grid grid-cols-1 gap-3 bring-forward mb-0"
+                id="about_accordion" role="tablist" aria-multiselectable="true">
 
-                  <div
-                    class="panel panel-default bg-transparent border-none shadow-none"
-                    data-aos="fade-up">
-                    <div class="panel-heading p-0 bg-transparent" role="tab"
-                      id="headingOne">
-                      <h4 class="font-black">
-                        <a role="button" data-toggle="collapse"
-                          data-parent="#about_accordion" href="#about_1"
-                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
-                          aria-expanded="true" aria-controls="about_1">
-                          Worship
-                          <i
-                            class="fa-regular fa-circle-plus rotate-45 fa-sm text-beige"></i>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="about_1" class="panel-collapse collapse in"
-                      role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body p-0 border-none">
-                        <p>We believe that worship invites the presence of God,
-                          and we can’t wait to encounter God as we worship
-                          together.
-                        </p>
-                      </div>
+                <div
+                  class="panel panel-default bg-transparent border-none shadow-none"
+                  data-aos="fade-up">
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
+                    id="headingOne">
+                    <h4 class="h3 font-black mb-0">
+                      <a role="button" data-toggle="collapse"
+                        data-parent="#about_accordion" href="#about_1"
+                        class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                        aria-expanded="true" aria-controls="about_1">
+                        Worship
+                        <i
+                          class="fa-regular fa-circle-plus rotate-45 text-beige"></i>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="about_1" class="panel-collapse collapse text-left in"
+                    role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body p-0 border-none">
+                      <p class="mb-0">We believe that worship invites the
+                        presence of God,
+                        and we can’t wait to encounter God as we worship
+                        together.
+                      </p>
                     </div>
                   </div>
-
-                  <div
-                    class="panel panel-default bg-transparent border-none shadow-none"
-                    data-aos="fade-up">
-                    <div class="panel-heading p-0 bg-transparent" role="tab"
-                      id="headingOne">
-                      <h4 class="font-black">
-                        <a role="button" data-toggle="collapse"
-                          data-parent="#about_accordion" href="#about_2"
-                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
-                          aria-expanded="true" aria-controls="about_2">
-                          Teaching
-                          <i
-                            class="fa-regular fa-circle-plus fa-sm text-beige"></i>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="about_2" class="panel-collapse collapse"
-                      role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body p-0 border-none">
-                        <p>Each session is led by pastors and teachers who are
-                          passionate about sharing God’s Word and discipling a
-                          generation into a lifetime of following Jesus.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="panel panel-default bg-transparent border-none shadow-none"
-                    data-aos="fade-up">
-                    <div class="panel-heading p-0 bg-transparent" role="tab"
-                      id="headingOne">
-                      <h4 class="font-black">
-                        <a role="button" data-toggle="collapse"
-                          data-parent="#about_accordion" href="#about_3"
-                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
-                          aria-expanded="true" aria-controls="about_3">
-                          Fun
-                          <i
-                            class="fa-regular fa-circle-plus fa-sm text-beige"></i>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="about_3" class="panel-collapse collapse"
-                      role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body p-0 border-none">
-                        <p>Every student at Gauntlet will be part of high-energy
-                          team competitions, engaging activities, and daily free
-                          time.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="panel panel-default bg-transparent border-none shadow-none"
-                    data-aos="fade-up">
-                    <div class="panel-heading p-0 bg-transparent" role="tab"
-                      id="headingOne">
-                      <h4 class="font-black">
-                        <a role="button" data-toggle="collapse"
-                          data-parent="#about_accordion" href="#about_4"
-                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
-                          aria-expanded="true" aria-controls="about_4">
-                          Small Groups
-                          <i
-                            class="fa-regular fa-circle-plus fa-sm text-beige"></i>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="about_4" class="panel-collapse collapse"
-                      role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body p-0 border-none">
-                        <p>Students will spend time forming lifelong and
-                          encouraging friendships in small groups and larger
-                          community groups.</p>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
+
+                <div
+                  class="panel panel-default bg-transparent border-none shadow-none"
+                  data-aos="fade-up">
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
+                    id="headingOne">
+                    <h4 class="h3 font-black mb-0">
+                      <a role="button" data-toggle="collapse"
+                        data-parent="#about_accordion" href="#about_2"
+                        class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                        aria-expanded="true" aria-controls="about_2">
+                        Teaching
+                        <i class="fa-regular fa-circle-plus text-beige"></i>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="about_2" class="panel-collapse collapse text-left"
+                    role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body p-0 border-none">
+                      <p class="mb-0">Each session is led by pastors and
+                        teachers who are
+                        passionate about sharing God’s Word and discipling a
+                        generation into a lifetime of following Jesus.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="panel panel-default bg-transparent border-none shadow-none"
+                  data-aos="fade-up">
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
+                    id="headingOne">
+                    <h4 class="h3 font-black mb-0">
+                      <a role="button" data-toggle="collapse"
+                        data-parent="#about_accordion" href="#about_3"
+                        class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                        aria-expanded="true" aria-controls="about_3">
+                        Fun
+                        <i class="fa-regular fa-circle-plus text-beige"></i>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="about_3" class="panel-collapse collapse text-left"
+                    role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body p-0 border-none">
+                      <p class="mb-0">Every student at Gauntlet will be part of
+                        high-energy
+                        team competitions, engaging activities, and daily free
+                        time.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="panel panel-default bg-transparent border-none shadow-none"
+                  data-aos="fade-up">
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
+                    id="headingOne">
+                    <h4 class="h3 font-black mb-0">
+                      <a role="button" data-toggle="collapse"
+                        data-parent="#about_accordion" href="#about_4"
+                        class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                        aria-expanded="true" aria-controls="about_4">
+                        Small Groups
+                        <i class="fa-regular fa-circle-plus text-beige"></i>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="about_4" class="panel-collapse collapse text-left"
+                    role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body p-0 border-none">
+                      <p class="mb-0">Students will spend time forming lifelong
+                        and
+                        encouraging friendships in small groups and larger
+                        community groups.</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
+          <p class="hidden-md hidden-lg hidden-xl bring-forward"><a href="#go"
+              class="btn btn-primary">Get Your
+              Ticket</a></p>
         </div>
       </div>
     </section>
@@ -379,17 +382,26 @@
       </div>
       <div class="page-constrained mx-auto mb-6 mb-md-8">
         <div
-          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
-          <div class="bring-forward">
+          class="d-grid grid-cols-1 grid-cols-lg-12 gap-y-5 gap-x-8 text-center text-lg-left align-items-center bring-forward">
+          <div class="col-span-lg-7">
             <h2 class="display-3">Can you already see yourself at
               Gauntlet?</h2>
-            <p>Ready to go to Gauntlet? Grab your spot today! Registrations
+            <p>Ready to go to Gauntlet? Grab your spot today!
+              Registrations
               close April 14.
             </p>
-            <p class="mb-0"><a href="#" class="btn btn-secondary">Register
-                Now</a>
+            <select name="campus" id=""
+              class="border-0 btn btn-default bg-white mb-3 px-3 pr-4 text-transform-none tracking-tight text-left outline-none"
+              data-aos="fade-up">
+              <option value="">Choose Your Campus</option>
+              <option value="akn">Aiken</option>
+              <option value="and">Anderson</option>
+            </select>
+            <p class="mb-0 hidden-xs hidden-sm"><a href="#"
+                class="btn btn-secondary">Register
+                Now</a></p>
           </div>
-          <div>
+          <div class="col-span-lg-5">
             <div class="text-constrained mx-auto">
               <div class="d-grid grid-cols-1 gap-4 gap-lg-6">
                 <div data-aos="fade-up">
@@ -405,6 +417,9 @@
               </div>
             </div>
           </div>
+          <p class="mb-0 hidden-md hidden-lg hidden-xl"><a href="#"
+              class="btn btn-secondary">Register
+              Now</a></p>
         </div>
       </div>
 
@@ -448,7 +463,8 @@
             youth camp because we believe in the next generation, and we want to
             provide them a space to encounter God in a unique way this summer.
           </p>
-          <p class="mb-0"><a href="#" class="btn btn-secondary">Give Now</a></p>
+          <p class="bring-forward mb-0"><a href="#"
+              class="btn btn-secondary">Give Now</a></p>
         </span>
       </div>
     </section>
@@ -461,8 +477,8 @@
       </div>
       <div class="page-constrained mx-auto mb-6 mb-md-8">
         <div
-          class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 align-items-center text-center text-lg-left">
-          <div class="bring-forward h-max position-sticky">
+          class="d-grid grid-cols-1 grid-cols-lg-2 gap-y-4 gap-x-8 align-items-center text-center text-lg-left">
+          <div class="bring-forward">
             <h2 class="display-3">Serve at Gauntlet</h2>
             <p>
               Not only is Gauntlet a life-changing week for students, but it’s
@@ -470,44 +486,54 @@
               Support Volunteers are essential to creating a Gauntlet experience
               students love year after year.
             </p>
-            <p>We always have a 4-to-1 student-to-volunteer ratio because we
+            <p>We always have a 4-to-1 student-to-volunteer ratio
+              because we
               care about students and want every student to have a fun and safe
               week. If you're interested in serving at Gauntlet as a Group
               Leader, apply below.</p>
-            <p class="mb-0"><a href="#" class="btn btn-primary">Lead
-                a Group</a>
+            <div class="hidden-xs hidden-sm">
+              <p><a href="#" class="btn btn-primary">Lead
+                  a Group</a></p>
+              <p class="mb-0"><small>We’re currently focusing on filling group
+                  leader roles,
+                  but if you’re interested in being a Support Volunteer, you can
+                  email <a href="#" class="text-white">gauntlet@newspring.cc</a>
+                  or talk to your local Fuse
+                  Director.</small></p>
+            </div>
           </div>
           <div>
             <div class="text-constrained mx-auto">
-              <h3 class="font-black text-black">What makes a great Gauntlet
+              <h3 class="font-black mb-7">What makes a great Gauntlet
                 volunteer?</h3>
-              <div class="panel-group bring-forward" id="serve_accordion"
-                role="tablist" aria-multiselectable="true">
+              <div
+                class="panel-group d-grid grid-cols-1 gap-3 bring-forward mb-0"
+                id="serve_accordion" role="tablist" aria-multiselectable="true">
 
                 <div
                   class="panel panel-default bg-transparent border-none shadow-none"
                   data-aos="fade-up">
-                  <div class="panel-heading p-0 bg-transparent" role="tab"
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
                     id="headingOne">
-                    <h4 class="font-black">
+                    <h4 class="h3 font-black mb-0">
                       <a role="button" data-toggle="collapse"
                         data-parent="#serve_accordion" href="#serve_1"
                         class="text-decoration-none text-white d-flex justify-content-between align-items-center"
                         aria-expanded="true" aria-controls="serve_1">
                         Maturity
                         <i
-                          class="fa-regular fa-circle-plus rotate-45 fa-sm text-beige"></i>
+                          class="fa-regular fa-circle-plus rotate-45 text-beige"></i>
                       </a>
                     </h4>
                   </div>
-                  <div id="serve_1" class="panel-collapse collapse in"
+                  <div id="serve_1" class="panel-collapse collapse text-left in"
                     role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body p-0 border-none">
-                      <p>The best Gauntlet volunteers are mature Christians,
-                        like the ones Paul describes in 1 Timothy 3:1-7. In
-                        addition, you’ll want to genuinely desire to invest in
-                        students because you will spend a lot of time with the
-                        next generation.
+                      <p class="mb-0">The best Gauntlet volunteers are mature
+                        Christians, like the ones Paul describes in 1 Timothy
+                        3:1-7. In addition, you’ll want to genuinely desire to
+                        invest in students because you will spend a lot of time
+                        with the next generation.
                       </p>
                     </div>
                   </div>
@@ -516,27 +542,26 @@
                 <div
                   class="panel panel-default bg-transparent border-none shadow-none"
                   data-aos="fade-up">
-                  <div class="panel-heading p-0 bg-transparent" role="tab"
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
                     id="headingOne">
-                    <h4 class="font-black">
+                    <h4 class="h3 font-black mb-0">
                       <a role="button" data-toggle="collapse"
                         data-parent="#serve_accordion" href="#serve_2"
                         class="text-decoration-none text-white d-flex justify-content-between align-items-center"
                         aria-expanded="true" aria-controls="serve_2">
                         Flexibility
-                        <i
-                          class="fa-regular fa-circle-plus fa-sm text-beige"></i>
+                        <i class="fa-regular fa-circle-plus text-beige"></i>
                       </a>
                     </h4>
                   </div>
-                  <div id="serve_2" class="panel-collapse collapse"
+                  <div id="serve_2" class="panel-collapse collapse text-left"
                     role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body p-0 border-none">
-                      <p>Other qualities we look for in group leaders are
-                        someone who isn’t easily flustered, someone who will
-                        communicate well with students’ parents, someone who
-                        will be flexible when plans change, and decisive when
-                        students are at a stalemate.</p>
+                      <p class="mb-0">Other qualities we look for in group
+                        leaders are someone who isn’t easily flustered, someone
+                        who will communicate well with students’ parents,
+                        someone who will be flexible when plans change, and
+                        decisive when students are at a stalemate.</p>
                     </div>
                   </div>
                 </div>
@@ -544,32 +569,45 @@
                 <div
                   class="panel panel-default bg-transparent border-none shadow-none"
                   data-aos="fade-up">
-                  <div class="panel-heading p-0 bg-transparent" role="tab"
+                  <div class="panel-heading p-0 bg-transparent mb-3" role="tab"
                     id="headingOne">
-                    <h4 class="font-black">
+                    <h4 class="h3 font-black mb-0">
                       <a role="button" data-toggle="collapse"
                         data-parent="#serve_accordion" href="#serve_3"
                         class="text-decoration-none text-white d-flex justify-content-between align-items-center"
                         aria-expanded="true" aria-controls="serve_3">
                         Responsibility
-                        <i
-                          class="fa-regular fa-circle-plus fa-sm text-beige"></i>
+                        <i class="fa-regular fa-circle-plus text-beige"></i>
                       </a>
                     </h4>
                   </div>
-                  <div id="serve_3" class="panel-collapse collapse"
+                  <div id="serve_3" class="panel-collapse collapse text-left"
                     role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body p-0 border-none">
-                      <p>Finally, great group leaders know it’s a big deal for
-                        parents to trust us with their students. They don’t take
-                        that responsibility lightly, and they work hard to make
-                        sure students have fun and stay safe.</p>
+                      <p class="mb-0">Finally, great group leaders know it’s a
+                        big deal for parents to trust us with their students.
+                        They don’t take that responsibility lightly, and they
+                        work hard to make sure students have fun and stay safe.
+                      </p>
                     </div>
                   </div>
                 </div>
 
+
+
               </div>
+
             </div>
+          </div>
+          <div class="hidden-md hidden-lg hidden-xl bring-forward">
+            <p><a href="#" class="btn btn-primary">Lead
+                a Group</a></p>
+            <p class="mb-0"><small>We’re currently focusing on filling group
+                leader roles,
+                but if you’re interested in being a Support Volunteer, you can
+                email <a href="#" class="text-white">gauntlet@newspring.cc</a>
+                or talk to your local Fuse
+                Director.</small></p>
           </div>
         </div>
       </div>
@@ -581,39 +619,44 @@
       <div class="fullscreen background-fixed background-center o-90"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="text-constrained mx-auto text-center">
-        <h2 class="display-1">Pray for Gauntlet</h2>
-        <p>Prayer is one of our most powerful tools as we prepare for and send
-          students to Gauntlet. Would you partner with us in praying for
-          students, leaders, and volunteers this year? We know that God wants to
-          meet with each and every student at Gauntlet, and we can’t wait to ask
-          Him to do what only He can do in their lives.</p>
-      </div>
-      <div class="page-constrained mx-auto">
-        <div
-          class="d-grid grid-cols-1 grid-cols-lg-3 gap-3 gap-md-6 my-6 my-md-7 text-center">
-          <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-primary">Encounter</h3>
-            <p>Pray that every student would encounter God at Gauntlet.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-primary">Friendship</h3>
-            <p>Pray that every student would grow in friendship with God at
-              Gauntlet.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-primary">Safety</h3>
-            <p>Pray for the safety of every student, leader, and volunteer who
-              attends Gauntlet.</p>
+      <div class="d-grid grid-cols-1 grid-cols-lg-12 gap-x-8 bring-forward">
+        <div class="col-span-lg-7">
+          <h2 class="display-1">Pray for Gauntlet</h2>
+          <p>Prayer is one of our most powerful tools as we prepare
+            for and send
+            students to Gauntlet. Would you partner with us in praying for
+            students, leaders, and volunteers this year? We know that God wants
+            to
+            meet with each and every student at Gauntlet, and we can’t wait to
+            ask
+            Him to do what only He can do in their lives.</p>
+          <p>In the days ahead, we’ll post a sign-up link to 24/7
+            prayer to
+            cover
+            the entire week of Gauntlet. We would love for you to join us in
+            praying hour by hour during our summer camp!</p>
+          <p class="mb-0"><a href="#" class="btn btn-primary">Sign Up
+              to Pray</a></p>
+        </div>
+        <div class="col-span-lg-5">
+          <div class="d-grid grid-cols-1 gap-y-4 my-6 my-md-7">
+            <div data-aos="fade-up">
+              <h3 class="mb-2 font-black text-primary">Encounter</h3>
+              <p>Pray that every student would encounter God at Gauntlet.</p>
+            </div>
+            <div data-aos="fade-up">
+              <h3 class="mb-2 font-black text-primary">Friendship</h3>
+              <p>Pray that every student would grow in friendship with God at
+                Gauntlet.</p>
+            </div>
+            <div data-aos="fade-up">
+              <h3 class="mb-2 font-black text-primary">Safety</h3>
+              <p class="mb-0">Pray for the safety of every student, leader, and
+                volunteer who
+                attends Gauntlet.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bring-forward text-constrained mx-auto text-center">
-        <p>In the days ahead, we’ll post a sign-up link to 24/7 prayer to cover
-          the entire week of Gauntlet. We would love for you to join us in
-          praying hour by hour during our summer camp!</p>
-        <p class="hidden mb-0"><a href="#" class="btn btn-primary">Sign Up
-            to Serve</a>
       </div>
     </section>
 
@@ -623,18 +666,30 @@
       <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="bring-forward text-constrained mx-auto">
-        <h2 class="display-3 text-center">For Parents</h2>
-        <p>As we get closer to Gauntlet, every campus will hold parent meetings.
-          These meetings are designed to answer all your questions and equip you
-          with everything you and your student(s) need to know to have a great
-          week. We encourage all parents/guardians to make all efforts to attend
-          the scheduled parent meeting.</p>
-        <p>We’ll cover everything from what to pack to where to park – you don’t
-          want to miss this meeting. Plus, it’s a great chance to connect with
-          the Fuse staff, who will be hanging out with your student(s) in
-          Clemson. If you are unable to attend, please contact your local Fuse
-          Director.</p>
+      <div class="d-grid grid-cols-1 grid-cols-lg-12 gap-y-5 gap-x-8">
+        <div class="col-span-lg-7">
+          <h2 class="display-2">For Parents</h2>
+          <p>As we get closer to Gauntlet, every campus will hold parent
+            meetings.
+            These meetings are designed to answer all your questions and equip
+            you
+            with everything you and your student(s) need to know to have a great
+            week. We encourage all parents/guardians to make all efforts to
+            attend
+            the scheduled parent meeting.</p>
+          <p>We’ll cover everything from what to pack to where to park – you
+            don’t
+            want to miss this meeting. Plus, it’s a great chance to connect with
+            the Fuse staff, who will be hanging out with your student(s) in
+            Clemson. If you are unable to attend, please contact your local Fuse
+            Director.</p>
+          <p class="bring-forward mb-0"><a href="#" class="btn btn-primary">Sign
+              Up for
+              Updates</a></p>
+        </div>
+        <div class="col-span-lg-5">
+          {{ Campus List }}
+        </div>
       </div>
     </section>
 
@@ -644,156 +699,121 @@
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
-      <div class="bring-forward text-constrained mx-auto mb-6 mb-md-7">
-        <h2 class="display-3 text-center">Frequently Asked Questions</h2>
-      </div>
-      <div class="text-constrained mx-auto">
-        <div class="panel-group bring-forward" id="faq_accordion" role="tablist"
-          aria-multiselectable="true">
-
-          <div
-            class="panel panel-default bg-transparent border-none shadow-none"
-            data-aos="fade-up">
-            <div class="panel-heading p-0 bg-transparent" role="tab"
-              id="headingOne">
-              <h4 class="font-black">
-                <a role="button" data-toggle="collapse"
-                  data-parent="#faq_accordion" href="#faq_1"
-                  class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
-                  aria-expanded="true" aria-controls="faq_1">
-                  Maturity
-                  <i
-                    class="fa-regular fa-circle-plus rotate-45 fa-sm text-black"></i>
-                </a>
-              </h4>
+      <div class="d-grid grid-cols-1 grid-cols-lg-12 gap-y-5 gap-x-8">
+        <div class="col-span-lg-7">
+          <h2 class="display-2">Frequently Asked Questions</h2>
+          <p>Anim fugiat mollit magna irure sit non veniam qui sunt commodo
+            proident cupidatat aliquip laboris.</p>
+          <span
+            class="wistia_embed wistia_async_yzt065rodt popover=true popoverContent=link playerColor=f05421 wistia_embed_initialized bring-forward d-inline-block"
+            id="wistia-yzt065rodt-1">
+            <div id="wistia_29.thumb_container" class="wistia_click_to_play"
+              data-aos="fade-up">
+              <a href="#" class="btn btn-primary">Play
+                Video <i class="fa-solid fa-play ml-1"></i></a>
             </div>
-            <div id="faq_1" class="panel-collapse collapse in" role="tabpanel"
-              aria-labelledby="headingOne">
-              <div class="panel-body p-0 border-none">
-                <p>The best Gauntlet volunteers are mature Christians,
-                  like the ones Paul describes in 1 Timothy 3:1-7. In
-                  addition, you’ll want to genuinely desire to invest in
-                  students because you will spend a lot of time with the
-                  next generation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="panel panel-default bg-transparent border-none shadow-none"
-            data-aos="fade-up">
-            <div class="panel-heading p-0 bg-transparent" role="tab"
-              id="headingOne">
-              <h4 class="font-black">
-                <a role="button" data-toggle="collapse"
-                  data-parent="#faq_accordion" href="#faq_2"
-                  class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
-                  aria-expanded="true" aria-controls="faq_2">
-                  Flexibility
-                  <i class="fa-regular fa-circle-plus fa-sm text-black"></i>
-                </a>
-              </h4>
-            </div>
-            <div id="faq_2" class="panel-collapse collapse" role="tabpanel"
-              aria-labelledby="headingOne">
-              <div class="panel-body p-0 border-none">
-                <p>Other qualities we look for in group leaders are
-                  someone who isn’t easily flustered, someone who will
-                  communicate well with students’ parents, someone who
-                  will be flexible when plans change, and decisive when
-                  students are at a stalemate.</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="panel panel-default bg-transparent border-none shadow-none"
-            data-aos="fade-up">
-            <div class="panel-heading p-0 bg-transparent" role="tab"
-              id="headingOne">
-              <h4 class="font-black">
-                <a role="button" data-toggle="collapse"
-                  data-parent="#faq_accordion" href="#faq_3"
-                  class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
-                  aria-expanded="true" aria-controls="faq_3">
-                  Responsibility
-                  <i class="fa-regular fa-circle-plus fa-sm text-black"></i>
-                </a>
-              </h4>
-            </div>
-            <div id="faq_3" class="panel-collapse collapse" role="tabpanel"
-              aria-labelledby="headingOne">
-              <div class="panel-body p-0 border-none">
-                <p>Finally, great group leaders know it’s a big deal for
-                  parents to trust us with their students. They don’t take
-                  that responsibility lightly, and they work hard to make
-                  sure students have fun and stay safe.</p>
-              </div>
-            </div>
-          </div>
-
+          </span>
+          <script src="https://fast.wistia.com/embed/medias/yzt065rodt.jsonp"
+            async=""></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js"
+            async=""></script>
+        </div>
+        <div class="col-span-lg-5">
+          {{ FAQ List }}
         </div>
       </div>
-      <div
-        class="hidden d-flex flex-column gap-y-3 bring-forward text-constrained mx-auto">
-        <div data-aos="fade-up">
-          <a href="#faq_1" data-toggle="collapse"
-            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
-            <div class="col-span-5 col-span-lg-11">
-              <h3 class="h5 text-transform-none">Where is Gauntlet?</h3>
-            </div>
-            <div class="col-span-1 col-span-lg-1 text-right">
-              <i class="fa-regular fa-circle-plus fa-2x"></i>
-            </div>
-          </a>
-          <div id="faq_1" class="collapse text-purple">
-            <p>Clemson, South Carolina</p>
-          </div>
+      <div class="hidden">
+        <div class="bring-forward text-constrained mx-auto mb-6 mb-md-7">
+          <h2 class="display-3 text-center">Frequently Asked Questions</h2>
         </div>
-        <div data-aos="fade-up">
-          <a href="#faq_2" data-toggle="collapse"
-            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
-            <div class="col-span-5 col-span-lg-11">
-              <h3 class="h5 text-transform-none">What are the dates for
-                Gauntlet?</h3>
-            </div>
-            <div class="col-span-1 col-span-lg-1 text-right">
-              <i class="fa-regular fa-circle-plus fa-2x"></i>
-            </div>
-          </a>
-          <div id="faq_2" class="collapse text-purple">
-            <p>June 24-28, 2024</p>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <a href="#faq_3" data-toggle="collapse"
-            class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none text-black">
-            <div class="col-span-5 col-span-lg-11">
-              <h3 class="h5 text-transform-none">How much does it
-                cost to go to Gauntlet as a
-                student? As a volunteer?</h3>
-            </div>
-            <div class="col-span-1 col-span-lg-1 text-right">
-              <i class="fa-regular fa-circle-plus fa-2x"></i>
-            </div>
-          </a>
-          <div id="faq_3" class="collapse text-purple">
-            <p>Early Bird student pricing is $429 and will be
-              available until
-              March 6, so register quickly! Full-price tickets are $450 and will
-              be available from March 7 to April 14. Your first student ticket
-              will be full price, and each student's ticket price following will
-              be $350. Tickets cover
-              students’ transportation, rooms, meals, resources, and all
-              Gauntlet
-              activities. If your student wants to purchase snacks or a souvenir
-              from the Gauntlet Store, they’ll need some extra spending money.
-            </p>
-          </div>
-        </div>
+        <div class="text-constrained mx-auto">
+          <div class="panel-group bring-forward" id="faq_accordion"
+            role="tablist" aria-multiselectable="true">
 
+            <div
+              class="panel panel-default bg-transparent border-none shadow-none"
+              data-aos="fade-up">
+              <div class="panel-heading p-0 bg-transparent" role="tab"
+                id="headingOne">
+                <h4 class="font-black">
+                  <a role="button" data-toggle="collapse"
+                    data-parent="#faq_accordion" href="#faq_1"
+                    class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
+                    aria-expanded="true" aria-controls="faq_1">
+                    Maturity
+                    <i
+                      class="fa-regular fa-circle-plus rotate-45 fa-sm text-black"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="faq_1" class="panel-collapse collapse text-left in"
+                role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body p-0 border-none">
+                  <p>The best Gauntlet volunteers are mature Christians,
+                    like the ones Paul describes in 1 Timothy 3:1-7. In
+                    addition, you’ll want to genuinely desire to invest in
+                    students because you will spend a lot of time with the
+                    next generation.
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <div
+              class="panel panel-default bg-transparent border-none shadow-none"
+              data-aos="fade-up">
+              <div class="panel-heading p-0 bg-transparent" role="tab"
+                id="headingOne">
+                <h4 class="font-black">
+                  <a role="button" data-toggle="collapse"
+                    data-parent="#faq_accordion" href="#faq_2"
+                    class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
+                    aria-expanded="true" aria-controls="faq_2">
+                    Flexibility
+                    <i class="fa-regular fa-circle-plus fa-sm text-black"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="faq_2" class="panel-collapse collapse text-left"
+                role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body p-0 border-none">
+                  <p>Other qualities we look for in group leaders are
+                    someone who isn’t easily flustered, someone who will
+                    communicate well with students’ parents, someone who
+                    will be flexible when plans change, and decisive when
+                    students are at a stalemate.</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="panel panel-default bg-transparent border-none shadow-none"
+              data-aos="fade-up">
+              <div class="panel-heading p-0 bg-transparent" role="tab"
+                id="headingOne">
+                <h4 class="font-black">
+                  <a role="button" data-toggle="collapse"
+                    data-parent="#faq_accordion" href="#faq_3"
+                    class="text-decoration-none text-primary d-flex justify-content-between align-items-center"
+                    aria-expanded="true" aria-controls="faq_3">
+                    Responsibility
+                    <i class="fa-regular fa-circle-plus fa-sm text-black"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="faq_3" class="panel-collapse collapse text-left"
+                role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body p-0 border-none">
+                  <p>Finally, great group leaders know it’s a big deal for
+                    parents to trust us with their students. They don’t take
+                    that responsibility lightly, and they work hard to make
+                    sure students have fun and stay safe.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
 
     </section>

@@ -278,6 +278,21 @@ h6, .h6,
 a.text-purple:hover { color: @color-purple; }
 a.text-blue:hover { color: @color-blue; }
 
+.display-1 {
+  font-size: ceil(@font-size-display-1*.8);
+}
+.display-2 {
+  font-size: ceil(@font-size-display-2*.9);
+}
+
+#navigation a {
+  font-size: 125%;
+}
+
+[data-toggle='collapse'] i {
+  margin-top: -7px;
+}
+
 @media @sm {
   a.text-purple:hover { color: darken(@color-purple, 10%); }
   a.text-purple:focus,
@@ -286,6 +301,22 @@ a.text-blue:hover { color: @color-blue; }
   a.text-blue:hover { color: darken(@color-blue, 10%); }
   a.text-blue:focus,
   a.text-blue:active { color: @color-blue; }
+}
+
+@media @md {
+  #navigation a {
+    font-size: 100%;
+  }
+
+  .display-1 {
+    font-size: ceil(@font-size-display-1 * 1.43); // 92px
+    letter-spacing: -3px;
+  }
+
+  .display-2 {
+    font-size: ceil(@font-size-display-2 * 1.5); // 84px
+    letter-spacing: -2.7px;
+  }
 }
 
 @media @lg {
@@ -299,13 +330,14 @@ a.text-blue:hover { color: @color-blue; }
     overflow: visible;
   }
 
+  .svh-lg-100 {
+    height: svh100;
+  }
+
   .h-lg-100 {
     height: 100%;
   }
   .w-lg-auto {
     width: auto;
-  }
-  .display-3 {
-    // font-size: 104px;
   }
 }
