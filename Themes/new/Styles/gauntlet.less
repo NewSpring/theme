@@ -109,6 +109,10 @@ html {
   overflow: hidden;
 }
 
+.border-none {
+  border-width: 0px !important;
+}
+
 //
 //
 // BUTTONS
@@ -270,6 +274,18 @@ h6, .h6,
 .display-2,
 .display-3 {
   text-transform: uppercase;
+}
+a.text-purple:hover { color: @color-purple; }
+a.text-blue:hover { color: @color-blue; }
+
+@media @sm {
+  a.text-purple:hover { color: darken(@color-purple, 10%); }
+  a.text-purple:focus,
+  a.text-purple:active { color: @color-purple; }
+
+  a.text-blue:hover { color: darken(@color-blue, 10%); }
+  a.text-blue:focus,
+  a.text-blue:active { color: @color-blue; }
 }
 
 @media @lg {

@@ -71,6 +71,14 @@
       background-color: var(--secondary) !important;
     }
 
+    .text-primary {
+      color: var(--primary) !important;
+    }
+
+    .text-secondary {
+      color: var(--secondary) !important;
+    }
+
     .btn-primary {
       position: relative;
       background-color: var(--primary);
@@ -117,7 +125,7 @@
             style="max-width: 200px;">
           <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-light.svg"
             alt="Gauntlet Logo" class="bring-forward w-100"
-            style="max-width: 45px;">
+            style="max-width: 50px;">
         </a>
         <nav class="hidden-lg hidden-xl">
           <ul
@@ -219,8 +227,7 @@
 
 
 
-    <section id="about"
-      class="pt-8 pt-xl-9 position-relative bg-black text-beige">
+    <section id="about" class=" pt-xl-9 position-relative bg-black text-beige">
       <div class="fullscreen background-fixed background-center o-40"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -228,9 +235,10 @@
         <div
           class="d-grid grid-cols-1 grid-cols-lg-2 gap-8 text-center text-lg-left align-items-center">
           <div class="bring-forward">
-            <h2 class="display-2">What is Gauntlet?</h2>
-            <p class="h3 font-black text-fuscia">Gauntlet is a summer camp
-              experience like no
+            <p class="display-3 font-black text-beige">Gauntlet is a <span
+                class="text-secondary">summer
+                camp
+                experience</span> like no
               other.</p>
             <p>Rising seventh
               graders through graduated seniors will gather from across the
@@ -247,68 +255,134 @@
           <div>
             <div class="text-constrained mx-auto">
               <div class="d-grid grid-cols-1 gap-2 bring-forward">
-                <div data-aos="fade-up">
-                  <a href="#about_1" data-toggle="collapse" data-parent="#about"
-                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
-                    <div class="col-span-5 col-span-lg-11">
-                      <h3 class="h4 font-black text-purple mb-0">Worship</h3>
+                <div class="panel-group" id="accordion" role="tablist"
+                  aria-multiselectable="true">
+                  <div class="panel panel-default bg-transparent border-none"
+                    data-aos="fade-up">
+                    <div class="panel-heading p-0 bg-transparent" role="tab"
+                      id="headingOne">
+                      <h4 class="font-black">
+                        <a role="button" data-toggle="collapse"
+                          data-parent="#accordion" href="#collapseOne"
+                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          Worship
+                          <i
+                            class="fa-regular fa-circle-plus rotate-135 fa-sm text-beige"></i>
+                        </a>
+                      </h4>
                     </div>
-                    <div class="col-span-1 col-span-lg-1 text-right">
-                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                    <div id="collapseOne" class="panel-collapse collapse in"
+                      role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body p-0 border-none">
+                        <p>We believe that worship invites the presence of God,
+                          and we can’t wait to encounter God as we worship
+                          together.
+                        </p>
+                      </div>
                     </div>
-                  </a>
-                  <div id="about_1" class="collapse text-beige">
-                    <p>We believe that worship invites the presence of God, and
-                      we can’t wait to encounter God as we worship together.</p>
+                  </div>
+                  <div class="panel panel-default bg-transparent border-none"
+                    data-aos="fade-up">
+                    <div class="panel-heading p-0 bg-transparent" role="tab"
+                      id="headingOne">
+                      <h4 class="font-black">
+                        <a role="button" data-toggle="collapse"
+                          data-parent="#accordion" href="#collapseTwo"
+                          class="text-decoration-none text-secondary d-flex justify-content-between align-items-center"
+                          aria-expanded="true" aria-controls="collapseTwo">
+                          Teaching
+                          <i
+                            class="fa-regular fa-circle-plus fa-sm text-beige"></i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse"
+                      role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body p-0 border-none">
+                        <p>Each session is led by pastors and teachers who are
+                          passionate about sharing God’s Word and discipling a
+                          generation into a lifetime of following Jesus.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div data-aos="fade-up">
-                  <a href="#about_2" data-toggle="collapse" data-parent="#about"
-                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
-                    <div class="col-span-5 col-span-lg-11">
-                      <h3 class="h4 font-black text-purple mb-0">Teaching</h3>
+
+                <div class="hidden">
+                  <div data-aos="fade-up">
+                    <a href="#about_1" data-toggle="collapse"
+                      data-parent="#about_accordion"
+                      class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                      <div class="col-span-5 col-span-lg-11">
+                        <h3 class="h4 font-black text-purple mb-0">Worship</h3>
+                      </div>
+                      <div class="col-span-1 col-span-lg-1 text-right">
+                        <i
+                          class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                      </div>
+                    </a>
+                    <div id="about_1" class="collapse text-beige">
+                      <p>We believe that worship invites the presence of God,
+                        and
+                        we can’t wait to encounter God as we worship together.
+                      </p>
                     </div>
-                    <div class="col-span-1 col-span-lg-1 text-right">
-                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
-                    </div>
-                  </a>
-                  <div id="about_2" class="collapse text-beige">
-                    <p>Each session is led by pastors and teachers who are
-                      passionate about sharing God’s Word and discipling a
-                      generation into a lifetime of following Jesus.</p>
                   </div>
-                </div>
-                <div data-aos="fade-up">
-                  <a href="#about_3" data-toggle="collapse" data-parent="#about"
-                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
-                    <div class="col-span-5 col-span-lg-11">
-                      <h3 class="h4 font-black text-purple mb-0">Fun</h3>
+                  <div data-aos="fade-up">
+                    <a href="#about_2" data-toggle="collapse"
+                      data-parent="#about_accordion"
+                      class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                      <div class="col-span-5 col-span-lg-11">
+                        <h3 class="h4 font-black text-purple mb-0">Teaching</h3>
+                      </div>
+                      <div class="col-span-1 col-span-lg-1 text-right">
+                        <i
+                          class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                      </div>
+                    </a>
+                    <div id="about_2" class="collapse text-beige">
+                      <p>Each session is led by pastors and teachers who are
+                        passionate about sharing God’s Word and discipling a
+                        generation into a lifetime of following Jesus.</p>
                     </div>
-                    <div class="col-span-1 col-span-lg-1 text-right">
-                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
-                    </div>
-                  </a>
-                  <div id="about_3" class="collapse text-beige">
-                    <p>Every student at Gauntlet will be part of high-energy
-                      team competitions, engaging activities, and daily free
-                      time.</p>
                   </div>
-                </div>
-                <div data-aos="fade-up">
-                  <a href="#about_4" data-toggle="collapse" data-parent="#about"
-                    class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
-                    <div class="col-span-5 col-span-lg-11">
-                      <h3 class="h4 font-black text-purple mb-0">Small Groups
-                      </h3>
+                  <div data-aos="fade-up">
+                    <a href="#about_3" data-toggle="collapse"
+                      data-parent="#about_accordion"
+                      class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                      <div class="col-span-5 col-span-lg-11">
+                        <h3 class="h4 font-black text-purple mb-0">Fun</h3>
+                      </div>
+                      <div class="col-span-1 col-span-lg-1 text-right">
+                        <i
+                          class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                      </div>
+                    </a>
+                    <div id="about_3" class="collapse text-beige">
+                      <p>Every student at Gauntlet will be part of high-energy
+                        team competitions, engaging activities, and daily free
+                        time.</p>
                     </div>
-                    <div class="col-span-1 col-span-lg-1 text-right">
-                      <i class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                  </div>
+                  <div data-aos="fade-up">
+                    <a href="#about_4" data-toggle="collapse"
+                      data-parent="#about_accordion"
+                      class="d-grid grid-cols-6 grid-cols-lg-12 align-items-center text-decoration-none mb-3">
+                      <div class="col-span-5 col-span-lg-11">
+                        <h3 class="h4 font-black text-purple mb-0">Small Groups
+                        </h3>
+                      </div>
+                      <div class="col-span-1 col-span-lg-1 text-right">
+                        <i
+                          class="fa-regular fa-circle-plus fa-2x text-beige"></i>
+                      </div>
+                    </a>
+                    <div id="about_4" class="collapse text-beige">
+                      <p>Students will spend time forming lifelong and
+                        encouraging
+                        friendships in small groups and larger community groups.
+                      </p>
                     </div>
-                  </a>
-                  <div id="about_4" class="collapse text-beige">
-                    <p>Students will spend time forming lifelong and encouraging
-                      friendships in small groups and larger community groups.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -321,7 +395,7 @@
 
 
     <section id="go"
-      class="px-3 px-sm-5 px-md-7 px-lg-8 position-relative bg-orange text-beige">
+      class="px-3 px-sm-5 px-md-7 px-lg-8 position-relative bg-primary text-beige">
       <div class="fullscreen background-fixed background-center o-50"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -403,7 +477,7 @@
 
 
 
-    <section id="serve" class="position-relative bg-purple text-beige">
+    <section id="serve" class="position-relative bg-secondary text-beige">
       <div class="fullscreen background-fixed background-center o-30"
         style="background-image: url('/Themes/new/Assets/Images/christmas_texture1.png'); z-index: 1;">
       </div>
@@ -478,16 +552,16 @@
         <div
           class="d-grid grid-cols-1 grid-cols-lg-3 gap-3 gap-md-6 my-6 my-md-7 text-center">
           <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-amber">Encounter</h3>
+            <h3 class="mb-2 font-black text-primary">Encounter</h3>
             <p>Pray that every student would encounter God at Gauntlet.</p>
           </div>
           <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-amber">Friendship</h3>
+            <h3 class="mb-2 font-black text-primary">Friendship</h3>
             <p>Pray that every student would grow in friendship with God at
               Gauntlet.</p>
           </div>
           <div data-aos="fade-up">
-            <h3 class="mb-2 font-black text-amber">Safety</h3>
+            <h3 class="mb-2 font-black text-primary">Safety</h3>
             <p>Pray for the safety of every student, leader, and volunteer who
               attends Gauntlet.</p>
           </div>
@@ -616,16 +690,26 @@
     <div class="page-constrained mx-auto bring-forward">
       <div class="d-grid grid-cols-1 bring-forward text-center">
         <div>
-          <img src="Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg"
-            alt="" class="d-inline-block w-75 w-sm-50 w-lg-25 mb-5">
+          <a href="#top">
+            <img
+              src="Themes/new/Assets/SVG/gauntlet/gauntlet-wordmark-light.svg"
+              alt="" class="d-inline-block w-75 w-sm-50 w-lg-25 mb-5"></a>
           <p class=""><small>Gauntlet is the
               student summer camp of
               <a href="https://newspring.cc" class="text-white">NewSpring
                 Church</a>.</small></p>
-          <a href="https://newspring.cc">
-            <img src="./Themes/new/Assets/SVG/mark.svg"
-              alt="NewSpring Church Logo" class="mb-5"
-              style="width: 50px; max-width: 50px" /></a>
+          <div
+            class="d-flex justify-content-center align-items-center gap-3 mb-5">
+            <a href="#top">
+              <img src="/Themes/new/Assets/SVG/gauntlet/gauntlet-mark-light.svg"
+                alt="Gauntlet Logo" class="bring-forward w-100"
+                style="max-width: 50px;"></a>
+            <i class="fa-solid fa-xmark fa-lg"></i>
+            <a href="https://newspring.cc">
+              <img src="./Themes/new/Assets/SVG/mark.svg"
+                alt="NewSpring Church Logo"
+                style="width: 50px; max-width: 50px" /></a>
+          </div>
           <img src="/Themes/new/Assets/SVG/logo-light.svg" alt=""
             class="mb-5 hidden" style="max-width: 200px;">
 
@@ -690,13 +774,36 @@
         item.addEventListener("click", hideNavOnMobile)
       });
 
+      function collapseItem(element) {
+        if (collapseElement.classList.contains('in')) {
+          collapseIcon.classList.remove('rotate-135');
+        } else {
+          collapseIcon.classList.add('rotate-135');
+        }
+      }
+
       // Add functionality to collapsable elements
       collapseElements.forEach((item) => {
         item.addEventListener("click", function () {
-          // const collapseElementId = item.href.split('#')[1];
-          // const collapseElement = document.querySelector('#' + collapseElementId);
           const collapseIcon = item.querySelector('.fa-circle-plus');
-          collapseIcon.classList.toggle('rotate-135');
+          const collapseElementId = item.href.split('#')[1];
+          const collapseElement = document.querySelector('#' + collapseElementId);
+          const parentId = item.dataset.parent.split('#')[1];
+          const parentElement = document.querySelector('#' + parentId);
+          const openChildren = parentElement.querySelectorAll('.collapse.in');
+
+          // Toggle Clicked Item
+          if (collapseElement.classList.contains('in')) {
+            collapseIcon.classList.remove('rotate-135');
+          } else {
+            collapseIcon.classList.add('rotate-135');
+          }
+
+          // Close all Open Children within Same Parent
+          console.log(openChildren);
+
+          // console.log(openChildren);
+
         })
       });
     });

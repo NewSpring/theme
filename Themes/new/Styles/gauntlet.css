@@ -148,6 +148,9 @@ html {
 .collapse {
   overflow: hidden;
 }
+.border-none {
+  border-width: 0px !important;
+}
 .btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -287,6 +290,28 @@ h6,
 .display-2,
 .display-3 {
   text-transform: uppercase;
+}
+a.text-purple:hover {
+  color: #6d49d9;
+}
+a.text-blue:hover {
+  color: #215cd7;
+}
+@media (min-width: 576px) {
+  a.text-purple:hover {
+    color: #5029c6;
+  }
+  a.text-purple:focus,
+  a.text-purple:active {
+    color: #6d49d9;
+  }
+  a.text-blue:hover {
+    color: #1a49ab;
+  }
+  a.text-blue:focus,
+  a.text-blue:active {
+    color: #215cd7;
+  }
 }
 @media (min-width: 992px) {
   html {
