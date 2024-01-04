@@ -309,6 +309,9 @@ a.text-blue:hover {
 [data-toggle='collapse'] i {
   margin-top: -7px;
 }
+#gauntlet-wordmark {
+  margin-bottom: -2px;
+}
 @media (min-width: 576px) {
   a.text-purple:hover {
     color: #5029c6;
@@ -326,6 +329,9 @@ a.text-blue:hover {
   }
 }
 @media (min-width: 768px) {
+  #gauntlet-wordmark {
+    margin-bottom: -3px;
+  }
   #navigation a {
     font-size: 100%;
   }
@@ -342,6 +348,9 @@ a.text-blue:hover {
   html {
     scroll-padding-top: 91px;
   }
+  #gauntlet-wordmark {
+    margin-bottom: -4px;
+  }
   #navigation.collapse {
     display: block;
     height: auto !important;
@@ -355,5 +364,10 @@ a.text-blue:hover {
   }
   .w-lg-auto {
     width: auto;
+  }
+}
+@media (min-width: 1441px) {
+  #gauntlet-wordmark {
+    margin-bottom: -7px;
   }
 }

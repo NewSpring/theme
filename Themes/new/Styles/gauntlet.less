@@ -34,6 +34,10 @@ html {
   scroll-padding-top: 79px; 
 }
 
+// section {
+//   overflow: hidden;
+// }
+
 
 //
 //
@@ -293,6 +297,10 @@ a.text-blue:hover { color: @color-blue; }
   margin-top: -7px;
 }
 
+#gauntlet-wordmark {
+  margin-bottom: -2px;
+}
+
 @media @sm {
   a.text-purple:hover { color: darken(@color-purple, 10%); }
   a.text-purple:focus,
@@ -304,6 +312,10 @@ a.text-blue:hover { color: @color-blue; }
 }
 
 @media @md {
+  #gauntlet-wordmark {
+    margin-bottom: -3px;
+  }
+
   #navigation a {
     font-size: 100%;
   }
@@ -324,6 +336,10 @@ a.text-blue:hover { color: @color-blue; }
     scroll-padding-top: 91px; 
   }
 
+  #gauntlet-wordmark {
+    margin-bottom: -4px;
+  }
+
   #navigation.collapse {
     display: block;
     height: auto !important;
@@ -339,5 +355,11 @@ a.text-blue:hover { color: @color-blue; }
   }
   .w-lg-auto {
     width: auto;
+  }
+}
+
+@media @xl {
+  #gauntlet-wordmark {
+    margin-bottom: -7px;
   }
 }

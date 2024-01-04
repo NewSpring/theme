@@ -7,7 +7,7 @@
       "uuidString" : "21E1CFA7-2518-41F2-BA25-75CE6E17159C"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -15,6 +15,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
+    "\/.keyfile" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.keyfile",
       "oF" : 0
     },
     "\/2030.html" : {
@@ -154,6 +162,12 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/locations.html",
+      "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/overflow.html" : {
@@ -4251,6 +4265,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/cutout_students.png" : {
+      "ft" : 32768,
+      "iS" : 1642906,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/cutout_students.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/Themes\/new\/Assets\/Images\/jobs_hero_2x1.jpg" : {
       "ft" : 16384,
       "iS" : 490489,
@@ -6349,9 +6376,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -6363,6 +6387,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
