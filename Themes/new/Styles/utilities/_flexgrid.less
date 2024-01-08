@@ -18,6 +18,48 @@
 }
 
 .flexgrid-breakpoints(@infix) {
+
+  // COLUMNS
+  .grid-cols@{infix}-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .grid-cols@{infix}-none {
+    grid-template-columns: none;
+  }
+
   .col@{infix}-auto {
     grid-column: auto;
   }
@@ -101,64 +143,88 @@
     grid-column-start: initial;
   }
 
-  .justify-items@{infix}-start {
-    justify-items: start;
+  // ROWS
+  .grid-rows@{infix}-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
-  .justify-items@{infix}-end {
-    justify-items: end;
+  .grid-rows@{infix}-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
-  .justify-items@{infix}-center {
-    justify-items: center;
+  .grid-rows@{infix}-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
-  .justify-items@{infix}-stretch {
-    justify-items: stretch;
+  .grid-rows@{infix}-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
-
-  .align-content@{infix}-evenly {
-    align-content: space-evenly;
+  .grid-rows@{infix}-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
   }
-  .align-content@{infix}-baseline {
-    align-content: baseline;
+  .grid-rows@{infix}-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
-
-  .grid-cols@{infix}-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .grid-rows@{infix}-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .grid-rows@{infix}-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .grid-rows@{infix}-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .grid-rows@{infix}-10 {
+    grid-template-rows: repeat(10, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .grid-rows@{infix}-11 {
+    grid-template-rows: repeat(11, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+  .grid-rows@{infix}-12 {
+    grid-template-rows: repeat(12, minmax(0, 1fr));
   }
-  .grid-cols@{infix}-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+  .grid-rows@{infix}-none {
+    grid-template-rows: none;
   }
-  .grid-cols@{infix}-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  
+  .row@{infix}-auto {
+    grid-row: auto;
   }
-  .grid-cols@{infix}-9 {
-    grid-template-columns: repeat(9, minmax(0, 1fr));
+  .row-span@{infix}-1 {
+    grid-row: span 1 / span 1;
   }
-  .grid-cols@{infix}-10 {
-    grid-template-columns: repeat(10, minmax(0, 1fr));
+  .row-span@{infix}-2 {
+    grid-row: span 2 / span 2;
   }
-  .grid-cols@{infix}-11 {
-    grid-template-columns: repeat(11, minmax(0, 1fr));
+  .row-span@{infix}-3 {
+    grid-row: span 3 / span 3;
   }
-  .grid-cols@{infix}-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+  .row-span@{infix}-4 {
+    grid-row: span 4 / span 4;
   }
-  .grid-cols@{infix}-none {
-    grid-template-columns: none;
+  .row-span@{infix}-5 {
+    grid-row: span 5 / span 5;
+  }
+  .row-span@{infix}-6 {
+    grid-row: span 6 / span 6;
+  }
+  .row-span@{infix}-7 {
+    grid-row: span 7 / span 7;
+  }
+  .row-span@{infix}-8 {
+    grid-row: span 8 / span 8;
+  }
+  .row-span@{infix}-9 {
+    grid-row: span 9 / span 9;
+  }
+  .row-span@{infix}-10 {
+    grid-row: span 10 / span 10;
+  }
+  .row-span@{infix}-11 {
+    grid-row: span 11 / span 11;
+  }
+  .row-span@{infix}-12 {
+    grid-row: span 12 / span 12;
+  }
+  .row-span@{infix}-full {
+    grid-row: 1 / -1;
   }
 
   .gap@{infix}-0 {
@@ -283,6 +349,31 @@
   }
   .gap-y@{infix}-12 {
     row-gap: @spacer * @spacing-12;
+  }
+
+  .justify-items@{infix}-start {
+    justify-items: start;
+  }
+  .justify-items@{infix}-end {
+    justify-items: end;
+  }
+  .justify-items@{infix}-center {
+    justify-items: center;
+  }
+  .justify-items@{infix}-stretch {
+    justify-items: stretch;
+  }
+
+  .align-content@{infix}-evenly {
+    align-content: space-evenly;
+  }
+  .align-content@{infix}-baseline {
+    align-content: baseline;
+  }
+
+
+  .grid-flow@{infix}-col {
+    grid-auto-flow: column;
   }
 
   // each(@spacers, {

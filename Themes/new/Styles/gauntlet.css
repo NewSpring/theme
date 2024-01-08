@@ -47,6 +47,15 @@ html {
 .bg-lime {
   background-color: #b9d956;
 }
+.bg-teal {
+  background-color: #0fa4b7;
+}
+.bg-brown {
+  background-color: #7a2e20;
+}
+.bg-lilac {
+  background-color: #c3c3fc;
+}
 .text-fuscia {
   color: #e854be;
 }
@@ -85,6 +94,15 @@ html {
 }
 .text-lime {
   color: #b9d956;
+}
+.text-teal {
+  color: #0fa4b7;
+}
+.text-brown {
+  color: #7a2e20;
+}
+.text-lilac {
+  color: #c3c3fc;
 }
 .fill-fuscia {
   fill: #e854be;
@@ -125,6 +143,15 @@ html {
 .fill-lime {
   fill: #b9d956;
 }
+.fill-teal {
+  fill: #0fa4b7;
+}
+.fill-brown {
+  fill: #7a2e20;
+}
+.fill-lilac {
+  fill: #c3c3fc;
+}
 .h-0 {
   height: 0;
 }
@@ -134,13 +161,6 @@ html {
 }
 .o-97 {
   opacity: 0.97;
-}
-.h-max {
-  height: max-content;
-}
-.position-sticky {
-  position: -webkit-sticky;
-  position: sticky;
 }
 [data-toggle="collapse"] i {
   transition: all 0.3s ease-in-out;
@@ -303,8 +323,15 @@ a.text-blue:hover {
 .display-2 {
   font-size: 51px;
 }
+.display-3 {
+  font-size: 46px;
+}
 #navigation a {
   font-size: 125%;
+}
+small {
+  font-size: 80%;
+  line-height: 1.3;
 }
 [data-toggle='collapse'] i {
   margin-top: -7px;
@@ -347,6 +374,9 @@ a.text-blue:hover {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 91px;
+  }
+  .display-3 {
+    font-size: 75px;
   }
   #gauntlet-wordmark {
     margin-bottom: -4px;
