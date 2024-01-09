@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/.keyfile" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.keyfile",
+      "oF" : 0
+    },
     "\/2030.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -154,6 +162,12 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/locations.html",
+      "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/overflow.html" : {
@@ -4880,11 +4894,21 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/belong-blue.svg" : {
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/24.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/belong-blue.svg",
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/24.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/belong.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/belong.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -4900,21 +4924,41 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-2-blue.svg" : {
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-1-yellow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-2-blue.svg",
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-1-yellow.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3-amber.svg" : {
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-2.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3-amber.svg",
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3-pink.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3-pink.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/g-3.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -5030,21 +5074,21 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/here-yellow.svg" : {
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/here.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/here-yellow.svg",
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/here.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/u-orange.svg" : {
+    "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/u.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/u-orange.svg",
+      "oAP" : "\/Themes\/new\/Assets\/SVG\/gauntlet\/gs\/u.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
