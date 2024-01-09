@@ -1105,6 +1105,15 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
 
+      const navLinks = document.querySelectorAll('#navigation a[data-scroll]');
+
+      // Collapse nav when link is clicked
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          $('#navigation').collapse('hide');
+        })
+      })
+
       // UI Handling for Bootstrap Collapse elements
       const collapseElements = document.querySelectorAll("[data-toggle='collapse']");
 
