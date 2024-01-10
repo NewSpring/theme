@@ -4265,11 +4265,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/Themes\/new\/Assets\/Images\/gauntlet\/cutout_students.png" : {
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/android-chrome-192x192.png" : {
       "ft" : 32768,
-      "iS" : 1642906,
+      "iS" : 8028,
       "oA" : 0,
-      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/cutout_students.png",
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/android-chrome-192x192.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -4277,6 +4277,74 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/android-chrome-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 26081,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/android-chrome-512x512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 7300,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon-16x16.png" : {
+      "ft" : 32768,
+      "iS" : 602,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon-16x16.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon-32x32.png" : {
+      "ft" : 32768,
+      "iS" : 1142,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon-32x32.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/favicon.ico",
+      "oF" : 0
+    },
+    "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/site.webmanifest",
+      "oF" : 0
     },
     "\/Themes\/new\/Assets\/Images\/jobs_hero_2x1.jpg" : {
       "ft" : 16384,
@@ -5759,7 +5827,7 @@
     "creationDate" : 696289535.702739,
     "displayValue" : "theme",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-forest",
+    "iconImageName" : "\/Themes\/new\/Assets\/Images\/gauntlet\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
