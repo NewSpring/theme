@@ -313,19 +313,36 @@ small {
   margin-bottom: -2px;
 }
 
-@media @sm {
-  a.text-purple:hover { color: darken(@color-purple, 10%); }
-  a.text-purple:focus,
-  a.text-purple:active { color: @color-purple; }
+#cutout_2 {
+  position: absolute;
+  top: 15%;
+  right: -60%;
+  max-width: 100%;
+}
 
-  a.text-blue:hover { color: darken(@color-blue, 10%); }
-  a.text-blue:focus,
-  a.text-blue:active { color: @color-blue; }
+#cutout_3 {
+  position: absolute;
+  bottom: -70%;
+  right: 0;
+  left: -5%;
+  max-width: 100%;
+}
+
+@media @sm {
+  #cutout_2 {
+    top: 0;
+    right: -63%;
+  }
 }
 
 @media @md {
   #gauntlet-wordmark {
     margin-bottom: -3px;
+  }
+
+  #cutout_2 {
+    right: -30%;
+    width: 70%;
   }
 
   #navigation a {
@@ -354,6 +371,10 @@ small {
 
   #gauntlet-wordmark {
     margin-bottom: -4px;
+  }
+
+  #cutout_2 {
+    top: -5%;
   }
 
   #navigation.collapse {

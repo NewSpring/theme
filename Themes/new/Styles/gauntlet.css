@@ -339,25 +339,32 @@ small {
 #gauntlet-wordmark {
   margin-bottom: -2px;
 }
+#cutout_2 {
+  position: absolute;
+  top: 15%;
+  right: -60%;
+  max-width: 100%;
+}
+#cutout_3 {
+  position: absolute;
+  bottom: -70%;
+  right: 0;
+  left: -5%;
+  max-width: 100%;
+}
 @media (min-width: 576px) {
-  a.text-purple:hover {
-    color: #5029c6;
-  }
-  a.text-purple:focus,
-  a.text-purple:active {
-    color: #6d49d9;
-  }
-  a.text-blue:hover {
-    color: #1a49ab;
-  }
-  a.text-blue:focus,
-  a.text-blue:active {
-    color: #215cd7;
+  #cutout_2 {
+    top: 0;
+    right: -63%;
   }
 }
 @media (min-width: 768px) {
   #gauntlet-wordmark {
     margin-bottom: -3px;
+  }
+  #cutout_2 {
+    right: -30%;
+    width: 70%;
   }
   #navigation a {
     font-size: 100%;
@@ -380,6 +387,9 @@ small {
   }
   #gauntlet-wordmark {
     margin-bottom: -4px;
+  }
+  #cutout_2 {
+    top: -5%;
   }
   #navigation.collapse {
     display: block;
